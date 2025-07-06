@@ -14,7 +14,13 @@ const Hero = () => {
   return (
     <section id="home" className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden">
       {/* Background Image */}
-   
+      <div className="absolute inset-0 opacity-20">
+        <img 
+          src="/bg.jpg"
+          alt="Samagra Shiksha Background"
+          className="w-full h-full object-cover"
+        />
+      </div>
       
       {/* Background Pattern Overlay */}
       <div className="absolute inset-0 opacity-30">
@@ -29,36 +35,9 @@ const Hero = () => {
           {/* Institution Badges */}
          
 
-          {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Centre for Social Audit of{' '}
-            <span className="text-yellow-300">Samagra Shiksha</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto leading-relaxed">
-            Empowering communities through transparent and participatory monitoring 
-            of educational programs across Uttar Pradesh
-          </p>
+         
 
-          {/* Key Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-2xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-yellow-300">75</div>
-              <div className="text-sm text-blue-200">Districts</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-yellow-300">1.5M+</div>
-              <div className="text-sm text-blue-200">Students</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-yellow-300">15K+</div>
-              <div className="text-sm text-blue-200">Schools</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-yellow-300">2.5K+</div>
-              <div className="text-sm text-blue-200">Audits</div>
-            </div>
-          </div>
+         
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
