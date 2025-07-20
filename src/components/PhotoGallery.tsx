@@ -63,7 +63,7 @@ const PhotoGallery = () => {
       type: "News",
       description: "Social Audit Initiative Transforms Education Monitoring in UP",
       source: "Times of India",
-      link: "#"
+      link: "https://drive.google.com/file/d/13e3KVI2wsNkHcAo0gZ5XusJJJJvw1uvE/view?usp=sharing"
     },
     {
       title: "Hindustan Times Report", 
@@ -71,7 +71,7 @@ const PhotoGallery = () => {
       type: "News",
       description: "Integral University Leads Innovative Social Audit Program",
       source: "Hindustan Times",
-      link: "#"
+      link: "https://drive.google.com/file/d/1DzdvmSLZN_B6rxG92cneUoo8snlLfiWR/view?usp=sharing"
     },
     {
       title: "DD News Feature",
@@ -79,7 +79,7 @@ const PhotoGallery = () => {
       type: "TV",
       description: "Documentary on Social Audit Implementation",
       source: "DD News",
-      link: "#"
+      link: "https://drive.google.com/file/d/1LeQ77NfeLmTqexeTTy3fsg6tRuM5vUoq/view?usp=sharing"
     },
     {
       title: "AIR Interview",
@@ -87,7 +87,7 @@ const PhotoGallery = () => {
       type: "Radio", 
       description: "Director speaks on Social Audit Impact",
       source: "All India Radio",
-      link: "#"
+      link: "https://drive.google.com/file/d/1ZN9jOXfMd26cwEfLAbUhzxpeWhZtDMek/view?usp=sharing"
     }
   ];
 
