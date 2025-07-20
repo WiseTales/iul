@@ -146,30 +146,20 @@ const ResourceCenter = () => {
 
   const categories = [
     { name: "Guidelines", count: 6, color: "bg-blue-100 text-blue-800" },
-    { name: "Templates", count: 2, color: "bg-green-100 text-green-800" },
-    { name: "Training", count: 4, color: "bg-purple-100 text-purple-800" },
-    { name: "Policy", count: 3, color: "bg-orange-100 text-orange-800" }
+    { name: "Letters", count: 8, color: "bg-green-100 text-green-800" },
+    { name: "Circulars", count: 12, color: "bg-purple-100 text-purple-800" },
+    { name: "Plans", count: 15, color: "bg-orange-100 text-orange-800" },
+    { name: "Reports", count: 25, color: "bg-red-100 text-red-800" },
+    { name: "Modules", count: 3, color: "bg-indigo-100 text-indigo-800" }
   ];
 
   const pastReports = [
-    {
-      title: "Annual Social Audit Report 2023",
-      period: "Apr 2023 - Mar 2024",
-      districts: 75,
-      schools: 15632
-    },
-    {
-      title: "Quarterly Progress Report Q4",
-      period: "Jan 2024 - Mar 2024",
-      districts: 75,
-      schools: 3892
-    },
-    {
-      title: "District Compilation - Lucknow",
-      period: "Mar 2024",
-      districts: 1,
-      schools: 245
-    }
+    { title: "MOE Guidelines for Social Audit", type: "Guidelines", category: "MOE Guidelines" },
+    { title: "Official Letters from State", type: "Letters", category: "Letters" },
+    { title: "Government Circulars", type: "Circulars", category: "Circulars" },
+    { title: "District Audit Plans", type: "Plans", category: "Plans" },
+    { title: "Compiled Audit Reports", type: "Reports", category: "Reports" },
+    { title: "Training Modules by NCERT", type: "Modules", category: "Modules" }
   ];
 
   const handleDownload = (url: string) => {

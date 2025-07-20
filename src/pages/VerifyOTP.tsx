@@ -16,7 +16,7 @@ const VerifyOTP = () => {
   const [success, setSuccess] = useState('');
   const [timeLeft, setTimeLeft] = useState(300); // 5 minutes
 
-  const { contact, type, name, isLogin } = location.state || {};
+  const { contact, type, isLogin } = location.state || {};
 
   useEffect(() => {
     if (!contact) {
@@ -62,7 +62,6 @@ const VerifyOTP = () => {
           contact,
           otp,
           type,
-          name,
           isLogin
         }),
       });
@@ -74,7 +73,7 @@ const VerifyOTP = () => {
         
         localStorage.setItem('userSession', JSON.stringify({
           contact,
-          name: data.name || name,
+          name: data.name || 'User',
           type,
           authenticated: true
         }));

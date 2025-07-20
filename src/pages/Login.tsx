@@ -8,7 +8,7 @@ import { ArrowLeft, Mail, Phone } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const [contactMethod, setContactMethod] = useState<'email' | 'phone'>('email');
+  const [contactMethod, setContactMethod] = useState<'email' | 'phone'>('phone');
   const [contact, setContact] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -16,7 +16,7 @@ const Login = () => {
 
   const handleSendOTP = async () => {
     if (!contact.trim()) {
-      setError('Please enter your email or phone number');
+      setError('Please enter your phone number');
       return;
     }
 
@@ -96,12 +96,12 @@ const Login = () => {
 
             <div className="space-y-3">
               <Label htmlFor="contact" className="text-sm font-semibold text-gray-700">
-                {contactMethod === 'email' ? 'Email Address' : 'Phone Number'}
+                Phone Number
               </Label>
               <Input
                 id="contact"
-                type={contactMethod === 'email' ? 'email' : 'tel'}
-                placeholder={contactMethod === 'email' ? 'Enter your email address' : 'Enter your phone number'}
+                type="tel"
+                placeholder="Enter your phone number"
                 value={contact}
                 onChange={(e) => setContact(e.target.value)}
                 className="h-14 text-lg border-2 border-gray-200 focus:border-blue-500 rounded-xl transition-colors duration-200"

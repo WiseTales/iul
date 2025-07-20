@@ -22,6 +22,9 @@ const Navbar = () => {
     { label: 'Training', id: 'training' },
     { label: 'Dashboard', id: 'dashboard' },
     { label: 'Resources', id: 'resources' },
+    { label: 'Reports', id: 'reports' },
+    { label: 'Who\'s Who', id: 'whos-who' },
+    { label: 'Gallery', id: 'gallery' },
   ];
 
   return (
@@ -29,13 +32,27 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="bg-blue-600 text-white rounded-lg p-2">
-              <span className="font-bold text-xl">SS</span>
+          <div className="flex items-center space-x-6">
+            {/* Samagra Shiksha Logo */}
+            <div className="flex items-center space-x-2">
+              <div className="bg-blue-600 text-white rounded-lg p-2">
+                <span className="font-bold text-lg">SS</span>
+              </div>
+              <div>
+                <h1 className="text-lg font-bold text-gray-900">Samagra Shiksha</h1>
+                <p className="text-xs text-gray-600">Social Audit Portal</p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900">Social Audit</h1>
-              <p className="text-sm text-gray-600">Samagra Shiksha</p>
+            
+            {/* Integral University Logo */}
+            <div className="flex items-center space-x-2">
+              <div className="bg-green-600 text-white rounded-lg p-2">
+                <span className="font-bold text-lg">IU</span>
+              </div>
+              <div>
+                <h1 className="text-lg font-bold text-gray-900">Integral University</h1>
+                <p className="text-xs text-gray-600">Centre for Social Audit</p>
+              </div>
             </div>
           </div>
 

@@ -8,21 +8,15 @@ import { ArrowLeft, Mail, Phone, User } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Signup = () => {
-  const [contactMethod, setContactMethod] = useState<'email' | 'phone'>('email');
+  const [contactMethod, setContactMethod] = useState<'email' | 'phone'>('phone');
   const [contact, setContact] = useState('');
-  const [name, setName] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleSignup = async () => {
-    if (!name.trim()) {
-      setError('Please enter your full name');
-      return;
-    }
-    
     if (!contact.trim()) {
-      setError('Please enter your email or phone number');
+      setError('Please enter your phone number');
       return;
     }
 
@@ -36,7 +30,6 @@ const Signup = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          name,
           contact,
           type: contactMethod
         }),
@@ -45,7 +38,7 @@ const Signup = () => {
       const data = await response.json();
 
       if (response.ok) {
-        navigate('/verify-otp', { state: { contact, type: contactMethod, name, isLogin: false } });
+        navigate('/verify-otp', { state: { contact, type: contactMethod, isLogin: false } });
       } else {
         setError(data.message || 'Failed to create account');
       }
@@ -72,21 +65,6 @@ const Signup = () => {
             <p className="text-gray-600 text-lg leading-relaxed">Join us to get started with your journey</p>
           </CardHeader>
           <CardContent className="space-y-6 px-8 pb-8">
-            <div className="space-y-3">
-              <Label htmlFor="name" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
-                <User className="h-4 w-4" />
-                Full Name
-              </Label>
-              <Input
-                id="name"
-                type="text"
-                placeholder="Enter your full name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="h-14 text-lg border-2 border-gray-200 focus:border-blue-500 rounded-xl transition-colors duration-200"
-              />
-            </div>
-
             {/* Contact Method Toggle */}
             <div className="flex rounded-xl border-2 border-gray-100 p-1 bg-gray-50">
               <button
@@ -117,12 +95,12 @@ const Signup = () => {
 
             <div className="space-y-3">
               <Label htmlFor="contact" className="text-sm font-semibold text-gray-700">
-                {contactMethod === 'email' ? 'Email Address' : 'Phone Number'}
+                Phone Number
               </Label>
               <Input
                 id="contact"
-                type={contactMethod === 'email' ? 'email' : 'tel'}
-                placeholder={contactMethod === 'email' ? 'Enter your email address' : 'Enter your phone number'}
+                type="tel"
+                placeholder="Enter your phone number"
                 value={contact}
                 onChange={(e) => setContact(e.target.value)}
                 className="h-14 text-lg border-2 border-gray-200 focus:border-blue-500 rounded-xl transition-colors duration-200"

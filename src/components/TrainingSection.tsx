@@ -62,63 +62,57 @@ const TrainingSection = () => {
     <section id="training" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Training & Capacity Building</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Capacity Building</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive training programs to build capacity of social auditors, 
-            community members, and education officials across all levels.
+            Comprehensive training program to build capacity of XPTs / CSAs / SAFTs based on 
+            03 training modules, developed by NCERT, New Delhi.
           </p>
         </div>
 
         {/* Training Modules */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Training Modules</h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            {trainingModules.map((module, index) => (
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { title: "Module No: 1", description: "Fundamentals of Social Audit", developed: "NCERT, New Delhi" },
+              { title: "Module No: 2", description: "Implementation Guidelines", developed: "NCERT, New Delhi" },
+              { title: "Module No: 3", description: "Reporting and Documentation", developed: "NCERT, New Delhi" }
+            ].map((module, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
-                  <div className="flex justify-between items-start mb-4">
-                    <CardTitle className="text-lg">{module.title}</CardTitle>
-                    <Badge variant="secondary" className="bg-green-100 text-green-800">
-                      {module.status}
-                    </Badge>
-                  </div>
-                  <div className="flex gap-4 text-sm text-gray-600">
-                    <span className="flex items-center gap-1">
-                      <BookOpen className="h-4 w-4" />
-                      {module.duration}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Users className="h-4 w-4" />
-                      {module.participants}
-                    </span>
-                  </div>
+                  <CardTitle className="text-lg text-center">{module.title}</CardTitle>
+                  <p className="text-gray-600 text-center">{module.description}</p>
+                  <p className="text-sm text-blue-600 text-center font-medium">Developed by: {module.developed}</p>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-3">
-                    <div>
-                      <h4 className="font-medium text-gray-800 mb-2">Key Topics:</h4>
-                      <div className="flex flex-wrap gap-2">
-                        {module.topics.map((topic, topicIndex) => (
-                          <Badge key={topicIndex} variant="outline" className="text-xs">
-                            {topic}
-                          </Badge>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="flex gap-2 pt-4">
-                      <Button size="sm" className="flex-1">
-                        <Play className="h-4 w-4 mr-2" />
-                        Start Training
-                      </Button>
-                      <Button size="sm" variant="outline">
-                        <Download className="h-4 w-4 mr-2" />
-                        Download
-                      </Button>
-                    </div>
-                  </div>
+                  <Button className="w-full">
+                    <Download className="h-4 w-4 mr-2" />
+                    Download Module
+                  </Button>
                 </CardContent>
               </Card>
             ))}
+          </div>
+          
+          {/* Additional Capacity Building Materials */}
+          <div className="mt-12">
+            <h4 className="text-xl font-semibold text-gray-900 mb-6 text-center">
+              Other Capacity Building Materials Developed by University
+            </h4>
+            <div className="grid md:grid-cols-4 gap-4">
+              {['Resource Package 1', 'Resource Package 2', 'Resource Package 3', 'Resource Package 4'].map((pkg, index) => (
+                <Card key={index} className="text-center">
+                  <CardContent className="p-4">
+                    <FileText className="h-8 w-8 text-blue-600 mx-auto mb-2" />
+                    <p className="font-medium">{pkg}</p>
+                    <Button size="sm" variant="outline" className="mt-2">
+                      <Download className="h-3 w-3 mr-1" />
+                      Download
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
 

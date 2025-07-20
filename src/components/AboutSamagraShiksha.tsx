@@ -62,6 +62,12 @@ const AboutSamagraShiksha = () => {
         {/* Key Features */}
         <div className="mb-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mb-8 text-center">
+            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              As per the Ministry of Education Guidelines, Social Audit ensures transparency, accountability, 
+              and community participation in the implementation of educational programs under Samagra Shiksha.
+            </p>
+          </div>
             {components.map((component, index) => {
               const IconComponent = component.icon;
               return (
@@ -89,8 +95,10 @@ const AboutSamagraShiksha = () => {
             </CardHeader>
             <CardContent>
               <p className="text-blue-700 text-lg leading-relaxed">
-                To ensure inclusive and equitable quality education and promote lifelong 
-                learning opportunities for all children from pre-school to higher secondary level.
+                To establish a transparent, accountable, and participatory system of social audit 
+                that ensures effective implementation of Samagra Shiksha programs, promoting 
+                quality education for all children while strengthening community engagement 
+                and democratic governance in education.
               </p>
             </CardContent>
           </Card>
@@ -101,8 +109,10 @@ const AboutSamagraShiksha = () => {
             </CardHeader>
             <CardContent>
               <p className="text-green-700 text-lg leading-relaxed">
-                To provide holistic development of children through quality education, 
-                ensuring no child is left behind and every child reaches their full potential.
+                To build capacity of stakeholders, conduct systematic social audits, 
+                facilitate public hearings, and ensure continuous monitoring of educational 
+                programs to achieve the goals of NEP 2020 and strengthen the education system 
+                through community participation and transparency.
               </p>
             </CardContent>
           </Card>

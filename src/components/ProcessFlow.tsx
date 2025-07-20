@@ -7,33 +7,26 @@ import { ArrowDown, Users, FileText, Eye, Megaphone } from "lucide-react";
 const ProcessFlow = () => {
   const steps = [
     {
-      title: "Preparatory Phase",
-      description: "Planning, stakeholder identification, and resource allocation",
+      title: "Pre-Social Audit Phase",
+      description: "Identification, mapping, capacity building, and planning",
       icon: FileText,
       color: "bg-blue-500",
-      tasks: ["Community mobilization", "Audit team formation", "Schedule planning"]
+      tasks: ["Identification of XPTs/CSAs/SAFTs", "Mapping with schools", "Capacity building", "Planning of SA"]
     },
     {
-      title: "Audit Phase",
-      description: "On-site verification, document review, and stakeholder interviews",
+      title: "Social Audit Phase",
+      description: "Systematic audit of educational programs and schemes",
       icon: Eye,
       color: "bg-green-500",
-      tasks: ["School visits", "Evidence collection", "Beneficiary interaction"]
+      tasks: ["Document verification", "Field visits", "Stakeholder interviews", "Data collection"]
     },
     {
-      title: "Post-Audit Phase",
-      description: "Report compilation, issue identification, and recommendations",
+      title: "Post-Social Audit Phase",
+      description: "Public hearing, reporting, and follow-up actions",
       icon: FileText,
       color: "bg-orange-500",
-      tasks: ["Report writing", "Issue documentation", "Recommendation formulation"]
+      tasks: ["Public hearing", "Report compilation", "Issue documentation", "Follow-up actions"]
     },
-    {
-      title: "Public Hearing",
-      description: "Community presentation, grievance redressal, and action planning",
-      icon: Megaphone,
-      color: "bg-purple-500",
-      tasks: ["Public presentation", "Community feedback", "Action plan creation"]
-    }
   ];
 
   const roles = [

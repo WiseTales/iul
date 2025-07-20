@@ -9,6 +9,9 @@ import ProcessFlow from '@/components/ProcessFlow';
 import TrainingSection from '@/components/TrainingSection';
 import Dashboard from '@/components/Dashboard';
 import ResourceCenter from '@/components/ResourceCenter';
+import PostSAReports from '@/components/PostSAReports';
+import WhosWho from '@/components/WhosWho';
+import PhotoGallery from '@/components/PhotoGallery';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -23,6 +26,9 @@ const Index = () => {
       <TrainingSection />
       <Dashboard />
       <ResourceCenter />
+      <PostSAReports />
+      <WhosWho />
+      <PhotoGallery />
       <Footer />
     </div>
   );

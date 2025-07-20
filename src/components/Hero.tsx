@@ -67,7 +67,7 @@ const Hero = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4 max-w-3xl mx-auto text-center">
           {[
             { label: "Districts", value: "14" },
-            { label: "Students", value: "1M+" },
+            { label: "Students", value: "779" },
             { label: "Schools", value: "6K+" },
             { label: "Audits", value: "2.5K+" },
           ].map((stat) => (
@@ -76,6 +76,13 @@ const Hero = () => {
               <div className="text-sm text-gray-700">{stat.label}</div>
             </div>
           ))}
+        </div>
+        
+        {/* NEP 2020 Badge */}
+        <div className="flex justify-center mb-4">
+          <div className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+            NEP 2020 Aligned
+          </div>
         </div>
 
         {/* Scroll Arrow */}
