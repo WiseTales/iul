@@ -9,7 +9,7 @@ const WhosWho = () => {
       name: "Prof. Syed Waseem Akhtar",
       position: "Founder and Chancellor",
       organization: "Integral University",
-      image: "/placeholder.svg",
+      image: "/1.JPG",
       profile: "Leading the vision of quality education and social responsibility in higher education.",
       email: "chancellor@iul.ac.in",
     
@@ -43,26 +43,30 @@ const WhosWho = () => {
       level: "Management"
     },
     {
-      name: "Dr. Mohd. Aslam",
-      position: "Assistant Director",
-      organization: "Centre for Social Audit",
+      name: "Prof. Hafiz Mohd Arif",
+      position: "Head, Department of Languages",
+      organization: "Integral University",
       image: "/placeholder.svg",
       profile: "Coordinating audit activities and capacity building programs across districts.",
-      email: "aslam@integraluniversity.ac.in",
-      phone: "+91-9876543211",
-      level: "Management"
-    },
-    {
-      name: "Mr. Shahid Ali",
-      position: "Coordinator",
-      organization: "Centre for Social Audit",
+      email: "headeng@iul.ac.in",
+          },
+     {
+      name: "Dr. Aareena Naznine",
+      position: "Assistant Professor",
+      organization: "Integral University",
       image: "/placeholder.svg",
-      profile: "Managing field operations and stakeholder coordination for social audit implementation.",
-      email: "shahid@integraluniversity.ac.in",
-      phone: "+91-9876543212",
-      level: "Coordination"
-    }
-  ];
+      profile: "Coordinating audit activities and capacity building programs across districts.",
+      email: "aareenaz@iul.ac.in",
+          },
+      {
+      name: "Dr. Vanya Srivastava",
+      position: "Assistant Professor",
+      organization: "Integral University",
+      image: "/placeholder.svg",
+      profile: "Coordinating audit activities and capacity building programs across districts.",
+      email: "vanya@iul.ac.in",
+          },
+      ];
 
   const levelColors = {
     "Leadership": "bg-blue-100 text-blue-800",
