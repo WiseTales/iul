@@ -6,35 +6,35 @@ import { User, Mail, Phone } from "lucide-react";
 const WhosWho = () => {
   const teamMembers = [
     {
-      name: "Prof. (Dr.) Syed Nadeem Akhtar",
-      position: "Chancellor",
+      name: "Prof. Syed Waseem Akhtar",
+      position: "Founder and Chancellor",
       organization: "Integral University",
       image: "/placeholder.svg",
       profile: "Leading the vision of quality education and social responsibility in higher education.",
-      email: "chancellor@integraluniversity.ac.in",
-      level: "Leadership"
+      email: "chancellor@iul.ac.in",
+    
     },
     {
-      name: "Prof. (Dr.) Mohammad Shakir",
-      position: "Vice Chancellor",
+      name: "Dr. Syed Nadeem Akhtar",
+      position: "Pro-Chancellor",
+      organization: "Integral University",
+      image: "/placeholder.svg", 
+      profile: "Patronizing academic administration and research development programs.",
+      email: "prochancellor@iul.ac.in",
+    },
+    {
+      name: "Prof. Javed Musarrat",
+      position: "Vice-Chancellor",
       organization: "Integral University", 
       image: "/placeholder.svg",
       profile: "Overseeing academic excellence and institutional development initiatives.",
-      email: "vc@integraluniversity.ac.in",
-      level: "Leadership"
+      email: "vc@iul.ac.in",
+      
     },
+    
     {
-      name: "Prof. (Dr.) Iqbal Ahmad Khan",
-      position: "Pro Vice Chancellor",
-      organization: "Integral University",
-      image: "/placeholder.svg", 
-      profile: "Supporting academic administration and research development programs.",
-      email: "pvc@integraluniversity.ac.in",
-      level: "Leadership"
-    },
-    {
-      name: "Dr. Raees Ahmad Khan",
-      position: "Director",
+      name: "Prof. Mohammad Haris Siddiqui",
+      position: "Registrar",
       organization: "Centre for Social Audit",
       image: "/placeholder.svg",
       profile: "Leading the Centre for Social Audit of Samagra Shiksha with expertise in educational governance.",
