@@ -177,12 +177,20 @@ const PhotoGallery = () => {
                     </div>
                   </div>
                 </CardHeader>
-                <CardContent>
-                  <Button variant="outline" className="w-full">
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Read Full Coverage
-                  </Button>
-                </CardContent>
+               <CardContent>
+  <a
+    href={item.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full block"
+  >
+    <Button variant="outline" className="w-full">
+      <ExternalLink className="h-4 w-4 mr-2" />
+      Read Full Coverage
+    </Button>
+  </a>
+</CardContent>
+
               </Card>
             ))}
           </div>
