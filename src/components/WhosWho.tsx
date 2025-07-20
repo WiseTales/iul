@@ -37,17 +37,16 @@ const WhosWho = () => {
       position: "Registrar",
       organization: "Centre for Social Audit",
       image: "/placeholder.svg",
-      profile: "Leading the Centre for Social Audit of Samagra Shiksha with expertise in educational governance.",
-      email: "director.csa@integraluniversity.ac.in",
-      phone: "+91-9876543210",
-      level: "Management"
+      profile: "Managing and overseeing various administrative activities of the project.",
+      email: "registrar@iul.ac.in",
+      
     },
     {
       name: "Prof. Hafiz Mohd Arif",
       position: "Head, Department of Languages",
       organization: "Integral University",
       image: "/placeholder.svg",
-      profile: "Coordinating audit activities and capacity building programs across districts.",
+      profile: "Supervising and monitoring social audit activities.",
       email: "headeng@iul.ac.in",
           },
      {
@@ -55,7 +54,7 @@ const WhosWho = () => {
       position: "Assistant Professor",
       organization: "Integral University",
       image: "/placeholder.svg",
-      profile: "Coordinating audit activities and capacity building programs across districts.",
+      profile: "Supervising and monitoring social audit activities.",
       email: "aareenaz@iul.ac.in",
           },
       {
