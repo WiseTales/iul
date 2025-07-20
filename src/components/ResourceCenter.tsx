@@ -154,12 +154,12 @@ const ResourceCenter = () => {
   ];
 
   const pastReports = [
-    { title: "MOE Guidelines for Social Audit", type: "Guidelines", category: "MOE Guidelines" },
-    { title: "Official Letters from State", type: "Letters", category: "Letters" },
-    { title: "Government Circulars", type: "Circulars", category: "Circulars" },
-    { title: "District Audit Plans", type: "Plans", category: "Plans" },
-    { title: "Compiled Audit Reports", type: "Reports", category: "Reports" },
-    { title: "Training Modules by NCERT", type: "Modules", category: "Modules" }
+    { title: "MOE Guidelines for Social Audit", type: "Guidelines", category: "MOE Guidelines", districts: 15, schools: 2500, period: "2024-25" },
+    { title: "Official Letters from State", type: "Letters", category: "Letters", districts: 12, schools: 1800, period: "2024-25" },
+    { title: "Government Circulars", type: "Circulars", category: "Circulars", districts: 18, schools: 3200, period: "2024-25" },
+    { title: "District Audit Plans", type: "Plans", category: "Plans", districts: 20, schools: 4500, period: "2024-25" },
+    { title: "Compiled Audit Reports", type: "Reports", category: "Reports", districts: 25, schools: 5800, period: "2024-25" },
+    { title: "Training Modules by NCERT", type: "Modules", category: "Modules", districts: 10, schools: 1200, period: "2024-25" }
   ];
 
   const handleDownload = (url: string) => {
