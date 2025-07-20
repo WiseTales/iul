@@ -11,7 +11,7 @@ const PhotoGallery = () => {
       date: "July 2024",
       type: "Photo",
       description: "Capacity building program for XPTs and CSAs",
-      image: "/placeholder.svg",
+      image: "/A.jpg",
       category: "Training"
     },
     {
@@ -19,7 +19,7 @@ const PhotoGallery = () => {
       date: "June 2024", 
       type: "Photo",
       description: "Community participation in social audit process",
-      image: "/placeholder.svg",
+      image: "/B.jpg",
       category: "Public Hearing"
     },
     {
@@ -27,7 +27,7 @@ const PhotoGallery = () => {
       date: "May 2024",
       type: "Video",
       description: "On-site verification of educational programs",
-      image: "/placeholder.svg",
+      image: "/C.jpg",
       category: "Field Work"
     },
     {
@@ -35,7 +35,7 @@ const PhotoGallery = () => {
       date: "April 2024",
       type: "Photo", 
       description: "Coordination meeting with education officials",
-      image: "/placeholder.svg",
+      image: "/D.jpg",
       category: "Meetings"
     },
     {
@@ -51,7 +51,7 @@ const PhotoGallery = () => {
       date: "February 2024",
       type: "Video",
       description: "Involving parents and community members",
-      image: "/placeholder.svg",
+      image: "/E.jpg",
       category: "Community"
     }
   ];
