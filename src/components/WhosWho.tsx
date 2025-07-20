@@ -18,7 +18,7 @@ const WhosWho = () => {
       name: "Dr. Syed Nadeem Akhtar",
       position: "Pro-Chancellor",
       organization: "Integral University",
-      image: "/placeholder.svg", 
+      image: "/2.webp", 
       profile: "Patronizing academic administration and research development programs.",
       email: "prochancellor@iul.ac.in",
     },
