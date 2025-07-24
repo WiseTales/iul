@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Download, FileText, MapPin, Building, School } from "lucide-react";
+import { Download, Upload, FileText, MapPin, Building } from "lucide-react";
 
 const PostSAReports = () => {
   const reportCategories = [
@@ -25,38 +25,42 @@ const PostSAReports = () => {
         { name: "Kanpur District", date: "2024-07-05", schools: 198 },
         { name: "Agra District", date: "2024-07-04", schools: 156 }
       ]
-    },
-    {
-      title: "School-wise Reports",
-      icon: School,
-      color: "bg-purple-500",
-      reports: [
-        { name: "GPS Aliganj", date: "2024-07-06", audits: 3 },
-        { name: "UPS Gomti Nagar", date: "2024-07-05", audits: 2 },
-        { name: "GPS Hazratganj", date: "2024-07-04", audits: 4 }
-      ]
     }
   ];
 
   const compiledReports = [
-    { title: "Compiled Report - All Districts", period: "2024", districts: 14, type: "Comprehensive" },
-    { title: "Quarterly Compilation Q1", period: "Apr-Jun 2024", districts: 14, type: "Quarterly" },
-    { title: "Annual Compilation 2023-24", period: "Full Year", districts: 14, type: "Annual" }
+    {
+      title: "Compiled Report of 14 Districts",
+      period: "2024",
+      districts: 14,
+      type: "Comprehensive"
+    },
+    {
+      title: "Quarterly Compilation Q1",
+      period: "Apr-Jun 2024",
+      districts: 14,
+      type: "Quarterly"
+    },
+    {
+      title: "Annual Compilation 2023-24",
+      period: "Full Year",
+      districts: 14,
+      type: "Annual"
+    }
   ];
 
   return (
     <section id="reports" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Post SA Reports</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Post Social Audit Reports</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Access comprehensive social audit reports organized by administrative levels 
-            with options for downloading school-wise, block-wise, and district-wise reports.
+            Access Social Audit Reports organized Block-wise and District-wise, along with Compiled Reports of 14 districts.
           </p>
         </div>
 
         {/* Report Categories */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 mb-16">
           {reportCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
@@ -75,7 +79,7 @@ const PostSAReports = () => {
                           <p className="font-medium text-gray-900">{report.name}</p>
                           <p className="text-sm text-gray-600">{report.date}</p>
                           <p className="text-xs text-gray-500">
-                            {report.schools ? `${report.schools} schools` : `${report.audits} audits`}
+                            {report.schools} schools
                           </p>
                         </div>
                         <Button size="sm" variant="outline">
@@ -96,7 +100,7 @@ const PostSAReports = () => {
 
         {/* Compiled Reports */}
         <div>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Compiled Reports</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Compiled Reports (14 Districts)</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {compiledReports.map((report, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -128,22 +132,43 @@ const PostSAReports = () => {
           </div>
         </div>
 
-        {/* Download Options */}
+        {/* Upload & Download Options */}
         <div className="mt-16 bg-white rounded-lg p-8 shadow-lg">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Download Options</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Upload & Download Options</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            <Button className="h-16 flex-col gap-2 bg-blue-600 hover:bg-blue-700">
-              <School className="h-6 w-6" />
-              School-wise Reports
-            </Button>
-            <Button className="h-16 flex-col gap-2 bg-green-600 hover:bg-green-700">
-              <Building className="h-6 w-6" />
-              Block-wise Reports
-            </Button>
-            <Button className="h-16 flex-col gap-2 bg-purple-600 hover:bg-purple-700">
-              <MapPin className="h-6 w-6" />
-              District-wise Reports
-            </Button>
+            {/* School-wise */}
+            <div className="flex flex-col items-center gap-3">
+              <Button className="w-full flex gap-2 bg-blue-600 hover:bg-blue-700">
+                <Download className="h-4 w-4" />
+                Download School-wise
+              </Button>
+              <Button variant="outline" className="w-full flex gap-2">
+                <Upload className="h-4 w-4" />
+                Upload School-wise
+              </Button>
+            </div>
+            {/* Block-wise */}
+            <div className="flex flex-col items-center gap-3">
+              <Button className="w-full flex gap-2 bg-green-600 hover:bg-green-700">
+                <Download className="h-4 w-4" />
+                Download Block-wise
+              </Button>
+              <Button variant="outline" className="w-full flex gap-2">
+                <Upload className="h-4 w-4" />
+                Upload Block-wise
+              </Button>
+            </div>
+            {/* District-wise */}
+            <div className="flex flex-col items-center gap-3">
+              <Button className="w-full flex gap-2 bg-purple-600 hover:bg-purple-700">
+                <Download className="h-4 w-4" />
+                Download District-wise
+              </Button>
+              <Button variant="outline" className="w-full flex gap-2">
+                <Upload className="h-4 w-4" />
+                Upload District-wise
+              </Button>
+            </div>
           </div>
         </div>
       </div>
