@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { User, Mail, Phone } from "lucide-react";
 
 const WhosWho = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   const teamMembers = [
     {
       name: "Prof. Syed Waseem Akhtar",
@@ -12,26 +14,23 @@ const WhosWho = () => {
       image: "/1.JPG",
       profile: "Leading the vision of quality education and social responsibility in higher education.",
       email: "chancellor@iul.ac.in",
-    
     },
     {
       name: "Dr. Syed Nadeem Akhtar",
       position: "Pro-Chancellor",
       organization: "Integral University",
-      image: "/2.webp", 
+      image: "/2.webp",
       profile: "Patronizing academic administration and research development programs.",
       email: "prochancellor@iul.ac.in",
     },
     {
       name: "Prof. Javed Musarrat",
       position: "Vice-Chancellor",
-      organization: "Integral University", 
+      organization: "Integral University",
       image: "/placeholder.svg",
       profile: "Overseeing academic excellence and institutional development initiatives.",
       email: "vc@iul.ac.in",
-      
     },
-    
     {
       name: "Prof. Mohammad Haris Siddiqui",
       position: "Registrar",
@@ -39,7 +38,6 @@ const WhosWho = () => {
       image: "/placeholder.svg",
       profile: "Managing and overseeing various administrative activities of the project.",
       email: "registrar@iul.ac.in",
-      
     },
     {
       name: "Prof. Hafiz Mohd Arif",
@@ -48,29 +46,44 @@ const WhosWho = () => {
       image: "/placeholder.svg",
       profile: "Supervising and monitoring social audit activities.",
       email: "headeng@iul.ac.in",
-          },
-     {
+    },
+    {
       name: "Dr. Aareena Naznine",
       position: "Assistant Professor",
       organization: "Integral University",
       image: "/placeholder.svg",
       profile: "Supervising and monitoring social audit activities.",
       email: "aareenaz@iul.ac.in",
-          },
-      {
+    },
+    {
       name: "Dr. Vanya Srivastava",
       position: "Assistant Professor",
       organization: "Integral University",
       image: "/placeholder.svg",
       profile: "Coordinating audit activities and capacity building programs across districts.",
       email: "vanya@iul.ac.in",
-          },
-      ];
+    },
+  ];
 
   const levelColors = {
     "Leadership": "bg-blue-100 text-blue-800",
-    "Management": "bg-green-100 text-green-800", 
+    "Management": "bg-green-100 text-green-800",
     "Coordination": "bg-purple-100 text-purple-800"
+  };
+
+  const getInitials = (name: string) => {
+    return name
+      .split(" ")
+      .map(part => part[0])
+      .join("")
+      .substring(0, 2)
+      .toUpperCase();
+  };
+
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>, name: string) => {
+    e.currentTarget.style.display = "none";
+    const fallback = document.getElementById(`fallback-${name}`);
+    if (fallback) fallback.style.display = "flex";
   };
 
   return (
@@ -88,13 +101,24 @@ const WhosWho = () => {
           {teamMembers.map((member, index) => (
             <Card key={index} className="hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <CardHeader className="text-center pb-4">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200">
-                  <img 
-                    src={member.image} 
+                <div
+                  className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200 relative group cursor-pointer"
+                  onClick={() => setSelectedImage(member.image)}
+                >
+                  <img
+                    src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
+                    onError={(e) => handleImageError(e, `fallback-${index}`)}
                   />
+                  <div
+                    id={`fallback-fallback-${index}`}
+                    className="absolute inset-0 hidden items-center justify-center bg-gray-300 text-gray-700 font-bold text-xl"
+                  >
+                    {getInitials(member.name)}
+                  </div>
                 </div>
+
                 <CardTitle className="text-lg font-bold text-gray-900">{member.name}</CardTitle>
                 <div className="space-y-2">
                   <p className="text-blue-600 font-semibold">{member.position}</p>
@@ -106,7 +130,6 @@ const WhosWho = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 text-sm mb-4 leading-relaxed">{member.profile}</p>
-                
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm">
                     <Mail className="h-4 w-4 text-gray-500" />
@@ -123,6 +146,25 @@ const WhosWho = () => {
             </Card>
           ))}
         </div>
+
+        {/* Modal for larger image */}
+        {selectedImage && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+            <div className="relative max-w-xl mx-auto">
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-2 right-2 text-white text-2xl font-bold"
+              >
+                ×
+              </button>
+              <img
+                src={selectedImage}
+                alt="Full view"
+                className="max-h-[80vh] rounded shadow-lg"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
