@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { User, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 const WhosWho = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -80,9 +80,9 @@ const WhosWho = () => {
       .toUpperCase();
   };
 
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>, name: string) => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>, id: string) => {
     e.currentTarget.style.display = "none";
-    const fallback = document.getElementById(`fallback-${name}`);
+    const fallback = document.getElementById(`fallback-${id}`);
     if (fallback) fallback.style.display = "flex";
   };
 
@@ -108,12 +108,12 @@ const WhosWho = () => {
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover aspect-square group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => handleImageError(e, `fallback-${index}`)}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    onError={(e) => handleImageError(e, `${index}`)}
                   />
                   <div
-                    id={`fallback-fallback-${index}`}
-                    className="absolute inset-0 hidden items-center justify-center bg-gray-300 text-gray-700 font-bold text-xl"
+                    id={`fallback-${index}`}
+                    className="absolute inset-0 hidden items-center justify-center bg-gray-300 text-gray-700 font-bold text-xl rounded-full"
                   >
                     {getInitials(member.name)}
                   </div>
@@ -123,9 +123,11 @@ const WhosWho = () => {
                 <div className="space-y-2">
                   <p className="text-blue-600 font-semibold">{member.position}</p>
                   <p className="text-gray-600 text-sm">{member.organization}</p>
-                  <Badge className={levelColors[member.level as keyof typeof levelColors]}>
-                    {member.level}
-                  </Badge>
+                  {member.level && (
+                    <Badge className={levelColors[member.level as keyof typeof levelColors]}>
+                      {member.level}
+                    </Badge>
+                  )}
                 </div>
               </CardHeader>
               <CardContent>
