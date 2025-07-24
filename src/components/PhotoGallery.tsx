@@ -26,7 +26,7 @@ const PhotoGallery = () => {
       date: "May 2024",
       type: "Video",
       description: "On-site verification of educational programs",
-      image: "/C.jpg",
+      image: "/B1.jpg",
       category: "Field Work"
     },
     {
@@ -34,7 +34,7 @@ const PhotoGallery = () => {
       date: "April 2024",
       type: "Photo",
       description: "Coordination meeting with education officials",
-      image: "/D.jpg",
+      image: "/B2.jpg",
       category: "Meetings"
     },
     {
@@ -42,7 +42,7 @@ const PhotoGallery = () => {
       date: "March 2024",
       type: "Photo",
       description: "Recognition for excellence in social audit",
-      image: "/placeholder.svg",
+      image: "/B3.jpg",
       category: "Awards"
     },
     {
@@ -50,7 +50,7 @@ const PhotoGallery = () => {
       date: "February 2024",
       type: "Video",
       description: "Involving parents and community members",
-      image: "/E.jpg",
+      image: "/B4.jpg",
       category: "Community"
     }
   ];
