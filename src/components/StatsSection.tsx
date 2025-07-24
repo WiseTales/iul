@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
@@ -83,7 +82,7 @@ const StatsSection = () => {
         </div>
 
         {/* District Performance */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-1 gap-8">
           <Card>
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
@@ -104,48 +103,6 @@ const StatsSection = () => {
                   </div>
                 </div>
               ))}
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-green-600" />
-                Audit Trends
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-6">
-                <div className="flex justify-between items-center p-4 bg-green-50 rounded-lg">
-                  <div>
-                    <p className="font-semibold text-green-800">Public Hearings Conducted</p>
-                    <p className="text-2xl font-bold text-green-600">1,847</p>
-                  </div>
-                  <div className="text-green-600">
-                    <CheckCircle className="h-8 w-8" />
-                  </div>
-                </div>
-                
-                <div className="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
-                  <div>
-                    <p className="font-semibold text-blue-800">Average Response Time</p>
-                    <p className="text-2xl font-bold text-blue-600">7.2 days</p>
-                  </div>
-                  <div className="text-blue-600">
-                    <TrendingUp className="h-8 w-8" />
-                  </div>
-                </div>
-
-                <div className="flex justify-between items-center p-4 bg-purple-50 rounded-lg">
-                  <div>
-                    <p className="font-semibold text-purple-800">Stakeholder Satisfaction</p>
-                    <p className="text-2xl font-bold text-purple-600">94.3%</p>
-                  </div>
-                  <div className="text-purple-600">
-                    <Users className="h-8 w-8" />
-                  </div>
-                </div>
-              </div>
             </CardContent>
           </Card>
         </div>
