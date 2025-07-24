@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Eye, Users, FileCheck, Megaphone, Shield, TrendingUp } from "lucide-react";
 
 const SocialAuditInfo = () => {
@@ -96,47 +94,6 @@ const SocialAuditInfo = () => {
                 </Card>
               );
             })}
-          </div>
-        </div>
-
-        {/* Key Outcomes */}
-        <div className="bg-white rounded-lg p-8 shadow-lg">
-          <h3 className="text-2xl font-bold text-center text-gray-900 mb-8">Key Outcomes of Social Audit</h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="text-lg font-semibold text-gray-800 mb-4">For Schools</h4>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <Badge variant="secondary" className="w-2 h-2 p-0 rounded-full bg-blue-500"></Badge>
-                  <span className="text-gray-700">Improved infrastructure utilization</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Badge variant="secondary" className="w-2 h-2 p-0 rounded-full bg-blue-500"></Badge>
-                  <span className="text-gray-700">Better teacher attendance and performance</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Badge variant="secondary" className="w-2 h-2 p-0 rounded-full bg-blue-500"></Badge>
-                  <span className="text-gray-700">Enhanced student learning outcomes</span>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold text-gray-800 mb-4">For Community</h4>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <Badge variant="secondary" className="w-2 h-2 p-0 rounded-full bg-green-500"></Badge>
-                  <span className="text-gray-700">Increased awareness of education rights</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Badge variant="secondary" className="w-2 h-2 p-0 rounded-full bg-green-500"></Badge>
-                  <span className="text-gray-700">Greater participation in school governance</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Badge variant="secondary" className="w-2 h-2 p-0 rounded-full bg-green-500"></Badge>
-                  <span className="text-gray-700">Strengthened school-community partnership</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
