@@ -98,12 +98,15 @@ const WhosWho = () => {
                   className="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-200 relative cursor-pointer"
                   onClick={() => setSelectedImage(member.image)}
                 >
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="absolute inset-0 m-auto w-16 h-16 object-cover rounded-full transition-transform duration-300 hover:scale-110"
-                    onError={(e) => handleImageError(e, index)}
-                  />
+                <img
+  src={member.image}
+  alt={member.name}
+  className={`absolute inset-0 m-auto w-16 h-16 object-cover rounded-full transition-transform duration-300 hover:scale-110 ${
+    member.name === "Prof. Syed Waseem Akhtar" ? "translate-y-2" : ""
+  }`}
+  onError={(e) => handleImageError(e, index)}
+/>
+
                   <div
                     id={`fallback-${index}`}
                     className="hidden absolute inset-0 items-center justify-center text-gray-700 font-bold text-sm"
