@@ -162,10 +162,10 @@ const PhotoGallery = () => {
           <div className="flex justify-center items-center space-x-4">
             <button
               onClick={prevMediaSlide}
-              className="text-gray-600 text-3xl hover:text-black"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
               aria-label="Previous media"
             >
-              ‹
+              ‹ Previous
             </button>
             <img
               src={mediaImages[mediaIndex]}
@@ -174,10 +174,10 @@ const PhotoGallery = () => {
             />
             <button
               onClick={nextMediaSlide}
-              className="text-gray-600 text-3xl hover:text-black"
+              className="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition"
               aria-label="Next media"
             >
-              ›
+              Next ›
             </button>
           </div>
         </div>
@@ -186,20 +186,29 @@ const PhotoGallery = () => {
         {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center">
             <button onClick={closeModal} className="absolute top-4 right-6 text-white text-3xl">✕</button>
-           <button
-  onClick={prevSlide}
-  className="absolute left-4 flex items-center gap-2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white font-semibold px-4 py-2 rounded-lg text-lg transition"
->
-  ‹ Previous
-</button>
 
-<button
-  onClick={nextSlide}
-  className="absolute right-4 flex items-center gap-2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white font-semibold px-4 py-2 rounded-lg text-lg transition"
->
-  Next ›
-</button>
+            <button
+              onClick={prevSlide}
+              className="absolute left-4 flex items-center gap-2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white font-semibold px-4 py-2 rounded-lg text-lg transition"
+            >
+              ‹ Previous
+            </button>
 
+            <div className="max-w-3xl px-4 text-center">
+              <img
+                src={slideshowImages[currentSlide]}
+                alt={`Slide ${currentSlide + 1}`}
+                className="max-h-[80vh] mx-auto rounded"
+              />
+              <p className="text-white mt-4 text-lg">{galleryItems[currentSlide].title}</p>
+            </div>
+
+            <button
+              onClick={nextSlide}
+              className="absolute right-4 flex items-center gap-2 bg-white bg-opacity-20 hover:bg-opacity-40 text-white font-semibold px-4 py-2 rounded-lg text-lg transition"
+            >
+              Next ›
+            </button>
           </div>
         )}
       </div>
