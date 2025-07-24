@@ -90,7 +90,7 @@ const PhotoGallery = () => {
   };
 
   // Media Coverage specific images (C.jpg, D.jpg, E.jpg)
-  const mediaImages = ["/C.jpg", "/D.jpg", "/E.jpg", "/F.jpg"];
+  const mediaImages = ["/C.jpg", "/C1.jpg", "/C2.jpg", "/C3.jpg", "/C4.jpg", "/E.jpg", "/F.jpg", "/D.jpg"];
   const [mediaIndex, setMediaIndex] = useState(0);
 
   const nextMediaSlide = () => {
