@@ -65,24 +65,17 @@ const WhosWho = () => {
     },
   ];
 
-  const levelColors = {
-    "Leadership": "bg-blue-100 text-blue-800",
-    "Management": "bg-green-100 text-green-800",
-    "Coordination": "bg-purple-100 text-purple-800"
-  };
-
-  const getInitials = (name: string) => {
-    return name
+  const getInitials = (name: string) =>
+    name
       .split(" ")
-      .map(part => part[0])
+      .map((n) => n[0])
       .join("")
-      .substring(0, 2)
+      .slice(0, 2)
       .toUpperCase();
-  };
 
-  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>, id: string) => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>, index: number) => {
     e.currentTarget.style.display = "none";
-    const fallback = document.getElementById(`fallback-${id}`);
+    const fallback = document.getElementById(`fallback-${index}`);
     if (fallback) fallback.style.display = "flex";
   };
 
@@ -92,7 +85,7 @@ const WhosWho = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Who's Who</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Meet our dedicated team leading the Centre for Social Audit of Samagra Shiksha, 
+            Meet our dedicated team leading the Centre for Social Audit of Samagra Shiksha,
             from Chancellor to Coordinator, committed to ensuring transparency and accountability in education.
           </p>
         </div>
@@ -102,32 +95,27 @@ const WhosWho = () => {
             <Card key={index} className="hover:shadow-xl transition-shadow duration-300 overflow-hidden">
               <CardHeader className="text-center pb-4">
                 <div
-                  className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden bg-gray-200 relative group cursor-pointer"
+                  className="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-200 relative cursor-pointer"
                   onClick={() => setSelectedImage(member.image)}
                 >
                   <img
                     src={member.image}
                     alt={member.name}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    onError={(e) => handleImageError(e, `${index}`)}
+                    className="absolute inset-0 m-auto w-16 h-16 object-cover rounded-full transition-transform duration-300 hover:scale-110"
+                    onError={(e) => handleImageError(e, index)}
                   />
                   <div
                     id={`fallback-${index}`}
-                    className="absolute inset-0 hidden items-center justify-center bg-gray-300 text-gray-700 font-bold text-xl rounded-full"
+                    className="hidden absolute inset-0 items-center justify-center text-gray-700 font-bold text-sm"
                   >
                     {getInitials(member.name)}
                   </div>
                 </div>
 
                 <CardTitle className="text-lg font-bold text-gray-900">{member.name}</CardTitle>
-                <div className="space-y-2">
+                <div className="space-y-1">
                   <p className="text-blue-600 font-semibold">{member.position}</p>
                   <p className="text-gray-600 text-sm">{member.organization}</p>
-                  {member.level && (
-                    <Badge className={levelColors[member.level as keyof typeof levelColors]}>
-                      {member.level}
-                    </Badge>
-                  )}
                 </div>
               </CardHeader>
               <CardContent>
@@ -149,20 +137,20 @@ const WhosWho = () => {
           ))}
         </div>
 
-        {/* Modal for larger image */}
+        {/* Image Zoom Modal */}
         {selectedImage && (
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-            <div className="relative max-w-xl mx-auto">
+          <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+            <div className="relative">
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute top-2 right-2 text-white text-2xl font-bold"
+                className="absolute top-0 right-0 m-2 text-white text-3xl font-bold"
               >
-                ×
+                &times;
               </button>
               <img
                 src={selectedImage}
-                alt="Full view"
-                className="max-h-[80vh] rounded shadow-lg"
+                alt="Zoomed profile"
+                className="max-h-[80vh] max-w-[90vw] rounded shadow-lg"
               />
             </div>
           </div>
