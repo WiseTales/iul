@@ -13,6 +13,56 @@ const PhotoGallery = () => {
       image: "/A.jpg",
       category: "Training"
     },
+
+     {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B5.jpg",
+      category: "Public Hearing"
+    },
+
+     {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B6.jpg",
+      category: "Public Hearing"
+    },
+     {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B7.jpg",
+      category: "Public Hearing"
+    },
+     {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B8.jpg",
+      category: "Public Hearing"
+    },
+     {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B9.jpg",
+      category: "Public Hearing"
+    },
+     {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B10.jpg",
+      category: "Public Hearing"
+    },
     {
       title: "Public Hearing - Lucknow",
       date: "June 2024",
@@ -44,6 +94,22 @@ const PhotoGallery = () => {
       description: "Recognition for excellence in social audit",
       image: "/B3.jpg",
       category: "Awards"
+    },
+ {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B11.jpg",
+      category: "Public Hearing"
+    },
+ {
+      title: "Public Hearing - Lucknow",
+      date: "June 2024",
+      type: "Photo",
+      description: "Community participation in social audit process",
+      image: "/B12.jpg",
+      category: "Public Hearing"
     },
     {
       title: "Community Engagement",
