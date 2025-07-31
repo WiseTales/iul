@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="flex justify-center items-center px-4 z-10 relative">
         <div className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 max-w-5xl w-full">
           <img
-            src="/bg.jpg"
+            src="/logoss.png"
             alt="Samagra Shiksha Background"
             className="w-full h-auto object-contain"
           />
