@@ -34,29 +34,29 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-6">
             
-       {/* Samagra Shiksha Logo */}
-<div className="flex items-center space-x-4">
+    {/* Samagra Shiksha Logo */}
+<div className="flex items-center space-x-3">
   <img
     src="/logoss.png"
     alt="Samagra Shiksha Logo"
-    className="h-20 w-20 object-contain rounded"
+    className="h-16 w-16 object-contain rounded"
   />
   <div>
-    <h1 className="text-xl font-bold text-gray-900">Samagra Shiksha</h1>
-    <p className="text-sm text-gray-600">Social Audit Portal</p>
+    <h1 className="text-lg font-bold text-gray-900">Samagra Shiksha</h1>
+    <p className="text-xs text-gray-600">Social Audit Portal</p>
   </div>
 </div>
 
 {/* Integral University Logo */}
-<div className="flex items-center space-x-4">
+<div className="flex items-center space-x-3">
   <img
     src="/logoiul.jpeg"
     alt="Integral University Logo"
-    className="h-20 w-20 object-contain rounded"
+    className="h-16 w-16 object-contain rounded"
   />
   <div>
-    <h1 className="text-xl font-bold text-gray-900">Integral University</h1>
-    <p className="text-sm text-gray-600">Centre for Social Audit</p>
+    <h1 className="text-lg font-bold text-gray-900">Integral University</h1>
+    <p className="text-xs text-gray-600">Centre for Social Audit</p>
   </div>
 </div>
 
