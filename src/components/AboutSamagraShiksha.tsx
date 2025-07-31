@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Users, Computer, Heart, GraduationCap, Scale, ClipboardText } from "lucide-react";
+import { BookOpen, Users, Computer, Heart, GraduationCap, Scale } from "lucide-react";
 
 const AboutSamagraShiksha = () => {
   const components = [
@@ -58,54 +58,6 @@ const AboutSamagraShiksha = () => {
           </p>
         </div>
 
-        {/* Objective & Coverage */}
-        <div className="mb-12 grid lg:grid-cols-2 gap-8">
-          <Card className="border-l-4 border-l-blue-500">
-            <CardHeader>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
-                  <ClipboardText className="w-5 h-5 text-white" />
-                </div>
-                <CardTitle className="text-xl font-semibold">Objective of Social Audit</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700 mb-4">
-                The basic objective of Social Audit is to enhance public accountability in Samagra Shiksha with the requirements of the audit discipline. It is a fact-finding process, not a fault-finding process.
-              </p>
-              <p className="text-gray-700 font-medium mb-2">The objectives of Social Audit can be put down in the following manner:</p>
-              <ol className="list-decimal list-inside text-gray-700 space-y-1">
-                <li>To ensure that the entitlements of a child as guaranteed under the RTE Act and funded through Samagra Shiksha are being provided in the school, in a timely and equitable manner.</li>
-                <li>To verify the timely issuance of authorization to spend to the School/SMC by appropriate Government under Single Nodal Account of Samagra Shiksha-SIS.</li>
-                <li>To check the status of infrastructure (Classroom, Furniture, Toilets, Drinking Water, and Electricity Facility etc.) in the school along with status of works initiated through the funds sanctioned.</li>
-                <li>To ensure a feeling of safety in schools for all students, specially girls.</li>
-                <li>To check the enrolment, retention and completion of schooling of students in the school.</li>
-                <li>To share and verify information placed under school report cards (generated under UDISE+).</li>
-                <li>To initiate and sustain an educational dialogue between all grass root level stakeholders—children, parents, SMCs, and Education Officials—to improve the school development.</li>
-                <li>To develop a participatory approach towards school development through community support.</li>
-                <li>To protect rights of Children with Special Needs (CWSN) and students from marginalized/vulnerable sections in school.</li>
-                <li>To support the execution of the School Development Plan (SDP) along with the execution of the School Safety Plan (SSP).</li>
-              </ol>
-            </CardContent>
-          </Card>
-
-          <Card className="border-l-4 border-l-green-500">
-            <CardHeader>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center">
-                  <ClipboardText className="w-5 h-5 text-white" />
-                </div>
-                <CardTitle className="text-xl font-semibold">Coverage Requirement</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700">
-                At least <strong>20% of the schools of each category</strong> (Primary, Upper Primary, Composite, etc.) will be covered under social audit every year such that Social Audit of all Government schools will be conducted in a span of five years.
-              </p>
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Key Features */}
         <div className="mb-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -132,6 +84,64 @@ const AboutSamagraShiksha = () => {
               );
             })}
           </div>
+        </div>
+
+        {/* Objectives & Coverage */}
+        <div className="mb-16 grid lg:grid-cols-2 gap-8">
+          <Card className="border-gray-200">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold">Objective of Social Audit</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700 mb-4">
+                The basic objective of Social Audit is to enhance public accountability in Samagra Shiksha with the requirements of the audit discipline. It is a fact-finding process, not a fault-finding process.
+              </p>
+              <p className="text-gray-700 mb-2 font-medium">The objectives of Social Audit can be put down in the following manner:</p>
+              <ol className="list-decimal list-inside text-gray-700" style={{ listStyleType: "lower-roman" }}>
+                <li className="mb-1">
+                  To ensure that the entitlements of a child as guaranteed under the RTE Act and funded through Samagra Shiksha are being provided in the school, in a timely and equitable manner.
+                </li>
+                <li className="mb-1">
+                  To verify the timely issuance of authorization to spend to the School/SMC by appropriate Government under Single Nodal Account of Samagra Shiksha-SIS.
+                </li>
+                <li className="mb-1">
+                  To check the status of infrastructure (Classroom, Furniture, Toilets, Drinking Water, and Electricity Facility etc.) in the school along with status of works initiated through the funds sanctioned.
+                </li>
+                <li className="mb-1">
+                  To ensure a feeling of safety in schools for all students, specially girls.
+                </li>
+                <li className="mb-1">
+                  To check the enrolment, retention and completion of schooling of students in the school.
+                </li>
+                <li className="mb-1">
+                  To share and verify information placed under school report cards (generated under UDISE+).
+                </li>
+                <li className="mb-1">
+                  To initiate and sustain an educational dialogue between all grass root level stakeholders—children, parents, SMCs, and Education Officials—to improve the school development.
+                </li>
+                <li className="mb-1">
+                  To develop a participatory approach towards school development through community support.
+                </li>
+                <li className="mb-1">
+                  To protect rights of Children with Special Needs (CWSN) and students from marginalized/vulnerable sections in school.
+                </li>
+                <li className="mb-1">
+                  To support the execution of the School Development Plan (SDP) along with the execution of the School Safety Plan (SSP).
+                </li>
+              </ol>
+            </CardContent>
+          </Card>
+
+          <Card className="border-gray-200">
+            <CardHeader>
+              <CardTitle className="text-2xl font-semibold">Coverage Requirement</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-700">
+                At least 20% of the schools of each category (Primary, Upper Primary, Composite, etc.) will be covered under social audit every year such that Social Audit of all Government schools will be conducted in a span of five years.
+              </p>
+            </CardContent>
+          </Card>
         </div>
 
         {/* Vision & Mission */}
