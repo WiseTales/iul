@@ -152,28 +152,24 @@ const AboutSamagraShiksha = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
             <CardHeader>
-              <CardTitle className="text-2xl text-blue-800">Our Vision</CardTitle>
+              <CardTitle className="text-2xl text-blue-800">Vision</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-blue-700 text-lg leading-relaxed">
-                To establish a transparent, accountable, and participatory system of social audit 
-                that ensures effective implementation of Samagra Shiksha programs, promoting 
-                quality education for all children while strengthening community engagement 
-                and democratic governance in education.
+               To foster a transparent and participatory social audit system that strengthens community engagement and ensures quality education for all under Samagra Shiksha.
               </p>
             </CardContent>
           </Card>
 
           <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
             <CardHeader>
-              <CardTitle className="text-2xl text-green-800">Our Mission</CardTitle>
+              <CardTitle className="text-2xl text-green-800">Mission</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-green-700 text-lg leading-relaxed">
-                To build capacity of stakeholders, conduct systematic social audits, 
-                facilitate public hearings, and ensure continuous monitoring of educational 
-                programs to achieve the goals of NEP 2020 and strengthen the education system 
-                through community participation and transparency.
+                To empower stakeholders through capacity building, conduct audits, and ensure continuous monitoring to achieve NEP 2020 goals through community-driven transparency.
+
+
               </p>
             </CardContent>
           </Card>
