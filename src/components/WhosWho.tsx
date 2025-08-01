@@ -33,7 +33,7 @@ const WhosWho = () => {
     {
       name: "Prof. Mohammad Haris Siddiqui",
       position: "Registrar",
-      organization: "Centre for Social Audit",
+      organization: "Integral University",
       image: "/4.jpeg",
       profile: "Managing and overseeing various administrative activities of the project.",
       email: "registrar@iul.ac.in",
