@@ -39,14 +39,7 @@ const StatsSection = () => {
     }
   ];
 
-  const districtProgress = [
-    { name: "Lucknow", progress: 95, audits: 145 },
-    { name: "Kanpur", progress: 87, audits: 132 },
-    { name: "Agra", progress: 78, audits: 98 },
-    { name: "Varanasi", progress: 92, audits: 87 },
-    { name: "Allahabad", progress: 83, audits: 76 }
-  ];
-
+  
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
