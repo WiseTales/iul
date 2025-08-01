@@ -43,7 +43,7 @@ const WhosWho = () => {
       position: "Head, Department of Languages",
       organization: "Integral University",
       image: "/5.jpg",
-      profile: "Supervising and monitoring social audit activities.",
+      profile: "Program management as a Nodal officer.",
       email: "headeng@iul.ac.in",
     },
     {
@@ -51,7 +51,7 @@ const WhosWho = () => {
       position: "Assistant Professor",
       organization: "Integral University",
       image: "/61.png",
-      profile: "Supervising and monitoring social audit activities.",
+      profile: "Program management as a Nodal officer.",
       email: "aareenaz@iul.ac.in",
     },
     {
@@ -59,7 +59,7 @@ const WhosWho = () => {
       position: "Assistant Professor",
       organization: "Integral University",
       image: "/62.png",
-      profile: "Coordinating audit activities and capacity building programs across districts.",
+      profile: "Coordinating Social Audit activities.",
       email: "vanya@iul.ac.in",
     },
   ];
