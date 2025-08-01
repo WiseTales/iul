@@ -13,11 +13,11 @@ const TrainingSection = () => {
       downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
     },
     {
-      title: "Module No: 2",
-      description: "Implementation Guidelines",
-      developed: "NCERT, New Delhi",
-      openUrl: "", // add link here
-      downloadUrl: "" // add download link here
+      title: "Official Circular – Social Audit of Schools (July 2025)",
+      description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+      developed: "Issued by Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
+      openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", // add link here
+      downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH" // add download link here
     },
     {
       title: "Module No: 3",
