@@ -50,7 +50,7 @@ const WhosWho = () => {
       name: "Dr. Aareena Naznine",
       position: "Assistant Professor",
       organization: "Integral University",
-      image: "/61.png",
+      image: "/61.jpg",
       profile: "Program management as a Nodal officer.",
       email: "aareenaz@iul.ac.in",
     },
