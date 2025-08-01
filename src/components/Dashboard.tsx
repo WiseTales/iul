@@ -247,7 +247,7 @@ const Dashboard = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Megaphone className="h-5 w-5 text-red-600" />
-                Public Hearings
+                Public Hearings Conducted at CSA Level
               </CardTitle>
             </CardHeader>
             <CardContent>
