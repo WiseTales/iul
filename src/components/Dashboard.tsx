@@ -59,8 +59,8 @@ const Dashboard = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-blue-100">MOE Social Audits Completed</p>
-                  <p className="text-3xl font-bold">2,847</p>
-                  <p className="text-sm text-blue-200">95.2% completion rate</p>
+                  <p className="text-3xl font-bold">0</p>
+                  <p className="text-sm text-blue-200">0% completion rate</p>
                 </div>
                 <BarChart3 className="h-12 w-12 text-blue-200" />
               </div>
@@ -72,8 +72,8 @@ const Dashboard = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-green-100">Public Hearings Completed</p>
-                  <p className="text-3xl font-bold">2,456</p>
-                  <p className="text-sm text-green-200">86.3% of audits</p>
+                  <p className="text-3xl font-bold">0</p>
+                  <p className="text-sm text-green-200">0% of audits</p>
                 </div>
                 <TrendingUp className="h-12 w-12 text-green-200" />
               </div>
@@ -85,7 +85,7 @@ const Dashboard = () => {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-orange-100">XPTs/CSAs/SAFTs Trained</p>
-                  <p className="text-3xl font-bold">1,247</p>
+                  <p className="text-3xl font-bold">0</p>
                   <p className="text-sm text-orange-200">Across all districts</p>
                 </div>
                 <AlertCircle className="h-12 w-12 text-orange-200" />
