@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, Users, Computer, Heart, GraduationCap, Scale } from "lucide-react";
+import { BookOpen, Users, Computer, Heart, GraduationCap, Scale, ClipboardText, ShieldCheck, Building, UserCheck, Conversation, People, SafetyCertificate } from "lucide-react";
 
 const AboutSamagraShiksha = () => {
   const components = [
@@ -43,6 +43,81 @@ const AboutSamagraShiksha = () => {
     }
   ];
 
+  const socialAuditObjectives = [
+    {
+      title: "Basic Objective",
+      description: "The basic objective of Social Audit is to enhance public accountability in Samagra Shiksha with the requirements of the audit discipline. It is a fact-finding process, not a fault-finding process.",
+      icon: ClipboardText,
+      color: "bg-indigo-500"
+    },
+    {
+      title: "i. Entitlements under RTE",
+      description: "To ensure that the entitlements of a child as guaranteed under the RTE Act and funded through Samagra Shiksha are being provided in the school, in a timely and equitable manner.",
+      icon: Building,
+      color: "bg-sky-500"
+    },
+    {
+      title: "ii. Authorization to Spend",
+      description: "To verify the timely issuance of authorization to spend to the School/SMC by appropriate Government under Single Nodal Account of Samagra Shiksha-SIS.",
+      icon: ShieldCheck,
+      color: "bg-cyan-500"
+    },
+    {
+      title: "iii. Infrastructure Status",
+      description: "To check the status of infrastructure (Classroom, Furniture, Toilets, Drinking Water, and Electricity Facility etc.) in the school along with status of works initiated through the funds sanctioned.",
+      icon: Building,
+      color: "bg-green-600"
+    },
+    {
+      title: "iv. Safety in Schools",
+      description: "To ensure a feeling of safety in schools for all students, specially girls.",
+      icon: SafetyCertificate,
+      color: "bg-red-500"
+    },
+    {
+      title: "v. Enrollment & Retention",
+      description: "To check the enrolment, retention and completion of schooling of students in the school.",
+      icon: UserCheck,
+      color: "bg-yellow-500"
+    },
+    {
+      title: "vi. School Report Cards",
+      description: "To share and verify information placed under school report cards (generated under UDISE+).",
+      icon: ClipboardText,
+      color: "bg-purple-400"
+    },
+    {
+      title: "vii. Educational Dialogue",
+      description: "To initiate and sustain an educational dialogue between all grass root level stakeholders—children, parents, SMCs, and Education Officials—to improve the school development.",
+      icon: Conversation,
+      color: "bg-fuchsia-500"
+    },
+    {
+      title: "viii. Participatory Development",
+      description: "To develop a participatory approach towards school development through community support.",
+      icon: People,
+      color: "bg-teal-600"
+    },
+    {
+      title: "ix. Rights Protection",
+      description: "To protect rights of Children with Special Needs (CWSN) and students from marginalized/vulnerable sections in school.",
+      icon: Users,
+      color: "bg-emerald-500"
+    },
+    {
+      title: "x. Support SDP & SSP",
+      description: "To support the execution of the School Development Plan (SDP) along with the execution of the School Safety Plan (SSP).",
+      icon: GraduationCap,
+      color: "bg-blue-600"
+    },
+    {
+      title: "Coverage Requirement (Periodicity of Audit)",
+      description: "At least 20% of the schools of each category (Primary, Upper Primary, Composite, etc.) will be covered under social audit every year such that Social Audit of all Government schools will be conducted in a span of five years.",
+      icon: Users,
+      color: "bg-gray-500"
+    }
+  ];
+
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -61,34 +136,6 @@ const AboutSamagraShiksha = () => {
         {/* Key Features */}
         <div className="mb-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="mb-8 text-center">
-              <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                As per the Ministry of Education Guidelines, Social Audit ensures transparency, accountability, 
-                and community participation in the implementation of educational programs under Samagra Shiksha.
-              </p>
-              <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mt-6">
-                The basic objective of Social Audit is to enhance public accountability in Samagra Shiksha 
-                with the requirements of the audit discipline. It is a fact-finding process, not a fault-finding process.
-              </p>
-              <ul className="text-left text-gray-700 text-lg leading-relaxed list-disc pl-8 mt-6 space-y-2">
-                <li>To ensure that the entitlements of a child as guaranteed under the RTE Act and funded through Samagra Shiksha are being provided in the school, in a timely and equitable manner.</li>
-                <li>To verify the timely issuance of authorization to spend to the School/SMC by appropriate Government under Single Nodal Account of Samagra Shiksha-SIS.</li>
-                <li>To check the status of infrastructure (Classroom, Furniture, Toilets, Drinking Water, and Electricity Facility etc.) in the school along with status of works initiated through the funds sanctioned.</li>
-                <li>To ensure a feeling of safety in schools for all students, specially girls.</li>
-                <li>To check the enrolment, retention and completion of schooling of students in the school.</li>
-                <li>To share and verify information placed under school report cards (generated under UDISE+).</li>
-                <li>To initiate and sustain an educational dialogue between all grass root level stakeholders—children, parents, SMCs, and Education Officials—to improve the school development.</li>
-                <li>To develop a participatory approach towards school development through community support.</li>
-                <li>To protect rights of Children with Special Needs (CWSN) and students from marginalized/vulnerable sections in school.</li>
-                <li>To support the execution of the School Development Plan (SDP) along with the execution of the School Safety Plan (SSP).</li>
-              </ul>
-              <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed mt-6">
-                <strong>Coverage Requirement (Periodicity of Audit):</strong> At least 20% of the schools of each category 
-                (Primary, Upper Primary, Composite, etc.) will be covered under social audit every year such that Social Audit of 
-                all Government schools will be conducted in a span of five years.
-              </p>
-            </div>
-
             {components.map((component, index) => {
               const IconComponent = component.icon;
               return (
@@ -101,6 +148,34 @@ const AboutSamagraShiksha = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 text-center">{component.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Social Audit Objectives */}
+        <div className="mb-16">
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-semibold text-gray-800">Objective of Social Audit</h3>
+            <p className="text-md text-gray-600 max-w-2xl mx-auto">
+              As defined in the Ministry of Education guidelines, the following are the exact objectives and coverage requirement for Social Audit under Samagra Shiksha. 
+            </p>
+          </div>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {socialAuditObjectives.map((obj, idx) => {
+              const Icon = obj.icon;
+              return (
+                <Card key={idx} className="hover:shadow-xl transition-shadow duration-300">
+                  <CardHeader className="text-center pb-4">
+                    <div className={`w-14 h-14 ${obj.color} rounded-full flex items-center justify-center mx-auto mb-3`}>
+                      <Icon className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-base font-semibold">{obj.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 text-sm">{obj.description}</p>
                   </CardContent>
                 </Card>
               );
