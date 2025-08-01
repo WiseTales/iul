@@ -7,11 +7,20 @@ import { BarChart3, Download, Filter, MapPin, TrendingUp, AlertCircle, Users, Gr
 
 const Dashboard = () => {
   const districtData = [
-    { name: "Lucknow", audits: 245, completed: 95, issues: 12, resolved: 10 },
-    { name: "Kanpur", audits: 198, completed: 87, issues: 18, resolved: 15 },
-    { name: "Agra", audits: 156, completed: 78, issues: 22, resolved: 18 },
-    { name: "Varanasi", audits: 134, completed: 92, issues: 8, resolved: 8 },
-    { name: "Allahabad", audits: 123, completed: 83, issues: 15, resolved: 12 }
+    { name: "Ambedkar Nagar", audits: 212, completed: 88, issues: 14, resolved: 12 },
+    { name: "Amethi", audits: 198, completed: 84, issues: 16, resolved: 13 },
+    { name: "Ayodhya", audits: 230, completed: 92, issues: 10, resolved: 9 },
+    { name: "Bahraich", audits: 175, completed: 79, issues: 20, resolved: 17 },
+    { name: "Balrampur", audits: 160, completed: 81, issues: 18, resolved: 15 },
+    { name: "Barabanki", audits: 205, completed: 90, issues: 11, resolved: 10 },
+    { name: "Bareilly", audits: 240, completed: 94, issues: 9, resolved: 8 },
+    { name: "Gonda", audits: 183, completed: 85, issues: 15, resolved: 13 },
+    { name: "Lakhimpur Kheri", audits: 170, completed: 80, issues: 17, resolved: 14 },
+    { name: "Raebareli", audits: 190, completed: 89, issues: 12, resolved: 11 },
+    { name: "Shahjahanpur", audits: 215, completed: 91, issues: 10, resolved: 9 },
+    { name: "Shravasti", audits: 155, completed: 76, issues: 21, resolved: 18 },
+    { name: "Sitapur", audits: 225, completed: 93, issues: 8, resolved: 8 },
+    { name: "Sultanpur", audits: 180, completed: 82, issues: 19, resolved: 16 }
   ];
 
   const handleDownloadExcel = (filename: string) => {
