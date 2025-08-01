@@ -177,17 +177,7 @@ const ResourceCenter = () => {
           </p>
         </div>
 
-        {/* Resource Categories */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Resource Categories</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category, index) => (
-              <Badge key={index} className={`${category.color} px-4 py-2 text-sm font-medium`}>
-                {category.name} ({category.count})
-              </Badge>
-            ))}
-          </div>
-        </div>
+       
 
         {/* Available Resources */}
         <div className="mb-16">
