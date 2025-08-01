@@ -11,7 +11,7 @@ const WhosWho = () => {
       position: "Founder and Chancellor",
       organization: "Integral University",
       image: "/1.JPG",
-      profile: "Leading the vision of quality education and social responsibility in higher education.",
+      profile: "",
       email: "chancellor@iul.ac.in",
     },
     {
@@ -19,7 +19,7 @@ const WhosWho = () => {
       position: "Pro-Chancellor",
       organization: "Integral University",
       image: "/2.webp",
-      profile: "Patronizing academic administration and research development programs.",
+      profile: "",
       email: "prochancellor@iul.ac.in",
     },
     {
@@ -27,7 +27,7 @@ const WhosWho = () => {
       position: "Vice-Chancellor",
       organization: "Integral University",
       image: "/3.jpg",
-      profile: "Overseeing academic excellence and institutional development initiatives.",
+      profile: "",
       email: "vc@iul.ac.in",
     },
     {
