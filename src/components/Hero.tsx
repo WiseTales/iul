@@ -67,8 +67,8 @@ const Hero = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-4 max-w-3xl mx-auto text-center">
           {[
             { label: "Districts", value: "14" },
-            { label: "Students", value: "779" },
-            { label: "Schools", value: "6K+" },
+            { label: "Schools", value: "6,436" },
+            { label: "Blocks", value: "192" },
             { label: "Audits", value: "2.5K+" },
           ].map((stat) => (
             <div key={stat.label}>

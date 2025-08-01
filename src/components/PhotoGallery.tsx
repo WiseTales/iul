@@ -7,7 +7,7 @@ const PhotoGallery = () => {
   const galleryItems = [
     {
       title: "Social Audit Training Session",
-      date: "July 2024",
+      date: "July 2025",
       type: "Photo",
       description: "Capacity building program for XPTs and CSAs",
       image: "/A.jpg",
@@ -25,7 +25,7 @@ const PhotoGallery = () => {
 
      {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B6.jpg",
@@ -33,7 +33,7 @@ const PhotoGallery = () => {
     },
      {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B7.jpg",
@@ -41,7 +41,7 @@ const PhotoGallery = () => {
     },
      {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B8.jpg",
@@ -49,7 +49,7 @@ const PhotoGallery = () => {
     },
      {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B9.jpg",
@@ -57,7 +57,7 @@ const PhotoGallery = () => {
     },
      {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B10.jpg",
@@ -65,7 +65,7 @@ const PhotoGallery = () => {
     },
     {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B.jpg",
@@ -73,7 +73,7 @@ const PhotoGallery = () => {
     },
     {
       title: "Field Visit Documentation",
-      date: "May 2024",
+      date: "May 2025",
       type: "Video",
       description: "On-site verification of educational programs",
       image: "/B1.jpg",
@@ -81,7 +81,7 @@ const PhotoGallery = () => {
     },
     {
       title: "Stakeholder Meeting",
-      date: "April 2024",
+      date: "April 2025",
       type: "Photo",
       description: "Coordination meeting with education officials",
       image: "/B2.jpg",
@@ -89,7 +89,7 @@ const PhotoGallery = () => {
     },
     {
       title: "Award Ceremony",
-      date: "March 2024",
+      date: "March 2025",
       type: "Photo",
       description: "Recognition for excellence in social audit",
       image: "/B3.jpg",
@@ -97,7 +97,7 @@ const PhotoGallery = () => {
     },
  {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B11.jpg",
@@ -105,7 +105,7 @@ const PhotoGallery = () => {
     },
  {
       title: "Public Hearing - Lucknow",
-      date: "June 2024",
+      date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B12.jpg",
@@ -113,7 +113,7 @@ const PhotoGallery = () => {
     },
     {
       title: "Community Engagement",
-      date: "February 2024",
+      date: "February 2025",
       type: "Video",
       description: "Involving parents and community members",
       image: "/B4.jpg",

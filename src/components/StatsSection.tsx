@@ -15,24 +15,24 @@ const StatsSection = () => {
     },
     {
       title: "Schools Covered",
-      value: "15,632",
+      value: "6,436",
       change: "+8%",
       icon: School,
       color: "text-blue-600",
       bgColor: "bg-blue-50"
     },
     {
-      title: "Community Members Engaged",
-      value: "45,290",
-      change: "+15%",
+      title: "Districts Allotted",
+      value: "14",
+      change: "Complete",
       icon: Users,
       color: "text-purple-600",
       bgColor: "bg-purple-50"
     },
     {
-      title: "Issues Resolved",
-      value: "1,234",
-      change: "+22%",
+      title: "Total Blocks",
+      value: "192",
+      change: "All covered",
       icon: TrendingUp,
       color: "text-orange-600",
       bgColor: "bg-orange-50"
@@ -73,12 +73,58 @@ const StatsSection = () => {
                   <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
                   <p className={`text-xs ${stat.color} flex items-center gap-1 mt-1`}>
                     <TrendingUp className="h-3 w-3" />
-                    {stat.change} from last month
+                    {stat.change}
                   </p>
                 </CardContent>
               </Card>
             );
           })}
+        </div>
+
+        {/* Schools Covered Section */}
+        <div className="mb-12">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <School className="h-5 w-5 text-blue-600" />
+                Schools Covered
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-blue-600">6,436</div>
+                  <div className="text-sm text-gray-600">Total Schools Covered</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-green-600">14</div>
+                  <div className="text-sm text-gray-600">Allotted Districts</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-purple-600">192</div>
+                  <div className="text-sm text-gray-600">Total Blocks</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-orange-600">1,287</div>
+                  <div className="text-sm text-gray-600">Total Schools Allotted (20%)</div>
+                </div>
+              </div>
+              <div className="text-center">
+                <button 
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+                  onClick={() => {
+                    // Create and download Excel file
+                    const link = document.createElement('a');
+                    link.href = '/api/download/schools-covered.xlsx';
+                    link.download = 'schools-covered-data.xlsx';
+                    link.click();
+                  }}
+                >
+                  Download Schools Covered Data (Excel)
+                </button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         {/* District Performance */}
