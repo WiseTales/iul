@@ -6,9 +6,9 @@ import { Download, FileText } from "lucide-react";
 const TrainingSection = () => {
   const trainingModules = [
     {
-      title: "Module No: 1",
-      description: "Fundamentals of Social Audit",
-      developed: "NCERT, New Delhi",
+      title: "Social Audit & Manpower Data 2024-25",
+      description: "Schools, Audit Steps, and Manpower for Each District",
+      developed: "Prepared by Social Audit Team",
       openUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true",
       downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
     },
