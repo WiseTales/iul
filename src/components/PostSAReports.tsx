@@ -5,26 +5,45 @@ import { Badge } from "@/components/ui/badge";
 import { Download, Upload, FileText, MapPin, Building } from "lucide-react";
 
 const PostSAReports = () => {
+  // District data from the provided screenshot (block count and total schools)
+  const districts = [
+    { name: "Ambedkar Nagar", blocks: 10, totalSchools: 1590 },
+    { name: "Amethi", blocks: 13, totalSchools: 1587 },
+    { name: "Bahraich", blocks: 15, totalSchools: 2818 },
+    { name: "Balrampur", blocks: 10, totalSchools: 1826 },
+    { name: "Barabanki", blocks: 16, totalSchools: 2651 },
+    { name: "Bareilly", blocks: 16, totalSchools: 2501 },
+    { name: "Ayodhya", blocks: 12, totalSchools: 1800 },
+    { name: "Gonda", blocks: 17, totalSchools: 2629 },
+    { name: "Lakhimpur Kheri", blocks: 16, totalSchools: 3122 },
+    { name: "Raebareli", blocks: 18, totalSchools: 2320 },
+    { name: "Shahjahanpur", blocks: 16, totalSchools: 2734 },
+    { name: "Shravasti", blocks: 5, totalSchools: 989 },
+    { name: "Sitapur", blocks: 20, totalSchools: 3531 },
+    { name: "Sultanpur", blocks: 14, totalSchools: 2080 }
+  ];
+
   const reportCategories = [
     {
       title: "Block-wise SA Reports",
       icon: Building,
       color: "bg-blue-500",
-      reports: [
-        { name: "Lucknow Block 1", date: "2025-07-06", schools: 45 },
-        { name: "Kanpur Block 2", date: "2025-07-05", schools: 38 },
-        { name: "Agra Block 3", date: "2025-07-04", schools: 52 }
-      ]
+      // Showing per-district block counts as individual entries (since actual block names aren't provided)
+      reports: districts.map((d) => ({
+        name: `${d.name} - ${d.blocks} Blocks`,
+        date: "2025-07-06",
+        schools: d.totalSchools
+      }))
     },
     {
       title: "District-wise Reports",
       icon: MapPin,
       color: "bg-green-500",
-      reports: [
-        { name: "Lucknow District", date: "2025-07-06", schools: 245 },
-        { name: "Kanpur District", date: "2025-07-05", schools: 198 },
-        { name: "Agra District", date: "2025-07-04", schools: 156 }
-      ]
+      reports: districts.map((d) => ({
+        name: `${d.name} District`,
+        date: "2025-07-06",
+        schools: d.totalSchools
+      }))
     }
   ];
 
@@ -78,7 +97,7 @@ const PostSAReports = () => {
                   <CardTitle className="text-xl text-center">{category.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-3">
+                  <div className="space-y-3 max-h-[500px] overflow-y-auto">
                     {category.reports.map((report, reportIndex) => (
                       <div key={reportIndex} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                         <div>
