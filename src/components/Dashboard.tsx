@@ -14,21 +14,6 @@ const Dashboard = () => {
     { name: "Allahabad", audits: 123, completed: 83, issues: 15, resolved: 12 }
   ];
 
-  const topPerformers = [
-    { name: "Lucknow", score: 95 },
-    { name: "Varanasi", score: 92 },
-    { name: "Kanpur", score: 87 },
-    { name: "Allahabad", score: 83 },
-    { name: "Agra", score: 78 }
-  ];
-
-  const recentIssues = [
-    { school: "GPS Aliganj", issue: "Infrastructure maintenance needed", priority: "High", status: "In Progress" },
-    { school: "UPS Gomti Nagar", issue: "Teacher attendance low", priority: "Medium", status: "Resolved" },
-    { school: "GPS Hazratganj", issue: "Mid-day meal quality", priority: "High", status: "New" },
-    { school: "UPS Indira Nagar", issue: "Library books shortage", priority: "Low", status: "Resolved" }
-  ];
-
   const handleDownloadExcel = (filename: string) => {
     const link = document.createElement('a');
     link.href = `/api/download/${filename}`;
@@ -290,98 +275,6 @@ const Dashboard = () => {
             </CardContent>
           </Card>
         </div>
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          {/* District Performance */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <MapPin className="h-5 w-5 text-blue-600" />
-                District-wise Performance
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {districtData.map((district, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-medium">{district.name}</span>
-                      <span className="text-sm text-gray-600">{district.audits} audits</span>
-                    </div>
-                    <Progress value={district.completed} className="h-2" />
-                    <div className="flex justify-between text-sm text-gray-500">
-                      <span>{district.completed}% complete</span>
-                      <span>{district.resolved}/{district.issues} actions taken</span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-
-          {/* Top Performers */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <TrendingUp className="h-5 w-5 text-green-600" />
-                Top Performing Districts
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                {topPerformers.map((performer, index) => (
-                  <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                    <div className="flex items-center gap-3">
-                      <Badge variant="secondary" className="w-8 h-8 rounded-full flex items-center justify-center">
-                        {index + 1}
-                      </Badge>
-                      <span className="font-medium">{performer.name}</span>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-lg font-bold text-green-600">{performer.score}%</div>
-                      <div className="text-xs text-gray-500">Completion Rate</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Recent Issues */}
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <AlertCircle className="h-5 w-5 text-orange-600" />
-              Recent Issues & Updates
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {recentIssues.map((issue, index) => (
-                <div key={index} className="flex items-center justify-between p-4 border rounded-lg hover:bg-gray-50 transition-colors">
-                  <div className="flex-1">
-                    <div className="font-medium text-gray-900">{issue.school}</div>
-                    <div className="text-gray-600">{issue.issue}</div>
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <Badge 
-                      variant={issue.priority === 'High' ? 'destructive' : issue.priority === 'Medium' ? 'default' : 'secondary'}
-                      className="text-xs"
-                    >
-                      {issue.priority}
-                    </Badge>
-                    <Badge 
-                      variant={issue.status === 'Resolved' ? 'secondary' : issue.status === 'In Progress' ? 'default' : 'outline'}
-                      className="text-xs"
-                    >
-                      {issue.status}
-                    </Badge>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
       </div>
     </section>
   );
