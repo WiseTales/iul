@@ -55,7 +55,7 @@ const AboutSamagraShiksha = () => {
           </Badge>
           <h2 className="text-4xl font-bold text-gray-900 mb-6">About Social Audit of Samagra Shiksha</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Samagra Shiksha is India's flagship integrated scheme for school education, 
+            Social audit of Samagra Shiksha is India's flagship integrated scheme for school education, 
             covering the entire spectrum from pre-school to class 12. It aims to ensure 
             inclusive and equitable quality education aligned with the National Education Policy 2020.
           </p>
@@ -65,10 +65,7 @@ const AboutSamagraShiksha = () => {
         <div className="mb-16">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="mb-8 text-center">
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              As per the Ministry of Education Guidelines, Social Audit ensures transparency, accountability, 
-              and community participation in the implementation of educational programs under Samagra Shiksha.
-            </p>
+           
           </div>
             {components.map((component, index) => {
               const IconComponent = component.icon;
