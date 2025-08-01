@@ -61,30 +61,27 @@ const AboutSamagraShiksha = () => {
           </p>
         </div>
 
-        {/* Key Features */}
-        <div className="mb-16">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="mb-8 text-center">
-           
-          </div>
-            {components.map((component, index) => {
-              const IconComponent = component.icon;
-              return (
-                <Card key={index} className="hover:shadow-xl transition-shadow duration-300 border-l-4 border-l-blue-500">
-                  <CardHeader className="text-center pb-4">
-                    <div className={`w-16 h-16 ${component.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                      <IconComponent className="h-8 w-8 text-white" />
-                    </div>
-                    <CardTitle className="text-lg font-semibold">{component.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 text-center">{component.description}</p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
-        </div>
+      {/* Key Features */}
+<div className="mb-16">
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {components.map((component, index) => {
+      const IconComponent = component.icon;
+      return (
+        <Card key={index} className="hover:shadow-xl transition-shadow duration-300 border-l-4 border-l-blue-500">
+          <CardHeader className="text-center pb-4">
+            <div className={`w-16 h-16 ${component.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
+              <IconComponent className="h-8 w-8 text-white" />
+            </div>
+            <CardTitle className="text-lg font-semibold">{component.title}</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-gray-600 text-center">{component.description}</p>
+          </CardContent>
+        </Card>
+      );
+    })}
+  </div>
+</div>
 
         {/* Objective of Social Audit */}
         <div className="mb-16">
