@@ -6,22 +6,23 @@ import { Progress } from "@/components/ui/progress";
 import { BarChart3, Download, Filter, MapPin, TrendingUp, AlertCircle, Users, GraduationCap, FileCheck, Megaphone } from "lucide-react";
 
 const Dashboard = () => {
-  const districtData = [
-    { name: "Ambedkar Nagar", audits: 212, completed: 88, issues: 14, resolved: 12 },
-    { name: "Amethi", audits: 198, completed: 84, issues: 16, resolved: 13 },
-    { name: "Ayodhya", audits: 230, completed: 92, issues: 10, resolved: 9 },
-    { name: "Bahraich", audits: 175, completed: 79, issues: 20, resolved: 17 },
-    { name: "Balrampur", audits: 160, completed: 81, issues: 18, resolved: 15 },
-    { name: "Barabanki", audits: 205, completed: 90, issues: 11, resolved: 10 },
-    { name: "Bareilly", audits: 240, completed: 94, issues: 9, resolved: 8 },
-    { name: "Gonda", audits: 183, completed: 85, issues: 15, resolved: 13 },
-    { name: "Lakhimpur Kheri", audits: 170, completed: 80, issues: 17, resolved: 14 },
-    { name: "Raebareli", audits: 190, completed: 89, issues: 12, resolved: 11 },
-    { name: "Shahjahanpur", audits: 215, completed: 91, issues: 10, resolved: 9 },
-    { name: "Shravasti", audits: 155, completed: 76, issues: 21, resolved: 18 },
-    { name: "Sitapur", audits: 225, completed: 93, issues: 8, resolved: 8 },
-    { name: "Sultanpur", audits: 180, completed: 82, issues: 19, resolved: 16 }
-  ];
+ const districtData = [
+  { name: "Ambedkar Nagar", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Amethi", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Ayodhya", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Bahraich", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Balrampur", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Barabanki", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Bareilly", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Gonda", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Lakhimpur Kheri", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Raebareli", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Shahjahanpur", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Shravasti", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Sitapur", audits: 0, completed: 0, issues: 0, resolved: 0 },
+  { name: "Sultanpur", audits: 0, completed: 0, issues: 0, resolved: 0 }
+];
+
 
   const handleDownloadExcel = (filename: string) => {
     const link = document.createElement('a');
@@ -181,10 +182,10 @@ const Dashboard = () => {
                 </div>
                 <div className="p-3 bg-blue-50 rounded-lg">
                   <p className="font-medium text-blue-900">CSA Training</p>
-                  <p className="text-sm text-blue-700 mb-2">*Note: Clarify source - 6436 vs 610 discrepancy</p>
+                  <p className="text-sm text-blue-700 mb-2">0 Trained</p>
                   <div className="flex justify-between items-center">
-                    <span className="text-blue-600">CSAs Trained: 610 / 644 (approximate)</span>
-                    <Badge variant="outline" className="text-blue-600">94.7%</Badge>
+                    <span className="text-blue-600">CSAs Trained: 0 (approximate)</span>
+                    <Badge variant="outline" className="text-blue-600">0%</Badge>
                   </div>
                 </div>
                 <div className="p-3 bg-purple-50 rounded-lg">
@@ -264,7 +265,7 @@ const Dashboard = () => {
                 </div>
                 <div className="p-3 bg-orange-50 rounded-lg">
                   <p className="font-medium text-orange-900">CSA Level</p>
-                  <p className="text-sm text-orange-700 mb-2">*CSA count reconciliation needed: 644 vs 384</p>
+                  <p className="text-sm text-orange-700 mb-2">0</p>
                   <div className="flex justify-between items-center">
                     <span className="text-sm text-orange-700">CSA-wise Public Hearings</span>
                     <div className="text-right">
