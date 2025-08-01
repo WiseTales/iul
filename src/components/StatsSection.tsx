@@ -39,13 +39,11 @@ const StatsSection = () => {
     }
   ];
 
-  
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Progress Tracking</h2>
-          
         </div>
 
         {/* Main Stats Grid */}
@@ -106,7 +104,6 @@ const StatsSection = () => {
                 <button 
                   className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                   onClick={() => {
-                    // Create and download Excel file
                     const link = document.createElement('a');
                     link.href = '/api/download/schools-covered.xlsx';
                     link.download = 'schools-covered-data.xlsx';
@@ -116,32 +113,6 @@ const StatsSection = () => {
                   Download Schools Covered Data (Excel)
                 </button>
               </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* District Performance */}
-        <div className="grid lg:grid-cols-1 gap-8">
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <FileText className="h-5 w-5 text-blue-600" />
-                Top Performing Districts
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              {districtProgress.map((district, index) => (
-                <div key={index} className="space-y-2">
-                  <div className="flex justify-between items-center">
-                    <span className="font-medium">{district.name}</span>
-                    <span className="text-sm text-gray-600">{district.audits} audits</span>
-                  </div>
-                  <Progress value={district.progress} className="h-2" />
-                  <div className="text-right text-sm text-gray-500">
-                    {district.progress}% complete
-                  </div>
-                </div>
-              ))}
             </CardContent>
           </Card>
         </div>
