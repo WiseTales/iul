@@ -1,9 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, FileText } from "lucide-react";
+import { Download, FileText, ExternalLink } from "lucide-react";
 
 const TrainingSection = () => {
+  const [moduleLinks, setModuleLinks] = useState([
+    "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true", // Module 1 prepopulated
+    "", // Module 2
+    ""  // Module 3
+  ]);
+
+  const [resourceLinks, setResourceLinks] = useState([
+    "", // Resource Package 1
+    "", // Resource Package 2
+    "", // Resource Package 3
+    ""  // Resource Package 4
+  ]);
+
+  const handleModuleLinkChange = (index: number, value: string) => {
+    setModuleLinks((prev) => {
+      const copy = [...prev];
+      copy[index] = value;
+      return copy;
+    });
+  };
+
+  const handleResourceLinkChange = (index: number, value: string) => {
+    setResourceLinks((prev) => {
+      const copy = [...prev];
+      copy[index] = value;
+      return copy;
+    });
+  };
+
+  const openLink = (url: string) => {
+    if (!url) return;
+    window.open(url, "_blank");
+  };
+
   return (
     <section id="training" className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -31,10 +65,34 @@ const TrainingSection = () => {
                   <p className="text-sm text-blue-600 text-center font-medium">Developed by: {module.developed}</p>
                 </CardHeader>
                 <CardContent>
-                  <Button className="w-full">
-                    <Download className="h-4 w-4 mr-2" />
-                    Download Module
-                  </Button>
+                  <div className="flex flex-col gap-3">
+                    <input
+                      type="text"
+                      placeholder="Paste module link here"
+                      className="w-full border rounded px-3 py-2 text-sm"
+                      value={moduleLinks[index]}
+                      onChange={(e) => handleModuleLinkChange(index, e.target.value)}
+                    />
+                    <div className="flex gap-2">
+                      <Button
+                        className="flex-1"
+                        onClick={() => openLink(moduleLinks[index])}
+                        disabled={!moduleLinks[index]}
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        {moduleLinks[index] ? "Open Module" : "Add link to enable"}
+                      </Button>
+                      <Button
+                        variant="outline"
+                        className="flex-1"
+                        onClick={() => openLink(moduleLinks[index])}
+                        disabled={!moduleLinks[index]}
+                      >
+                        <Download className="h-4 w-4 mr-2" />
+                        {moduleLinks[index] ? "Download / View" : "Disabled"}
+                      </Button>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -51,10 +109,25 @@ const TrainingSection = () => {
                   <CardContent className="p-4">
                     <FileText className="h-8 w-8 text-blue-600 mx-auto mb-2" />
                     <p className="font-medium">{pkg}</p>
-                    <Button size="sm" variant="outline" className="mt-2">
-                      <Download className="h-3 w-3 mr-1" />
-                      Download
-                    </Button>
+                    <input
+                      type="text"
+                      placeholder="Paste resource link here"
+                      className="w-full border rounded px-2 py-1 my-2 text-sm"
+                      value={resourceLinks[index]}
+                      onChange={(e) => handleResourceLinkChange(index, e.target.value)}
+                    />
+                    <div className="flex justify-center">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className="flex items-center gap-1"
+                        onClick={() => openLink(resourceLinks[index])}
+                        disabled={!resourceLinks[index]}
+                      >
+                        <Download className="h-3 w-3" />
+                        {resourceLinks[index] ? "Open" : "Add link"}
+                      </Button>
+                    </div>
                   </CardContent>
                 </Card>
               ))}
