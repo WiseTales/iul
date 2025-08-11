@@ -15,7 +15,7 @@ const PhotoGallery = () => {
     },
 
      {
-      title: "Public Hearing - Lucknow",
+      title: "title here - Lucknow",
       date: "June 2024",
       type: "Photo",
       description: "Community participation in social audit process",
@@ -24,7 +24,7 @@ const PhotoGallery = () => {
     },
 
      {
-      title: "Public Hearing - Lucknow",
+      title: "title here- Lucknow",
       date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
@@ -32,7 +32,7 @@ const PhotoGallery = () => {
       category: "Public Hearing"
     },
      {
-      title: "Public Hearing - Lucknow",
+      title: "title here - Lucknow",
       date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
@@ -40,7 +40,7 @@ const PhotoGallery = () => {
       category: "Public Hearing"
     },
      {
-      title: "Public Hearing - Lucknow",
+      title: "title here - Lucknow",
       date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
@@ -48,7 +48,7 @@ const PhotoGallery = () => {
       category: "Public Hearing"
     },
      {
-      title: "Public Hearing - Lucknow",
+      title: "title here - Lucknow",
       date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
@@ -56,7 +56,7 @@ const PhotoGallery = () => {
       category: "Public Hearing"
     },
      {
-      title: "Public Hearing - Lucknow",
+      title: "title - Lucknow",
       date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
@@ -64,7 +64,7 @@ const PhotoGallery = () => {
       category: "Public Hearing"
     },
     {
-      title: "Public Hearing - Lucknow",
+      title: "title - Lucknow",
       date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
