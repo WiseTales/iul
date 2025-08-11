@@ -229,7 +229,7 @@ const ResourceCenter = () => {
 
         {/* Past Reports */}
         <div>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Past Audit Reports</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Post Audit Reports</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {pastReports.map((report, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
