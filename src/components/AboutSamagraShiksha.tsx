@@ -70,7 +70,7 @@ const AboutSamagraShiksha = () => {
               <div className="mt-6 p-4 bg-amber-200 rounded-lg">
                 <h4 className="font-semibold text-amber-800 mb-2">Coverage Requirement (Periodicity of Audit)</h4>
                 <p className="text-amber-700">
-                  At least 20% of the schools of each category (Primary, Upper Primary, Composite, etc.) will be covered under social audit every year such that Social Audit of all Government schools will be conducted in a span of five years.
+                  At least 20% of the schools of each category (Primary, Upper Primary, Composite and 100% KGBV school) will be covered under social audit every year such that Social Audit of all Government schools will be conducted in a span of five years.
                 </p>
               </div>
             </CardContent>
