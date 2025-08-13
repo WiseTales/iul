@@ -56,7 +56,7 @@ const AboutSamagraShiksha = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6">About Social Audit of Samagra Shiksha</h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Social audit of Samagra Shiksha is India's flagship integrated scheme for school education, 
-            covering the entire spectrum from pre-school to class 12. It aims to ensure 
+            covering the entire spectrum of elementary education, primary school, upper school, composite school and KGBV school. It aims to ensure 
             inclusive and equitable quality education aligned with the National Education Policy 2020.
           </p>
         </div>
