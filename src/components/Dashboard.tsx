@@ -59,7 +59,7 @@ const Dashboard = () => {
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-blue-100">MOE Social Audits Completed</p>
+                  <p className="text-blue-100">Social Audits Completed</p>
                   <p className="text-3xl font-bold">0</p>
                   <p className="text-sm text-blue-200">0% completion rate</p>
                 </div>
@@ -85,7 +85,7 @@ const Dashboard = () => {
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-orange-100">XPTs/CSAs/SAFTs Trained</p>
+                  <p className="text-orange-100">MTs/CSAs/SAFTs Trained</p>
                   <p className="text-3xl font-bold">0</p>
                   <p className="text-sm text-orange-200">Across all districts</p>
                 </div>
