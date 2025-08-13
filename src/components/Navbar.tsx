@@ -50,9 +50,9 @@ const Navbar = () => {
 {/* Integral University Logo */}
 <div className="flex items-center space-x-3">
   <img
-    src="/logo_new.png"
+    src="/logoiul.jpeg"
     alt="Integral University Logo"
-    className="h-60 w-32 object-contain rounded"
+    className="h-16 w-16 object-contain rounded"
   />
   <div>
     <h1 className="text-lg font-bold text-gray-900">Integral University</h1>
