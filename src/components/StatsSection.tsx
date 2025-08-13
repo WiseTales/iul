@@ -6,9 +6,9 @@ import { TrendingUp, Users, School, FileText, CheckCircle } from "lucide-react";
 const StatsSection = () => {
   const stats = [
     {
-      title: "Audits Completed",
+      title: "Social Audits Completed",
       value: "2,847",
-      change: "+12%",
+      change: "x%",
       icon: CheckCircle,
       color: "text-green-600",
       bgColor: "bg-green-50"
@@ -16,7 +16,7 @@ const StatsSection = () => {
     {
       title: "Schools Covered",
       value: "6,436",
-      change: "+8%",
+      change: "x%",
       icon: School,
       color: "text-blue-600",
       bgColor: "bg-blue-50"
@@ -85,7 +85,7 @@ const StatsSection = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-blue-600">6,436</div>
-                  <div className="text-sm text-gray-600">Total Schools Covered</div>
+                  <div className="text-sm text-gray-600">Total Schools Allotted</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-green-600">14</div>
@@ -97,7 +97,7 @@ const StatsSection = () => {
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-orange-600">1,287</div>
-                  <div className="text-sm text-gray-600">Total Schools Allotted (20%)</div>
+                  <div className="text-sm text-gray-600">Total Schools Covered (20%)</div>
                 </div>
               </div>
               <div className="text-center">
