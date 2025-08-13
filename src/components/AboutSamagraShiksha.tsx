@@ -7,7 +7,45 @@ import { Badge } from "@/components/ui/badge";
 import { BookOpen, Users, Computer, Heart, GraduationCap, Scale } from "lucide-react";
 
 const AboutSamagraShiksha = () => {
- 
+   const components = [
+    {
+      title: "Early Childhood Care and Education (ECCE)",
+      description: "Comprehensive development for children aged 3-6 years",
+      icon: Heart,
+      color: "bg-pink-500"
+    },
+    {
+      title: "Foundational Literacy and Numeracy (FLN)",
+      description: "Building strong foundation in reading, writing, and mathematics",
+      icon: BookOpen,
+      color: "bg-blue-500"
+    },
+    {
+      title: "Digital Initiatives",
+      description: "Technology integration for enhanced learning experiences",
+      icon: Computer,
+      color: "bg-green-500"
+    },
+    {
+      title: "Inclusive Education",
+      description: "Ensuring education access for children with special needs",
+      icon: Users,
+      color: "bg-purple-500"
+    },
+    {
+      title: "Teacher Training",
+      description: "Continuous professional development for educators",
+      icon: GraduationCap,
+      color: "bg-orange-500"
+    },
+    {
+      title: "Gender Equity",
+      description: "Promoting equal opportunities for all students",
+      icon: Scale,
+      color: "bg-teal-500"
+    }
+  ];
+
   return (
     <section id="about" className="py-16 bg-white">
       <div className="container mx-auto px-4">
