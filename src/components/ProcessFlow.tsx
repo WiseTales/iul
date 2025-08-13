@@ -11,7 +11,7 @@ const ProcessFlow = () => {
       description: "Identification, mapping, capacity building, and planning",
       icon: FileText,
       color: "bg-blue-500",
-      tasks: ["Identification of XPTs/CSAs/SAFTs", "Mapping with schools", "Capacity building", "Planning of SA"]
+      tasks: ["Identification of MTs/CSAs/SAFTs", "Mapping with schools", "Capacity building", "Planning of SA"]
     },
     {
       title: "Social Audit Phase",
@@ -22,10 +22,10 @@ const ProcessFlow = () => {
     },
     {
       title: "Post-Social Audit Phase",
-      description: "Public hearing, reporting, and follow-up actions",
+      description: "Public hearing, corrective action, reporting, and completion of project",
       icon: FileText,
       color: "bg-orange-500",
-      tasks: ["Public hearing", "Report compilation", "Issue documentation", "Follow-up actions"]
+      tasks: ["Public hearing", "Report compilation", "Published documentation", "Completion of Project"]
     },
   ];
 
@@ -35,11 +35,7 @@ const ProcessFlow = () => {
       responsibilities: ["Headmasters coordination", "SMC participation", "Data provision"],
       color: "bg-blue-100 text-blue-800"
     },
-    {
-      level: "Cluster Level",
-      responsibilities: ["CRP coordination", "Multi-school oversight", "Local facilitation"],
-      color: "bg-green-100 text-green-800"
-    },
+   
     {
       level: "Block Level",
       responsibilities: ["BRC staff coordination", "Block compilation", "Resource support"],
@@ -47,12 +43,17 @@ const ProcessFlow = () => {
     },
     {
       level: "District Level",
-      responsibilities: ["DEO oversight", "District compilation", "Policy implementation"],
+      responsibilities: ["BSA oversight", "District compilation", "Policy implementation"],
       color: "bg-purple-100 text-purple-800"
     },
     {
       level: "State Level",
       responsibilities: ["State compilation", "Policy guidance", "Quality assurance"],
+      color: "bg-red-100 text-red-800"
+    },
+     {
+      level: "SAU/Institute",
+      responsibilities: ["Identification of Social Audit team - MTs, CSAs and SAFT", "Capacity building of team", "Conduct Social Audit and public hearing", "Report writing"],
       color: "bg-red-100 text-red-800"
     }
   ];
@@ -69,7 +70,7 @@ const ProcessFlow = () => {
 
         {/* Process Steps */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Audit Process Flow</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Social Audit Process Flow</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, index) => {
               const IconComponent = step.icon;
