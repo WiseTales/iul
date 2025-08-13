@@ -55,7 +55,7 @@ const Navbar = () => {
     className="h-16 w-16 object-contain rounded"
   />
   <div>
-    <h1 className="text-lg font-bold text-gray-900">Integral University</h1>
+    <h1 className="text-lg font-bold text-gray-900"></h1>
     <p className="text-xs text-gray-600">Centre for Social Audit</p>
   </div>
 </div>
