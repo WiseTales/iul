@@ -7,21 +7,22 @@ import { BarChart3, Download, Filter, MapPin, TrendingUp, AlertCircle, Users, Gr
 
 const Dashboard = () => {
  const districtData = [
-  { name: "Ambedkar Nagar", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 450 },
-  { name: "Amethi", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 380 },
-  { name: "Ayodhya", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 520 },
-  { name: "Bahraich", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 620 },
-  { name: "Balrampur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 340 },
-  { name: "Barabanki", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 480 },
-  { name: "Bareilly", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 750 },
-  { name: "Gonda", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 590 },
-  { name: "Lakhimpur Kheri", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 680 },
-  { name: "Raebareli", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 420 },
-  { name: "Shahjahanpur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 560 },
-  { name: "Shravasti", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 290 },
-  { name: "Sitapur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 640 },
-  { name: "Sultanpur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 406 }
+  { name: "Ambedkar Nagar", audits: 0, completed: 450, issues: 0, resolved: 0, alloted: 450 },
+  { name: "Amethi", audits: 0, completed: 380, issues: 0, resolved: 0, alloted: 380 },
+  { name: "Ayodhya", audits: 0, completed: 520, issues: 0, resolved: 0, alloted: 520 },
+  { name: "Bahraich", audits: 0, completed: 620, issues: 0, resolved: 0, alloted: 620 },
+  { name: "Balrampur", audits: 0, completed: 340, issues: 0, resolved: 0, alloted: 340 },
+  { name: "Barabanki", audits: 0, completed: 480, issues: 0, resolved: 0, alloted: 480 },
+  { name: "Bareilly", audits: 0, completed: 750, issues: 0, resolved: 0, alloted: 750 },
+  { name: "Gonda", audits: 0, completed: 590, issues: 0, resolved: 0, alloted: 590 },
+  { name: "Lakhimpur Kheri", audits: 0, completed: 680, issues: 0, resolved: 0, alloted: 680 },
+  { name: "Raebareli", audits: 0, completed: 420, issues: 0, resolved: 0, alloted: 420 },
+  { name: "Shahjahanpur", audits: 0, completed: 560, issues: 0, resolved: 0, alloted: 560 },
+  { name: "Shravasti", audits: 0, completed: 290, issues: 0, resolved: 0, alloted: 290 },
+  { name: "Sitapur", audits: 0, completed: 640, issues: 0, resolved: 0, alloted: 640 },
+  { name: "Sultanpur", audits: 0, completed: 406, issues: 0, resolved: 0, alloted: 406 }
 ];
+
 
   // Calculate percentage for each district
   const districtDataWithPercentage = districtData.map(district => ({
