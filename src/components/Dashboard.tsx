@@ -246,7 +246,7 @@ const Dashboard = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Megaphone className="h-5 w-5 text-red-600" />
-                Public Hearings Conducted at CSA Level
+                Public Hearings (In Progress)
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -256,21 +256,12 @@ const Dashboard = () => {
                   <div className="flex justify-between items-center mt-2">
                     <span className="text-sm text-red-700">Total Blocks: 192</span>
                     <div className="text-right">
-                      <div className="text-lg font-bold text-red-600">{'{block_level_hearings}'}</div>
+                      <div className="text-lg font-bold text-red-600">0%</div>
                       <div className="text-xs text-red-500">Hearings Conducted</div>
                     </div>
                   </div>
                 </div>
-                <div className="p-3 bg-orange-50 rounded-lg">
-                  <p className="font-medium text-orange-900">CSA Level</p>
-                  <p className="text-sm text-orange-700 mb-2">0%</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-orange-700">CSA-wise Public Hearings</span>
-                    <div className="text-right">
-                      <div className="text-lg font-bold text-orange-600">0%</div>
-                      <div className="text-xs text-orange-500">Average per CSA</div>
-                    </div>
-                  </div>
+            
                 </div>
               </div>
             
