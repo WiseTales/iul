@@ -146,25 +146,7 @@ const PostSAReports = () => {
           </div>
         </div>
 
-        {/* Upload & Download Options */}
-        <div className="mt-16 bg-white rounded-lg p-8 shadow-lg">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Upload & Download Options</h3>
-          <p className="text-center text-gray-600 mb-6">CSA Data Entry Available in District Report Format (DRF)</p>
-          <div className="grid md:grid-cols-1 gap-6">
-            {/* District-wise */}
-            <div className="flex flex-col items-center gap-3">
-              <h4 className="font-semibold text-gray-800 mb-2">CSA Data Entry — District Report Format (DRF)</h4>
-              <Button className="w-full flex gap-2 bg-purple-600 hover:bg-purple-700">
-                <Download className="h-4 w-4" />
-                Download District-wise
-              </Button>
-              <Button variant="outline" className="w-full flex gap-2">
-                <Upload className="h-4 w-4" />
-                Upload District-wise
-              </Button>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   );
