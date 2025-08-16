@@ -91,33 +91,33 @@ const PhotoGallery = () => {
       title: "Field Visit",
       
       type: "Photo",
-      description: "Recognition for excellence in social audit",
+      description: "Planning meeting",
       image: "/B3.jpg",
-      category: ""
+      category: "Interaction"
     },
  {
-      title: "Public Hearing - Lucknow",
-      date: "June 2025",
+      title: "Field Visit",
+      
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Meeting with school staff",
       image: "/B11.jpg",
-      category: "Public Hearing"
+      category: "Interaction"
     },
  {
-      title: "Public Hearing - Lucknow",
-      date: "June 2025",
+      title: "Field Visit",
+      
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Meeting with Trainees ",
       image: "/B12.jpg",
-      category: "Public Hearing"
+      category: "Interaction"
     },
     {
-      title: "Community Engagement",
+      title: "Field Visit",
       date: "February 2025",
-      type: "Video",
+      type: "Photo",
       description: "Involving parents and community members",
       image: "/B4.jpg",
-      category: "Community"
+      category: "Interaction"
     }
   ];
 
