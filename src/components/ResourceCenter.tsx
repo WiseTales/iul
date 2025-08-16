@@ -147,7 +147,7 @@ const ResourceCenter = () => {
   
     
     {
-      title: "Public Hearing Plan (In Progress",
+      title: "Public Hearing Plan (In Progress)",
       type: "PDF Document",
       size: "Official Plan",
       category: "Hearing",
