@@ -2,7 +2,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Download, Upload, FileText, MapPin, Building } from "lucide-react";
+import { Download, FileText, MapPin } from "lucide-react";
 
 const PostSAReports = () => {
   // District data from the provided screenshot (block count and total schools)
@@ -30,8 +30,11 @@ const PostSAReports = () => {
       color: "bg-green-500",
       reports: districts.map((d) => ({
         name: `${d.name} District`,
-       
-        schools: d.totalSchools
+        schools: d.totalSchools,
+        link:
+          d.name === "Raebareli"
+            ? "https://drive.google.com/file/d/1Tw_JY4Kb0a-F7HsKbqZsstGhxBvhCh2g/view?usp=sharing"
+            : "" // placeholders for other districts
       }))
     }
   ];
@@ -45,14 +48,20 @@ const PostSAReports = () => {
     }
   ];
 
-  const handleDownloadExcel = (filename: string) => { const link = document.createElement('a'); link.href = /api/download/${filename}; link.download = filename; link.click(); };
+  const handleDownloadExcel = (url: string, filename?: string) => {
+    const link = document.createElement('a');
+    link.href = url;
+    if (filename) link.download = filename;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.click();
+  };
 
   return (
     <section id="reports" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Post Social Audit Reports</h2>
-          
         </div>
 
         {/* Report Categories */}
@@ -73,12 +82,19 @@ const PostSAReports = () => {
                       <div key={reportIndex} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                         <div>
                           <p className="font-medium text-gray-900">{report.name}</p>
-                          <p className="text-sm text-gray-600">{report.date}</p>
                           <p className="text-xs text-gray-500">
                             {report.schools} schools
                           </p>
                         </div>
-                        <Button size="sm" variant="outline">
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() =>
+                            report.link
+                              ? handleDownloadExcel(report.link)
+                              : alert("Report link not available yet.")
+                          }
+                        >
                           <Download className="h-3 w-3 mr-1" />
                           Download
                         </Button>
@@ -96,7 +112,9 @@ const PostSAReports = () => {
 
         {/* Compiled Reports */}
         <div>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Compiled Reports (14 Districts)</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
+            Compiled Reports (14 Districts)
+          </h3>
           <div className="grid md:grid-cols-3 gap-6">
             {compiledReports.map((report, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
@@ -127,8 +145,6 @@ const PostSAReports = () => {
             ))}
           </div>
         </div>
-
-
       </div>
     </section>
   );
