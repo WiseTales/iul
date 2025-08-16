@@ -259,7 +259,7 @@ const Dashboard = () => {
                       <div className="text-lg font-bold text-red-600">0%</div>
                       <div className="text-xs text-red-500">Hearings Conducted</div>
                     </div>
-                  </div>
+                  </div> 
                 </div>
             
                 </div>
