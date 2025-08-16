@@ -105,7 +105,7 @@ const TrainingSection = () => {
                       <a href={module.openUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
                         <Button className="w-full flex items-center justify-center">
                           <Download className="h-4 w-4 mr-2" />
-                          Open Module
+                          Open 
                         </Button>
                       </a>
                     )}
