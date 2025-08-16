@@ -39,7 +39,7 @@ const ResourceCenter = () => {
       size: "Manual",
       category: "Training",
       icon: BookOpen,
-      description: "Complete training manual for audit team members",
+      description: "Complete training manual for Social Audit team members",
       downloadUrl: "https://drive.google.com/file/d/1JZHf5Jlww_NLF4O7sJeNVxIRRjYf2jOz/view?usp=sharing"
     },
     {
@@ -102,7 +102,7 @@ const ResourceCenter = () => {
       size: "Standards",
       category: "Policy",
       icon: FileText,
-      description: "Standards and protocols for maintaining audit records",
+      description: "Standards and protocols for maintaining Social audit records",
       downloadUrl: "https://drive.google.com/file/d/1ctmzSFnjHl-qGVBK_D4ijhJL3yUeo7JP/view?usp=sharing"
     },
     {
@@ -120,7 +120,7 @@ const ResourceCenter = () => {
       size: "Protocols",
       category: "Policy",
       icon: FileText,
-      description: "Protocols for ensuring transparency in audit processes",
+      description: "Protocols for ensuring transparency in Social audit processes",
       downloadUrl: "https://drive.google.com/file/d/1nrrxTfDDRcujn6rgWua5M2bwEUCxVyla/view?usp=sharing"
     },
     {
@@ -129,7 +129,7 @@ const ResourceCenter = () => {
       size: "Guidelines",
       category: "Guidelines",
       icon: FileText,
-      description: "Comprehensive guidelines for audit report preparation",
+      description: "Comprehensive guidelines for Social audit report preparation",
       downloadUrl: "https://drive.google.com/file/d/1skW8fsYc7RB34MV51-aAqgLThNHbbM0p/view?usp=sharing"
     },
     {
