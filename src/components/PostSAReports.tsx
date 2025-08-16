@@ -39,14 +39,7 @@ const PostSAReports = () => {
     }
   ];
 
-  const compiledReports = [
-    {
-      title: "Compiled Report of 14 Districts",
-      period: "2025",
-      districts: 14,
-      type: "Comprehensive"
-    }
-  ];
+  
 
   const handleDownloadExcel = (url: string, filename?: string) => {
     const link = document.createElement('a');
