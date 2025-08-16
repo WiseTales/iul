@@ -91,7 +91,7 @@ const TrainingSection = () => {
         {/* University Materials */}
         <div className="mt-12">
           <h4 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-            Other Resource Materials Developed by University
+            Other Resource Materials Developed by Integral University
           </h4>
           <div className="grid md:grid-cols-4 gap-4">
             {resourcePackages.map((pkg, index) => (
