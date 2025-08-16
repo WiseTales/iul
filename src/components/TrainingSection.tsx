@@ -4,7 +4,29 @@ import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 const TrainingSection = () => {
-  const officialCirculars = [ 
+  const allModules = [ 
+    {
+      title: "Social Audit & Team of Social Audit data",
+      description: "Schools, Audit Steps, and Manpower for Each District",
+      developed: "Social Audit Team",
+      openUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true",
+      downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
+    },
+    {
+      title: "Official Circular – Social Audit of Schools",
+      description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+      developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
+      openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", 
+      downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH"
+    },
+    {
+      title: "Training Modules developed by NCERT", 
+      description: "Reporting and Documentation",
+      developed: "NCERT, New Delhi",
+      openUrl: "", 
+      downloadUrl: "" 
+    },
+    // Duplicate entries for second row (since you want 6 cards)
     {
       title: "Social Audit & Team of Social Audit data",
       description: "Schools, Audit Steps, and Manpower for Each District",
@@ -46,36 +68,40 @@ const TrainingSection = () => {
           </p>
         </div>
 
-        {/* Official circulars and letters (merged section) */}
+        {/* Official Circulars and Letters (merged) */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Official circulars and letters</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">
+            Official Circulars and Letters
+          </h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {officialCirculars.map((item, index) => (
+            {allModules.map((module, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
-                  <CardTitle className="text-lg text-center">{item.title}</CardTitle>
-                  <p className="text-gray-600 text-center">{item.description}</p>
-                  <p className="text-sm text-blue-600 text-center font-medium">Developed by: {item.developed}</p>
+                  <CardTitle className="text-lg text-center">{module.title}</CardTitle>
+                  <p className="text-gray-600 text-center">{module.description}</p>
+                  <p className="text-sm text-blue-600 text-center font-medium">
+                    Developed by: {module.developed}
+                  </p>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-3">
                   <div className="flex flex-col sm:flex-row gap-2">
-                    {item.openUrl && (
-                      <a href={item.openUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    {module.openUrl && (
+                      <a href={module.openUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
                         <Button className="w-full flex items-center justify-center">
                           <Download className="h-4 w-4 mr-2" />
                           Open 
                         </Button>
                       </a>
                     )}
-                    {item.downloadUrl && (
-                      <a href={item.downloadUrl} target="_blank" rel="noopener noreferrer" className="flex-1" download>
+                    {module.downloadUrl && (
+                      <a href={module.downloadUrl} target="_blank" rel="noopener noreferrer" className="flex-1" download>
                         <Button className="w-full flex items-center justify-center" variant="outline">
                           <Download className="h-4 w-4 mr-2" />
                           Download PDF
                         </Button>
                       </a>
                     )}
-                    {!item.openUrl && !item.downloadUrl && (
+                    {!module.openUrl && !module.downloadUrl && (
                       <div className="text-center text-sm text-gray-500 w-full">
                         Link placeholder — add URL in code.
                       </div>
