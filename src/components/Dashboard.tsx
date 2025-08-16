@@ -135,17 +135,7 @@ const Dashboard = () => {
                     <div className="text-xs text-blue-500">Identified</div>
                   </div>
                 </div>
-                <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
-                  <div>
-                    <p className="font-medium text-green-900">CSA (Cluster Social Auditors)</p>
-                    <p className="text-sm text-green-700">1 per 10 schools</p>
-                    <p className="text-xs text-green-600">*Note: Reconcile with block-level logic if needed</p>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-lg font-bold text-green-600">644</div>
-                    <div className="text-xs text-green-500">CSAs</div>
-                  </div>
-                </div>
+                
                 <div className="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
                   <div>
                     <p className="font-medium text-purple-900">SAFT Members</p>
@@ -185,14 +175,7 @@ const Dashboard = () => {
                     <Badge className="bg-green-600 text-white">100% trained</Badge>
                   </div>
                 </div>
-                <div className="p-3 bg-blue-50 rounded-lg">
-                  <p className="font-medium text-blue-900">CSA Training</p>
-                  <p className="text-sm text-blue-700 mb-2">641/643 Trained</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-blue-600">CSAs Trained: 0 (approximate)</span>
-                    <Badge variant="outline" className="text-blue-600">0%</Badge>
-                  </div>
-                </div>
+                
                 <div className="p-3 bg-purple-50 rounded-lg">
                   <p className="font-medium text-purple-900">SAFT Training</p>
                   <div className="flex justify-between items-center">
