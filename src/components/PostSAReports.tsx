@@ -42,18 +42,6 @@ const PostSAReports = () => {
       period: "2025",
       districts: 14,
       type: "Comprehensive"
-    },
-    {
-      title: "Quarterly Compilation Q1",
-      period: "Apr-Jun 2025",
-      districts: 14,
-      type: "Quarterly"
-    },
-    {
-      title: "Annual Compilation 2023-24",
-      period: "2024-25",
-      districts: 14,
-      type: "Annual"
     }
   ];
 
