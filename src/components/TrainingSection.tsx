@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
 const TrainingSection = () => {
-  const trainingModules = [ 
+  const officialCirculars = [ 
     {
       title: "Social Audit & Team of Social Audit data",
       description: "Schools, Audit Steps, and Manpower for Each District",
@@ -13,7 +13,7 @@ const TrainingSection = () => {
       downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
     },
     {
-      title: "Official Circular – Social Audit of Schools (July 2025)",
+      title: "Official Circular – Social Audit of Schools",
       description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
       developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
       openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", 
@@ -29,7 +29,6 @@ const TrainingSection = () => {
   ];
 
   const resourcePackages = [
-   
     { name: "Resource Video 1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
     { name: "Resource Video 2", videoUrl: "https://www.youtube.com/embed/ysz5S6PUM-U" },
     { name: "Resource Video 3", videoUrl: "https://www.youtube.com/embed/abc123xyz" },
@@ -47,77 +46,36 @@ const TrainingSection = () => {
           </p>
         </div>
 
-        {/* Training Modules */}
-        <div className="mb-16">
-        
-          <div className="grid md:grid-cols-3 gap-6">
-            {trainingModules.map((module, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle className="text-lg text-center">{module.title}</CardTitle>
-                  <p className="text-gray-600 text-center">{module.description}</p>
-                  <p className="text-sm text-blue-600 text-center font-medium">Developed by: {module.developed}</p>
-                </CardHeader>
-                <CardContent className="flex flex-col gap-3">
-                  <div className="flex flex-col sm:flex-row gap-2">
-                    {module.openUrl && (
-                      <a href={module.openUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
-                        <Button className="w-full flex items-center justify-center">
-                          <Download className="h-4 w-4 mr-2" />
-                          Open 
-                        </Button>
-                      </a>
-                    )}
-                    {module.downloadUrl && (
-                      <a href={module.downloadUrl} target="_blank" rel="noopener noreferrer" className="flex-1" download>
-                        <Button className="w-full flex items-center justify-center" variant="outline">
-                          <Download className="h-4 w-4 mr-2" />
-                          Download PDF
-                        </Button>
-                      </a>
-                    )}
-                    {!module.openUrl && !module.downloadUrl && (
-                      <div className="text-center text-sm text-gray-500 w-full">
-                        Link placeholder — add URL in code.
-                      </div>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div> {/* ✅ close Training Modules div here */}
-
-        {/* Official circulars and letters */}
+        {/* Official circulars and letters (merged section) */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Official circulars and letters</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {trainingModules.map((module, index) => (
+            {officialCirculars.map((item, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
                 <CardHeader>
-                  <CardTitle className="text-lg text-center">{module.title}</CardTitle>
-                  <p className="text-gray-600 text-center">{module.description}</p>
-                  <p className="text-sm text-blue-600 text-center font-medium">Developed by: {module.developed}</p>
+                  <CardTitle className="text-lg text-center">{item.title}</CardTitle>
+                  <p className="text-gray-600 text-center">{item.description}</p>
+                  <p className="text-sm text-blue-600 text-center font-medium">Developed by: {item.developed}</p>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-3">
                   <div className="flex flex-col sm:flex-row gap-2">
-                    {module.openUrl && (
-                      <a href={module.openUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                    {item.openUrl && (
+                      <a href={item.openUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
                         <Button className="w-full flex items-center justify-center">
                           <Download className="h-4 w-4 mr-2" />
                           Open 
                         </Button>
                       </a>
                     )}
-                    {module.downloadUrl && (
-                      <a href={module.downloadUrl} target="_blank" rel="noopener noreferrer" className="flex-1" download>
+                    {item.downloadUrl && (
+                      <a href={item.downloadUrl} target="_blank" rel="noopener noreferrer" className="flex-1" download>
                         <Button className="w-full flex items-center justify-center" variant="outline">
                           <Download className="h-4 w-4 mr-2" />
                           Download PDF
                         </Button>
                       </a>
                     )}
-                    {!module.openUrl && !module.downloadUrl && (
+                    {!item.openUrl && !item.downloadUrl && (
                       <div className="text-center text-sm text-gray-500 w-full">
                         Link placeholder — add URL in code.
                       </div>
@@ -161,7 +119,6 @@ const TrainingSection = () => {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );
