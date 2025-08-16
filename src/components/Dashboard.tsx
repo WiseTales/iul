@@ -78,7 +78,7 @@ const Dashboard = () => {
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-green-100">Public Hearings Completed</p>
+                  <p className="text-green-100">Public Hearing (In Progress)/p>
                   <p className="text-3xl font-bold">0</p>
                   <p className="text-sm text-green-200">0% of audits</p>
                 </div>
