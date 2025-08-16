@@ -147,13 +147,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <Button 
-                className="w-full mt-4" 
-                onClick={() => handleDownloadExcel('resource-persons.xlsx')}
-              >
-                <Download className="h-4 w-4 mr-2" />
-                Download Resource Persons Data (Excel)
-              </Button>
+              
             </CardContent>
           </Card>
 
@@ -184,13 +178,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <Button 
-                className="w-full mt-4" 
-                onClick={() => handleDownloadExcel('training-status.xlsx')}
-              >
-                <Download className="h-4 w-4 mr-2" />
-                Download Training Status (Excel)
-              </Button>
+             
             </CardContent>
           </Card>
 
@@ -248,13 +236,7 @@ const Dashboard = () => {
                 </table>
               </div>
               
-              <Button 
-                className="w-full mt-4" 
-                onClick={() => handleDownloadExcel('social-audit-progress.xlsx')}
-              >
-                <Download className="h-4 w-4 mr-2" />
-                Download District-wise Progress (Excel)
-              </Button>
+              
             </CardContent>
           </Card>
 
