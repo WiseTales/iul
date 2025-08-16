@@ -29,7 +29,7 @@ const PhotoGallery = () => {
       type: "Photo",
       description: "Meeting with BEOs",
       image: "/B6.jpg",
-      category: "training"
+      category: "Training"
     },
      {
       title: "Field Visit",
@@ -41,59 +41,59 @@ const PhotoGallery = () => {
     },
      {
       title: "Field Visit",
-      date: "June 2025",
+
       type: "Photo",
       description: "Meeting with stakeholders ",
       image: "/B8.jpg",
-      category: "Public Hearing"
+      category: "Interaction"
     },
      {
-      title: "title here - Lucknow",
-      date: "June 2025",
+      title: "Field Visit",
+     
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Interaction with parents",
       image: "/B9.jpg",
-      category: "Public Hearing"
+      category: "Meeting"
     },
      {
-      title: "title - Lucknow",
-      date: "June 2025",
+      title: "Fieldf Visit",
+      
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Interaction with children",
       image: "/B10.jpg",
-      category: "Public Hearing"
+      category: "Visit"
     },  
     {
-      title: "title - Lucknow",
-      date: "June 2025",
+      title: "Training session",
+      
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Meeting with officers",
       image: "/B.jpg",
-      category: "Public Hearing"
+      category: "Training"
     },
     {
       title: "Field Visit Documentation",
-      date: "May 2025",
-      type: "Video",
+     
+      type: "Photo",
       description: "On-site verification of educational programs",
       image: "/B1.jpg",
       category: "Field Work"
     },
     {
-      title: "Stakeholder Meeting",
-      date: "April 2025",
+      title: "Meeting with BSA",
+      
       type: "Photo",
-      description: "Coordination meeting with education officials",
+      description: "Interaction",
       image: "/B2.jpg",
-      category: "Meetings"
+      category: "Meeting"
     },
     {
-      title: "Award Ceremony",
-      date: "March 2025",
+      title: "Field Visit",
+      
       type: "Photo",
       description: "Recognition for excellence in social audit",
       image: "/B3.jpg",
-      category: "Awards"
+      category: ""
     },
  {
       title: "Public Hearing - Lucknow",
