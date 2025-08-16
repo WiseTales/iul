@@ -27,7 +27,7 @@ const TrainingSection = () => {
 
   const resourcePackages = [
     { name: "Resource Video 1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-    { name: "Resource Video 2", videoUrl: "https://www.youtube.com/embed/ysz5S6PUM-U" },
+    { name: "Resource Video 2", videoUrl: "https://youtu.be/3QuLgo6WTBA?feature=shared" },
     { name: "Resource Video 3", videoUrl: "https://www.youtube.com/embed/abc123xyz" },
     { name: "Resource Video 4", videoUrl: "" } 
   ];
