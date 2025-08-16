@@ -9,13 +9,13 @@ const PhotoGallery = () => {
       title: "Social Audit Training Session",
     
       type: "Photo",
-      description: "Field Visit",
+      
       image: "/A.jpg",
       category: "Training"
     },
 
      {
-      title: "title here - Lucknow",
+      title: "titl - Lucknow",
       date: "June 2024",
       type: "Photo",
       description: "Community participation in social audit process",
