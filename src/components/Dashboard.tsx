@@ -30,7 +30,7 @@ const Dashboard = () => {
     percentage: district.alloted > 0 ? Math.round((district.completed / district.alloted) * 100) : 0
   }));
 
-  const handleDownloadExcel = (filename: string) => {
+  const handleDownloadExcel = (filename) => {
     const link = document.createElement('a');
     link.href = `/api/download/${filename}`;
     link.download = filename;
@@ -261,10 +261,7 @@ const Dashboard = () => {
                     </div>
                   </div> 
                 </div>
-            
-                </div>
               </div>
-            
             </CardContent>
           </Card>
         </div>
