@@ -25,17 +25,6 @@ const PostSAReports = () => {
 
   const reportCategories = [
     {
-      title: "Block-wise SA Reports",
-      icon: Building,
-      color: "bg-blue-500",
-      // Showing per-district block counts as individual entries (since actual block names aren't provided)
-      reports: districts.map((d) => ({
-        name: `${d.name} - ${d.blocks} Blocks`,
-        date: "2025-07-06",
-        schools: d.totalSchools
-      }))
-    },
-    {
       title: "District-wise Reports",
       icon: MapPin,
       color: "bg-green-500",
@@ -80,12 +69,12 @@ const PostSAReports = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Post Social Audit Reports</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Access Social Audit Reports organized Block-wise and District-wise, along with Compiled Reports of 14 districts.
+            Access Social Audit Reports organized District-wise, along with Compiled Reports of 14 districts.
           </p>
         </div>
 
         {/* Report Categories */}
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-1 gap-8 mb-16">
           {reportCategories.map((category, index) => {
             const IconComponent = category.icon;
             return (
@@ -160,20 +149,8 @@ const PostSAReports = () => {
         {/* Upload & Download Options */}
         <div className="mt-16 bg-white rounded-lg p-8 shadow-lg">
           <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Upload & Download Options</h3>
-          <p className="text-center text-gray-600 mb-6">CSA Data Entry Available in Cluster Report Format (CRF) and District Report Format (DRF)</p>
-          <div className="grid md:grid-cols-3 gap-6">
-            {/* Block-wise */}
-            <div className="flex flex-col items-center gap-3">
-              <h4 className="font-semibold text-gray-800 mb-2">CSA Data Entry — Cluster Report Format (CRF)</h4>
-              <Button className="w-full flex gap-2 bg-green-600 hover:bg-green-700">
-                <Download className="h-4 w-4" />
-                Download Block-wise
-              </Button>
-              <Button variant="outline" className="w-full flex gap-2">
-                <Upload className="h-4 w-4" />
-                Upload Block-wise
-              </Button>
-            </div>
+          <p className="text-center text-gray-600 mb-6">CSA Data Entry Available in District Report Format (DRF)</p>
+          <div className="grid md:grid-cols-1 gap-6">
             {/* District-wise */}
             <div className="flex flex-col items-center gap-3">
               <h4 className="font-semibold text-gray-800 mb-2">CSA Data Entry — District Report Format (DRF)</h4>
