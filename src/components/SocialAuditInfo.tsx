@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Eye, Users, FileCheck, Megaphone, Shield, TrendingUp } from "lucide-react";
+import { Eye, Users, FileCheck, Megaphone, Shield, TrendingUp, FileText, Download } from "lucide-react";
 
 const SocialAuditInfo = () => {
   const benefits = [
@@ -30,6 +30,16 @@ const SocialAuditInfo = () => {
     }
   ];
 
+  const downloadItem = {
+    title: "Guidelines for Social Audit of Samagra Shiksha",
+    type: "PDF Document",
+    size: "Official Guidelines",
+    category: "Guidelines",
+    icon: FileText,
+    description: "Comprehensive guidelines for conducting social audits in educational institutions",
+    downloadUrl: "https://drive.google.com/file/d/1GlrHrMf5mx2a-v7ot1DV4vQrZ-QYLQMb/view?usp=sharing"
+  };
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -41,6 +51,41 @@ const SocialAuditInfo = () => {
               A Social Audit is a community-led evaluation process that ensures transparency, 
               accountability, and participatory monitoring of educational program implementation.
             </p>
+            
+            {/* Download Box */}
+            <div className="mb-12">
+              <Card className="bg-orange-50 border-orange-200 hover:shadow-lg transition-shadow duration-300">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-start space-x-4">
+                      <FileText className="h-10 w-10 text-orange-600 mt-1" />
+                      <div className="text-left">
+                        <h3 className="font-semibold text-lg text-gray-900 mb-1">
+                          {downloadItem.title}
+                        </h3>
+                        <p className="text-gray-600 mb-2">{downloadItem.description}</p>
+                        <div className="flex items-center space-x-4 text-sm text-gray-500">
+                          <span className="bg-orange-100 px-2 py-1 rounded text-orange-700">
+                            {downloadItem.category}
+                          </span>
+                          <span>{downloadItem.type}</span>
+                          <span>{downloadItem.size}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      href={downloadItem.downloadUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors duration-200"
+                    >
+                      <Download className="h-4 w-4" />
+                      <span>Download</span>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
             
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <Card className="bg-blue-50 border-blue-200">
