@@ -15,7 +15,7 @@ const PhotoGallery = () => {
     },
 
      {
-      title: "Field Visit",
+      title: "Field Visit",  
      
       type: "Photo",
       description: "Community participation in social audit process",
