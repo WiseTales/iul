@@ -7,7 +7,7 @@ import { BarChart3, Download, Filter, MapPin, TrendingUp, AlertCircle, Users, Gr
 
 const Dashboard = () => {
  const districtData = [
-  { name: "Ambedkar Nagar", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 450 },
+  { name: "Ambedkar Nagar", audits: 0, completed: 450, issues: 0, resolved: 0, alloted: 450 },
   { name: "Amethi", audits: 0, completed: 380, issues: 0, resolved: 0, alloted: 380 },
   { name: "Ayodhya", audits: 0, completed: 520, issues: 0, resolved: 0, alloted: 520 },
   { name: "Bahraich", audits: 0, completed: 620, issues: 0, resolved: 0, alloted: 620 },
