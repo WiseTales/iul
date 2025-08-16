@@ -8,14 +8,14 @@ const TrainingSection = () => {
     {
       title: "Social Audit & Team of Social Audit data",
       description: "Schools, Audit Steps, and Manpower for Each District",
-      developed: "Prepared by Social Audit Team",
+      developed: "Social Audit Team",
       openUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true",
       downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
     },
     {
       title: "Official Circular – Social Audit of Schools (July 2025)",
       description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
-      developed: "Issued by Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
+      developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
       openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", 
       downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH"
     },
