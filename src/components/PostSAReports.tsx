@@ -56,9 +56,7 @@ const PostSAReports = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Post Social Audit Reports</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Access Social Audit Reports organized District-wise, along with Compiled Reports of 14 districts.
-          </p>
+          
         </div>
 
         {/* Report Categories */}
