@@ -16,7 +16,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1GlrHrMf5mx2a-v7ot1DV4vQrZ-QYLQMb/view?usp=sharing"
     },
     {
-      title: "Shahjahanpur Audit Plan",
+      title: "Shahjahanpur Social Audit Plan",
       type: "Document Template",
       size: "Template",
       category: "Templates",
@@ -25,7 +25,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/10m-CrdRvekzjPRcz1FsdOtq8kD_nCDEv/view?usp=sharing"
     },
     {
-      title: "Lakhimpur Kheri Audit Plan ",
+      title: "Lakhimpur Kheri Social Audit Plan ",
       type: "PDF Document",
       size: "Framework",
       category: "Guidelines",
@@ -34,7 +34,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1HzsDqIAY1a8ROwNCkNOe1EXIwGUQJbBk/view?usp=sharing"
     },
     {
-      title: "Ayodhya Audit plan ",
+      title: "Ayodhya Social  Audit plan ",
       type: "Training Material",
       size: "Manual",
       category: "Training",
@@ -43,7 +43,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1JZHf5Jlww_NLF4O7sJeNVxIRRjYf2jOz/view?usp=sharing"
     },
     {
-      title: "Bareilly Audit plan ",
+      title: "Bareilly Social Audit plan ",
       type: "PDF Guide",
       size: "Guide",
       category: "Policy",
@@ -52,7 +52,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1Lmor23d89wXhYu9-0ab0s4JiHk6YadO8/view?usp=sharing"
     },
     {
-      title: "Shrawsti Audit plan ",
+      title: "Shrawsti Social Audit plan ",
       type: "Form Templates",
       size: "Forms",
       category: "Templates",
@@ -61,7 +61,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1OuzHSURDs61cAWdrxqb6aUjiXbfFW0H0/view?usp=sharing"
     },
     {
-      title: "Ambedkar Nagar Audit Plan ",
+      title: "Ambedkar Nagar Social Audit Plan ",
       type: "Assessment Tool",
       size: "Framework",
       category: "Guidelines",
@@ -70,7 +70,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1PFY6iMhMVVN8iBnQzD7B_hjfGapyxuJ4/view?usp=sharing"
     },
     {   
-      title: "Gonda Audit Plan ",
+      title: "Gonda Social Audit Plan ",
       type: "Engagement Manual",
       size: "Guide",
       category: "Training",
@@ -79,7 +79,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1RoTJQ9sX2Zvqt7YxBHXZc2xvD3AuwgcM/view?usp=sharing"
     },
     {
-      title: "Sultanpur Audit Plan ",
+      title: "Sultanpur Social Audit Plan ",
       type: "Reference Manual",
       size: "Manual",
       category: "Guidelines",
@@ -88,7 +88,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1TM_qeOuf2m3yoKMVkogce8EgwDIUKMwP/view?usp=sharing"
     },
     {
-      title: "Balrampur Audit Plan ",
+      title: "Balrampur Social Audit Plan ",
       type: "Toolkit",
       size: "Resource Kit",
       category: "Training",
@@ -97,7 +97,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1V-qypU-vL4jYbo6DitlaWdmUwTdaA8Sn/view?usp=sharing"
     },
     {
-      title: "Bahraich Audit plan ",
+      title: "Bahraich Social Audit plan ",
       type: "Standards Document",
       size: "Standards",
       category: "Policy",
@@ -106,7 +106,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1ctmzSFnjHl-qGVBK_D4ijhJL3yUeo7JP/view?usp=sharing"
     },
     {
-      title: "Raebareli Audit Plan ",
+      title: "Raebareli Social Audit Plan ",
       type: "Methodology Guide",
       size: "Methods",
       category: "Guidelines",
@@ -115,7 +115,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1j_kwlvpk79CLUfTsgGDkS33h4mOWMund/view?usp=sharing"
     },
     {
-      title: "Sitapur  Audit Plan",
+      title: "Sitapur  Social Audit Plan",
       type: "Protocol Document",
       size: "Protocols",
       category: "Policy",
@@ -124,7 +124,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1nrrxTfDDRcujn6rgWua5M2bwEUCxVyla/view?usp=sharing"
     },
     {
-      title: "Amethi Audit plan",
+      title: "Amethi Social Audit plan",
       type: "Reporting Guide",
       size: "Guidelines",
       category: "Guidelines",
@@ -133,7 +133,7 @@ const ResourceCenter = () => {
       downloadUrl: "https://drive.google.com/file/d/1skW8fsYc7RB34MV51-aAqgLThNHbbM0p/view?usp=sharing"
     },
     {
-      title: "Barabanki Audit Plan ",
+      title: "Barabanki Social Audit Plan ",
       type: "Best Practices",
       size: "Compendium",
       category: "Training",
