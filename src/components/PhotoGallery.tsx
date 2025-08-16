@@ -62,7 +62,7 @@ const PhotoGallery = () => {
       description: "Community participation in social audit process",
       image: "/B10.jpg",
       category: "Public Hearing"
-    },
+    },  
     {
       title: "title - Lucknow",
       date: "June 2025",
