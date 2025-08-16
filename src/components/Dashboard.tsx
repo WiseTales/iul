@@ -297,11 +297,11 @@ const Dashboard = () => {
                 </div>
                 <div className="p-3 bg-orange-50 rounded-lg">
                   <p className="font-medium text-orange-900">CSA Level</p>
-                  <p className="text-sm text-orange-700 mb-2">0</p>
+                  <p className="text-sm text-orange-700 mb-2">0%</p>
                   <div className="flex justify-between items-center">
                     <span className="text-sm text-orange-700">CSA-wise Public Hearings</span>
                     <div className="text-right">
-                      <div className="text-lg font-bold text-orange-600">{'{variable}'}</div>
+                      <div className="text-lg font-bold text-orange-600">0%</div>
                       <div className="text-xs text-orange-500">Average per CSA</div>
                     </div>
                   </div>
