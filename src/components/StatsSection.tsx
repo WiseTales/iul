@@ -34,8 +34,8 @@ const StatsSection = () => {
                   <div className="text-sm text-gray-600">Total Blocks</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-orange-600">1,287</div>
-                  <div className="text-sm text-gray-600">Total Schools Covered (20%)</div>
+                  <div className="text-2xl font-bold text-orange-600">6,436</div>
+                  <div className="text-sm text-gray-600">Total Schools Covered (100%)</div>
                 </div>
               </div>
             </CardContent>
