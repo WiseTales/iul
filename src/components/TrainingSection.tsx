@@ -20,7 +20,7 @@ const TrainingSection = () => {
       downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH"
     },
     {
-      title: "Module No: 3",
+      title: "Training Modules developed by NCERT",
       description: "Reporting and Documentation",
       developed: "NCERT, New Delhi",
       openUrl: "", 
