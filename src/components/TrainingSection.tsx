@@ -26,28 +26,9 @@ const TrainingSection = () => {
       openUrl: "", 
       downloadUrl: "" 
     },
-    // Duplicate entries for second row (since you want 6 cards)
-    {
-      title: "Social Audit & Team of Social Audit data",
-      description: "Schools, Audit Steps, and Manpower for Each District",
-      developed: "Social Audit Team",
-      openUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true",
-      downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
-    },
-    {
-      title: "Official Circular – Social Audit of Schools",
-      description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
-      developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
-      openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", 
-      downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH"
-    },
-    {
-      title: "Training Modules developed by NCERT", 
-      description: "Reporting and Documentation",
-      developed: "NCERT, New Delhi",
-      openUrl: "", 
-      downloadUrl: "" 
-    }
+    // Add new entries here
+   
+   
   ];
 
   const resourcePackages = [
@@ -80,7 +61,7 @@ const TrainingSection = () => {
                   <CardTitle className="text-lg text-center">{module.title}</CardTitle>
                   <p className="text-gray-600 text-center">{module.description}</p>
                   <p className="text-sm text-blue-600 text-center font-medium">
-                    Developed by: {module.developed}
+                    Issued by: {module.developed}
                   </p>
                 </CardHeader>
                 <CardContent className="flex flex-col gap-3">
