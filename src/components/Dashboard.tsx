@@ -187,7 +187,7 @@ const Dashboard = () => {
                 </div>
                 <div className="p-3 bg-blue-50 rounded-lg">
                   <p className="font-medium text-blue-900">CSA Training</p>
-                  <p className="text-sm text-blue-700 mb-2">0 Trained</p>
+                  <p className="text-sm text-blue-700 mb-2">641/643 Trained</p>
                   <div className="flex justify-between items-center">
                     <span className="text-blue-600">CSAs Trained: 0 (approximate)</span>
                     <Badge variant="outline" className="text-blue-600">0%</Badge>
