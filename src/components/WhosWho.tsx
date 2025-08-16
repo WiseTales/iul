@@ -47,7 +47,7 @@ const WhosWho = () => {
       email: "headeng@iul.ac.in",
     },
     {
-      name: "Dr. Aareena Naznine",
+      name: "Dr. Aareena Naznin",
       position: "Assistant Professor",
       organization: "Integral University",
       image: "/61.jpg",
