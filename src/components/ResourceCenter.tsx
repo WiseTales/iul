@@ -143,19 +143,7 @@ const ResourceCenter = () => {
     }
   ];
 
-  const planSections = [
   
-    
-    {
-      title: "Public Hearing Plan (In Progress)",
-      type: "PDF Document",
-      size: "Official Plan",
-      category: "Hearing",
-      icon: FileText,
-      description: "Guidelines and procedures for conducting public hearings",
-      downloadUrl: "#"
-    }
-  ];
 
   const handleDownload = (url: string) => {
     window.open(url, '_blank');
@@ -165,16 +153,13 @@ const ResourceCenter = () => {
     <section id="resources" className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Resource Center</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Access comprehensive resources, guidelines, templates, and training materials 
-            for effective social audit implementation.
-          </p>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Comprehensive Social audit implementation plan</h2>
+        
         </div>
 
         {/* Available Resources */}
         <div className="mb-16">
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Available Resources</h3>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">District-wise social audit plan</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {resources.map((resource, index) => {
               const IconComponent = resource.icon;
