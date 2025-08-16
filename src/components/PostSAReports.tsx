@@ -30,7 +30,7 @@ const PostSAReports = () => {
       color: "bg-green-500",
       reports: districts.map((d) => ({
         name: `${d.name} District`,
-        date: "2025-07-06",
+       
         schools: d.totalSchools
       }))
     }
@@ -46,11 +46,13 @@ const PostSAReports = () => {
   ];
 
   const handleDownloadExcel = (filename: string) => {
-    const link = document.createElement('a');
-    link.href = `/api/download/${filename}`;
-    link.download = filename;
-    link.click();
-  };
+  const link = document.createElement('a');
+  link.href = "https://drive.google.com/file/d/1Tw_JY4Kb0a-F7HsKbqZsstGhxBvhCh2g/view?usp=sharing";
+  link.target = "_blank"; // opens in new tab
+  link.rel = "noopener noreferrer"; 
+  link.click();
+};
+
   return (
     <section id="reports" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
