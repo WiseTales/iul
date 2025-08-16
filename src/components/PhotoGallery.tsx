@@ -15,16 +15,16 @@ const PhotoGallery = () => {
     },
 
      {
-      title: "titl - Lucknow",
-      date: "June 2024",
+      title: "Field Visit",
+     
       type: "Photo",
       description: "Community participation in social audit process",
       image: "/B5.jpg",
-      category: "Public Hearing"
+      category: "Training"
     },
 
      {
-      title: "title here- Lucknow",
+      title: "Field Visit",
       date: "June 2025",
       type: "Photo",
       description: "Community participation in social audit process",
