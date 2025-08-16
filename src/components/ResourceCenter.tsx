@@ -144,15 +144,7 @@ const ResourceCenter = () => {
   ];
 
   const planSections = [
-    {
-      title: "Training Plan",
-      type: "PDF Document",
-      size: "Official Plan",
-      category: "Training",
-      icon: BookOpen,
-      description: "Comprehensive training plan for audit team members and stakeholders",
-      downloadUrl: "#"
-    },
+  
     
     {
       title: "Public Hearing Plan (In Progress",
