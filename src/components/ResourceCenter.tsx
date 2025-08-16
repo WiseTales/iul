@@ -163,7 +163,7 @@ const ResourceCenter = () => {
       downloadUrl: "#"
     },
     {
-      title: "Public Hearing Plan",
+      title: "Public Hearing Plan (In Progress",
       type: "PDF Document",
       size: "Official Plan",
       category: "Hearing",
