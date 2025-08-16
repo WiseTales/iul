@@ -199,7 +199,7 @@ const Dashboard = () => {
                 </div>
                 <div className="flex justify-between items-center mb-4">
                   <span className="font-medium">Overall Completion</span>
-                  <span className="text-lg font-bold text-green-600">{'{overall_pct}'}%</span>
+                  <span className="text-lg font-bold text-green-600">100%</span>
                 </div>
               </div>
               
