@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
 
 const TrainingSection = () => {
-  const trainingModules = [
+  const trainingModules = [ 
     {
       title: "Social Audit & Team of Social Audit data",
       description: "Schools, Audit Steps, and Manpower for Each District",
