@@ -167,15 +167,67 @@ const PhotoGallery = () => {
     setMediaIndex((prev) => (prev - 1 + mediaImages.length) % mediaImages.length);
   };
 
+  const newsLinks = [
+    "https://www.newsganj.com/yogi-government-is-training-csa-in-all-the-districts-of-the-state/",
+    "https://theprint.in/india/up-govt-launches-training-programme-to-ensure-transparency-in-education-scheme-implementation/2591069/",
+    "https://www.shauryatimes.com/news/183113",
+    "https://swadeshtoday.com/yogi-government-is-training-csa-in-all-districts-of-the-state/",
+    "https://www.etvbharat.com/hi/!state/social-audit-conducted-check-transparency-quality-26-thousand-720-basic-schools-state-action-plan-will-be-prepared-uttar-pradesh-news-ups25011300727",
+    "https://deshbandhump.com/%E0%A4%AA%E0%A4%B0%E0%A4%BF%E0%A4%B7%E0%A4%A6%E0%A5%80%E0%A4%AF-%E0%A4%B5%E0%A4%BF%E0%A4%A6%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B2%E0%A4%AF%E0%A5%8B%E0%A4%82-%E0%A4%AE%E0%A5%87%E0%A4%82-%E0%A4%AA/"
+  ];
+
   return (
     <section id="gallery" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Photo Gallery & Media Coverage</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Explore our visual documentation of social audit activities and media coverage
-            highlighting the impact of our transparency and accountability initiatives.
-          </p>
+          
+          {/* Big images - yogi1.jpg and yogi2.jpg */}
+          <div className="flex justify-center gap-6 mb-6">
+            <img
+              src="/yogi1.jpg"
+              alt="Yogi 1"
+              className="w-80 h-60 object-cover rounded-lg shadow-lg"
+            />
+            <img
+              src="/yogi2.jpg"
+              alt="Yogi 2"
+              className="w-80 h-60 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          
+          {/* Smaller images - sandeep1.jpg and sandeep2.jpg */}
+          <div className="flex justify-center gap-6 mb-8">
+            <img
+              src="/sandeep1.jpg"
+              alt="Sandeep 1"
+              className="w-60 h-40 object-cover rounded-lg shadow-lg"
+            />
+            <img
+              src="/sandeep2.jpg"
+              alt="Sandeep 2"
+              className="w-60 h-40 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          
+          {/* News Links */}
+          <div className="max-w-4xl mx-auto mb-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Media Coverage Links:</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
+              {newsLinks.map((link, index) => (
+                <div key={index} className="break-all">
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 text-sm underline"
+                  >
+                    {index + 1}. {link}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Photo Gallery */}
