@@ -25,25 +25,25 @@ const PhotoGallery = () => {
 
      {
       title: "Field Visit",
-      date: "June 2025",
+    
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Meeting with BEOs",
       image: "/B6.jpg",
-      category: "Public Hearing"
+      category: "training"
     },
      {
-      title: "title here - Lucknow",
-      date: "June 2025",
+      title: "Field Visit",
+     
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Meeting with BSAs",
       image: "/B7.jpg",
-      category: "Public Hearing"
+      category: "Training"
     },
      {
-      title: "title here - Lucknow",
+      title: "Field Visit",
       date: "June 2025",
       type: "Photo",
-      description: "Community participation in social audit process",
+      description: "Meeting with stakeholders ",
       image: "/B8.jpg",
       category: "Public Hearing"
     },
