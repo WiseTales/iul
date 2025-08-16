@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
@@ -37,44 +36,34 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')} 
+                <a 
+                  href="https://www.iul.ac.in/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  About Samagra Shiksha
-                </button>
+                  Integral University
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('process')} 
+                <a 
+                  href="https://www.education.gov.in/" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Audit Process
-                </button>
+                  Ministry of Education
+                </a>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('dashboard')} 
+                <a 
+                  href="https://basiceducation.up.gov.in/hi" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  Dashboard
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('training')} 
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Training Materials
-                </button>
-              </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('resources')} 
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Resources
-                </button>
+                  UP Basic Education
+                </a>
               </li>
             </ul>
           </div>
