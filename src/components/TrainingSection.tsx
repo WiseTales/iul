@@ -13,19 +13,13 @@ const TrainingSection = () => {
       downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
     },
     {
-      title: "Official Circular – Social Audit of Schools",
+      title: "Official Circulars – Social Audit of Schools",
       description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
       developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
       openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", 
       downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH"
     },
-    {
-      title: "Training Modules developed by NCERT", 
-      description: "Reporting and Documentation",
-      developed: "NCERT, New Delhi",
-      openUrl: "", 
-      downloadUrl: "" 
-    },
+   
     // Add new entries here
    
    
