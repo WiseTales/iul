@@ -7,22 +7,27 @@ import { BarChart3, Download, Filter, MapPin, TrendingUp, AlertCircle, Users, Gr
 
 const Dashboard = () => {
  const districtData = [
-  { name: "Ambedkar Nagar", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Amethi", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Ayodhya", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Bahraich", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Balrampur", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Barabanki", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Bareilly", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Gonda", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Lakhimpur Kheri", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Raebareli", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Shahjahanpur", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Shravasti", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Sitapur", audits: 0, completed: 0, issues: 0, resolved: 0 },
-  { name: "Sultanpur", audits: 0, completed: 0, issues: 0, resolved: 0 }
+  { name: "Ambedkar Nagar", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 450 },
+  { name: "Amethi", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 380 },
+  { name: "Ayodhya", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 520 },
+  { name: "Bahraich", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 620 },
+  { name: "Balrampur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 340 },
+  { name: "Barabanki", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 480 },
+  { name: "Bareilly", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 750 },
+  { name: "Gonda", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 590 },
+  { name: "Lakhimpur Kheri", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 680 },
+  { name: "Raebareli", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 420 },
+  { name: "Shahjahanpur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 560 },
+  { name: "Shravasti", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 290 },
+  { name: "Sitapur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 640 },
+  { name: "Sultanpur", audits: 0, completed: 0, issues: 0, resolved: 0, alloted: 406 }
 ];
 
+  // Calculate percentage for each district
+  const districtDataWithPercentage = districtData.map(district => ({
+    ...district,
+    percentage: district.alloted > 0 ? Math.round((district.completed / district.alloted) * 100) : 0
+  }));
 
   const handleDownloadExcel = (filename: string) => {
     const link = document.createElement('a');
@@ -225,14 +230,41 @@ const Dashboard = () => {
                   <span className="text-lg font-bold text-green-600">{'{overall_pct}'}%</span>
                 </div>
               </div>
-              <div className="space-y-2">
-                {districtData.map((district, index) => (
-                  <div key={index} className="flex justify-between items-center p-2 bg-gray-50 rounded">
-                    <span className="text-sm font-medium">{district.name}</span>
-                    <span className="text-sm text-gray-600">{district.completed}%</span>
-                  </div>
-                ))}
+              
+              {/* Table with 4 columns */}
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b bg-gray-50">
+                      <th className="text-left p-2 font-medium">District</th>
+                      <th className="text-center p-2 font-medium">Alloted</th>
+                      <th className="text-center p-2 font-medium">Completed</th>
+                      <th className="text-center p-2 font-medium">Percentage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {districtDataWithPercentage.map((district, index) => (
+                      <tr key={index} className="border-b hover:bg-gray-50">
+                        <td className="p-2 font-medium">{district.name}</td>
+                        <td className="text-center p-2">{district.alloted}</td>
+                        <td className="text-center p-2">{district.completed}</td>
+                        <td className="text-center p-2">
+                          <span className={`px-2 py-1 rounded text-xs font-medium ${
+                            district.percentage === 0 
+                              ? 'bg-red-100 text-red-800' 
+                              : district.percentage < 50 
+                                ? 'bg-yellow-100 text-yellow-800'
+                                : 'bg-green-100 text-green-800'
+                          }`}>
+                            {district.percentage}%
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
+              
               <Button 
                 className="w-full mt-4" 
                 onClick={() => handleDownloadExcel('social-audit-progress.xlsx')}
