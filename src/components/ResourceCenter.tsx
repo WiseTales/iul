@@ -7,152 +7,33 @@ import { Download, FileText, Video, BookOpen, HelpCircle, ExternalLink } from "l
 const ResourceCenter = () => {
   const resources = [
     {
-      title: "Guidelines for Social Audit of Samagra Shiksha",
+      title: "Training Plan",
       type: "PDF Document",
-      size: "Official Guidelines",
-      category: "Guidelines",
-      icon: FileText,
-      description: "Comprehensive guidelines for conducting social audits in educational institutions",
-      downloadUrl: "https://drive.google.com/file/d/1GlrHrMf5mx2a-v7ot1DV4vQrZ-QYLQMb/view?usp=sharing"
+      size: "Official Plan",
+      category: "Training",
+      icon: BookOpen,
+      description: "Comprehensive training plan for audit team members and stakeholders",
+      downloadUrl: "#"
     },
     {
-      title: "Shahjahanpur Social Audit Plan 07-07-2025",
-      type: "Document Template",
-      size: "Template",
-      category: "Templates",
-      icon: FileText,
-      description: "Standardized template for social audit reporting",
-      downloadUrl: "https://drive.google.com/file/d/10m-CrdRvekzjPRcz1FsdOtq8kD_nCDEv/view?usp=sharing"
-    },
-    {
-      title: "Lakhimpur Kheri Social Audit Plan 07-07-2025",
+      title: "Social Audit Plan",
       type: "PDF Document",
-      size: "Framework",
-      category: "Guidelines",
+      size: "Official Plan",
+      category: "Audit",
       icon: FileText,
-      description: "Comprehensive checklist framework for systematic auditing",
-      downloadUrl: "https://drive.google.com/file/d/1HzsDqIAY1a8ROwNCkNOe1EXIwGUQJbBk/view?usp=sharing"
+      description: "Detailed social audit implementation plan and methodology",
+      downloadUrl: "#"
     },
     {
-      title: "Ayodhya Social Audit plan 07-07-2025",
-      type: "Training Material",
-      size: "Manual",
-      category: "Training",
-      icon: BookOpen,
-      description: "Complete training manual for Social Audit team members",
-      downloadUrl: "https://drive.google.com/file/d/1JZHf5Jlww_NLF4O7sJeNVxIRRjYf2jOz/view?usp=sharing"
-    },
-    {
-      title: "Bareilly Social Audit plan 07-07-2025 ",
-      type: "PDF Guide",
-      size: "Guide",
-      category: "Policy",
+      title: "Public Hearing Plan",
+      type: "PDF Document",
+      size: "Official Plan",
+      category: "Hearing",
       icon: FileText,
-      description: "Guidelines for financial compliance in educational audits",
-      downloadUrl: "https://drive.google.com/file/d/1Lmor23d89wXhYu9-0ab0s4JiHk6YadO8/view?usp=sharing"
-    },
-    {
-      title: "Shrawsti Social Audit plan 07-07-2025",
-      type: "Form Templates",
-      size: "Forms",
-      category: "Templates",
-      icon: FileText,
-      description: "Standardized forms for data collection during audits",
-      downloadUrl: "https://drive.google.com/file/d/1OuzHSURDs61cAWdrxqb6aUjiXbfFW0H0/view?usp=sharing"
-    },
-    {
-      title: "Ambedkar Nagar Social Audit Plan 07-07-2025",
-      type: "Assessment Tool",
-      size: "Framework",
-      category: "Guidelines",
-      icon: FileText,
-      description: "Framework for assessing quality in educational programs",
-      downloadUrl: "https://drive.google.com/file/d/1PFY6iMhMVVN8iBnQzD7B_hjfGapyxuJ4/view?usp=sharing"
-    },
-    {   
-      title: "Gonda Social Audit Plan 07-07-2025",
-      type: "Engagement Manual",
-      size: "Guide",
-      category: "Training",
-      icon: BookOpen,
-      description: "Guidelines for effective stakeholder engagement",
-      downloadUrl: "https://drive.google.com/file/d/1RoTJQ9sX2Zvqt7YxBHXZc2xvD3AuwgcM/view?usp=sharing"
-    },
-    {
-      title: "Sultanpur Social Audit Plan 07-07-2025",
-      type: "Reference Manual",
-      size: "Manual",
-      category: "Guidelines",
-      icon: FileText,
-      description: "Key performance indicators for educational programs",
-      downloadUrl: "https://drive.google.com/file/d/1TM_qeOuf2m3yoKMVkogce8EgwDIUKMwP/view?usp=sharing"
-    },
-    {
-      title: "Balrampur Social Audit Plan 07-07-2025",
-      type: "Toolkit",
-      size: "Resource Kit",
-      category: "Training",
-      icon: BookOpen,
-      description: "Tools and techniques for community participation",
-      downloadUrl: "https://drive.google.com/file/d/1V-qypU-vL4jYbo6DitlaWdmUwTdaA8Sn/view?usp=sharing"
-    },
-    {
-      title: "Bahraich Social Audit plan 07-07-2025",
-      type: "Standards Document",
-      size: "Standards",
-      category: "Policy",
-      icon: FileText,
-      description: "Standards and protocols for maintaining Social audit records",
-      downloadUrl: "https://drive.google.com/file/d/1ctmzSFnjHl-qGVBK_D4ijhJL3yUeo7JP/view?usp=sharing"
-    },
-    {
-      title: "Raebareli Social Audit Plan 07-07-2025 ",
-      type: "Methodology Guide",
-      size: "Methods",
-      category: "Guidelines",
-      icon: FileText,
-      description: "Methods for assessing impact of educational programs",
-      downloadUrl: "https://drive.google.com/file/d/1j_kwlvpk79CLUfTsgGDkS33h4mOWMund/view?usp=sharing"
-    },
-    {
-      title: "Sitapur Social Audit Plan 07-07-2025",
-      type: "Protocol Document",
-      size: "Protocols",
-      category: "Policy",
-      icon: FileText,
-      description: "Protocols for ensuring transparency in Social audit processes",
-      downloadUrl: "https://drive.google.com/file/d/1nrrxTfDDRcujn6rgWua5M2bwEUCxVyla/view?usp=sharing"
-    },
-    {
-      title: "Amethi Social Audit plan .07-07-2025",
-      type: "Reporting Guide",
-      size: "Guidelines",
-      category: "Guidelines",
-      icon: FileText,
-      description: "Comprehensive guidelines for Social audit report preparation",
-      downloadUrl: "https://drive.google.com/file/d/1skW8fsYc7RB34MV51-aAqgLThNHbbM0p/view?usp=sharing"
-    },
-    {
-      title: "Barabanki Social Audit Plan 07-07-2025",
-      type: "Best Practices",
-      size: "Compendium",
-      category: "Training",
-      icon: BookOpen,
-      description: "Collection of best practices in social audit implementation",
-      downloadUrl: "https://drive.google.com/file/d/1yP5BzdGzsp2igClue8p3IFbVEGi2cuHr/view?usp=sharing"
+      description: "Guidelines and procedures for conducting public hearings",
+      downloadUrl: "#"
     }
   ];
-
-  const categories = [
-    { name: "Guidelines", count: 6, color: "bg-blue-100 text-blue-800" },
-    { name: "Letters", count: 8, color: "bg-green-100 text-green-800" },
-    { name: "Circulars", count: 12, color: "bg-purple-100 text-purple-800" },
-    { name: "Plans", count: 15, color: "bg-orange-100 text-orange-800" },
-    { name: "Reports", count: 25, color: "bg-red-100 text-red-800" },
-    { name: "Modules", count: 3, color: "bg-indigo-100 text-indigo-800" }
-  ];
-
-  
 
   const handleDownload = (url: string) => {
     window.open(url, '_blank');
@@ -168,8 +49,6 @@ const ResourceCenter = () => {
             for effective social audit implementation.
           </p>
         </div>
-
-       
 
         {/* Available Resources */}
         <div className="mb-16">
@@ -216,37 +95,6 @@ const ResourceCenter = () => {
                 </Card>
               );
             })}
-          </div>
-        </div>
-
-        {/* Past Reports */}
-        <div>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Post Social Audit Reports</h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {pastReports.map((report, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle className="text-lg">{report.title}</CardTitle>
-                  <div className="text-sm text-gray-600">{report.period}</div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-2 mb-4">
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Districts:</span>
-                      <span className="font-medium">{report.districts}</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-gray-600">Schools:</span>
-                      <span className="font-medium">{report.schools.toLocaleString()}</span>
-                    </div>
-                  </div>
-                  <Button className="w-full" size="sm">
-                    <Download className="h-4 w-4 mr-2" />
-                    Download Report
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </div>
