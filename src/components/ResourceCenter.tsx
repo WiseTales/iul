@@ -153,15 +153,7 @@ const ResourceCenter = () => {
       description: "Comprehensive training plan for audit team members and stakeholders",
       downloadUrl: "#"
     },
-    {
-      title: "Social Audit Plan",
-      type: "PDF Document",
-      size: "Official Plan",
-      category: "Audit",
-      icon: FileText,
-      description: "Detailed social audit implementation plan and methodology",
-      downloadUrl: "#"
-    },
+    
     {
       title: "Public Hearing Plan (In Progress",
       type: "PDF Document",
