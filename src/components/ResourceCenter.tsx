@@ -6,15 +6,7 @@ import { Download, FileText, Video, BookOpen, HelpCircle, ExternalLink } from "l
 
 const ResourceCenter = () => {
   const resources = [
-    {
-      title: "Guidelines for Social Audit of Samagra Shiksha",
-      type: "PDF Document",
-      size: "Official Guidelines",
-      category: "Guidelines",
-      icon: FileText,
-      description: "Comprehensive guidelines for conducting social audits in educational institutions",
-      downloadUrl: "https://drive.google.com/file/d/1GlrHrMf5mx2a-v7ot1DV4vQrZ-QYLQMb/view?usp=sharing"
-    },
+    
     {
       title: "Shahjahanpur Social Audit Plan",
       type: "Document Template",
