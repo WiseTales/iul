@@ -307,13 +307,7 @@ const Dashboard = () => {
                   </div>
                 </div>
               </div>
-              <Button 
-                className="w-full mt-4" 
-                onClick={() => handleDownloadExcel('public-hearings.xlsx')}
-              >
-                <Download className="h-4 w-4 mr-2" />
-                Download Public Hearings Data (Excel)
-              </Button>
+            
             </CardContent>
           </Card>
         </div>
