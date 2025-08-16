@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -159,7 +158,10 @@ const ResourceCenter = () => {
     { title: "Government Circulars", type: "Circulars", category: "Circulars", districts: 18, schools: 3200, period: "2025-26" },
     { title: "District Audit Plans", type: "Plans", category: "Plans", districts: 20, schools: 4500, period: "2025-26" },
     { title: "Compiled Audit Reports", type: "Reports", category: "Reports", districts: 25, schools: 5800, period: "2025-26" },
-    { title: "Training Modules by NCERT", type: "Modules", category: "Modules", districts: 10, schools: 1200, period: "2025-26" }
+    { title: "Training Modules by NCERT", type: "Modules", category: "Modules", districts: 10, schools: 1200, period: "2025-26" },
+    { title: "Training Plan", type: "Training Plan", category: "Training Plan", districts: 22, schools: 4800, period: "2025-26" },
+    { title: "Social Audit Plan", type: "Social Audit Plan", category: "Social Audit Plan", districts: 28, schools: 6200, period: "2025-26" },
+    { title: "Public Hearing Plan", type: "Public Hearing Plan", category: "Public Hearing Plan", districts: 19, schools: 3900, period: "2025-26" }
   ];
 
   const handleDownload = (url: string) => {
