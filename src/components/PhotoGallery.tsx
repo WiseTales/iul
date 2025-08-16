@@ -7,9 +7,9 @@ const PhotoGallery = () => {
   const galleryItems = [
     {
       title: "Social Audit Training Session",
-      date: "July 2025",
+    
       type: "Photo",
-      description: "Capacity building program for XPTs and CSAs",
+      description: "Field Visit",
       image: "/A.jpg",
       category: "Training"
     },
