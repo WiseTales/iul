@@ -152,17 +152,7 @@ const ResourceCenter = () => {
     { name: "Modules", count: 3, color: "bg-indigo-100 text-indigo-800" }
   ];
 
-  const pastReports = [
-    { title: "MOE Guidelines for Social Audit", type: "Guidelines", category: "MOE Guidelines", districts: 15, schools: 2500, period: "2025-26" },
-    { title: "Official Letters from State", type: "Letters", category: "Letters", districts: 12, schools: 1800, period: "2025-26" },
-    { title: "Government Circulars", type: "Circulars", category: "Circulars", districts: 18, schools: 3200, period: "2025-26" },
-    { title: "District Audit Plans", type: "Plans", category: "Plans", districts: 20, schools: 4500, period: "2025-26" },
-    { title: "Compiled Audit Reports", type: "Reports", category: "Reports", districts: 25, schools: 5800, period: "2025-26" },
-    { title: "Training Modules by NCERT", type: "Modules", category: "Modules", districts: 10, schools: 1200, period: "2025-26" },
-    { title: "Training Plan", type: "Training Plan", category: "Training Plan", districts: 22, schools: 4800, period: "2025-26" },
-    { title: "Social Audit Plan", type: "Social Audit Plan", category: "Social Audit Plan", districts: 28, schools: 6200, period: "2025-26" },
-    { title: "Public Hearing Plan", type: "Public Hearing Plan", category: "Public Hearing Plan", districts: 19, schools: 3900, period: "2025-26" }
-  ];
+  
 
   const handleDownload = (url: string) => {
     window.open(url, '_blank');
