@@ -32,7 +32,7 @@ const TrainingSection = () => {
     { name: "Resource Package 1", openUrl: "", downloadUrl: "" }, // placeholder
     { name: "Resource Package 2", openUrl: "", downloadUrl: "" },
     { name: "Resource Package 3", openUrl: "", downloadUrl: "" },
-    { name: "Resource Package 4", openUrl: "", downloadUrl: "" }
+    { name: "Resource Package 4", openUrl: "", downloadUrl: "" },
     { name: "Resource Video 1", videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
   { name: "Resource Video 2", videoUrl: "https://www.youtube.com/embed/ysz5S6PUM-U" },
   { name: "Resource Video 3", videoUrl: "https://www.youtube.com/embed/abc123xyz" },
