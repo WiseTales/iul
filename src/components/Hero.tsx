@@ -69,7 +69,7 @@ const Hero = () => {
             { label: "Districts", value: "14" },
             { label: "Schools", value: "6,436" },
             { label: "Blocks", value: "192" },
-            { label: "Social Audits", value: "2.5K+" },
+            { label: "Social Audits", value: "20% of 14 Districts" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="text-2xl font-bold text-yellow-600">{stat.value}</div>
