@@ -6,12 +6,13 @@ import { Download } from "lucide-react";
 const TrainingSection = () => {
   const allModules = [ 
     {
-      title: "Data of Social Audit Team",
-      description: "Schools, Audit Steps, and Manpower for Each District",
-      
-      openUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true",
-      downloadUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/export?format=pdf"
-    },
+  title: "Data of Social Audit team",
+  description: "Schools, Audit Steps, and Manpower for Each District.",
+  
+  openUrl: "https://drive.google.com/file/d/1SlFYciFon1HyNj6IUe6WX_aiV-i4pA5f/view?usp=sharing", 
+  downloadUrl: "https://drive.google.com/uc?export=download&id=1SlFYciFon1HyNj6IUe6WX_aiV-i4pA5f"
+},
+
     {
       title: "Official Circulars – Social Audit of Schools",
       description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
