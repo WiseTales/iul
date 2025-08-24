@@ -12,10 +12,10 @@ const ProcessFlow = () => {
       color: "bg-blue-500",
       tasks: [
         "Identification of MTs/CSAs/SAFTs",
+        "➡ Number of Master Trainers: 28 for 14 Districts", 
+        "➡ 2 MASTs for each District", 
         "➡ Number of CSAs (Cluster Social Auditors): 645 for 14 Districts",
         "➡ 1 CSA for 10 - 13 Schools of each district under social audit",
-        "➡ Number of Master Trainers: 28 for 14 Districts",
-        "➡ 2 MASTs for each District",
         "Mapping with schools",
         "Capacity building",
         "Planning of SA"
