@@ -6,20 +6,14 @@ import { Download } from "lucide-react";
 const TrainingSection = () => {
   const allModules = [ 
 
-    {
-  title: "Letter to DG Office",
- 
+  {
+  title: "Official Circulars – Social Audit of Schools",
+  description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
   developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
-  openUrl: "https://drive.google.com/file/d/1AwZnwjA_cPW4v193OpH5Cng8Jc1PL5k1/view?usp=sharing",
-  downloadUrl: "https://drive.google.com/uc?export=download&id=1AwZnwjA_cPW4v193OpH5Cng8Jc1PL5k1"
+  openUrl: "https://drive.google.com/file/d/1x1I9_RHGlh4lcGg-JKzRMnaYlezi6kgM/view?usp=sharing",
+  downloadUrl: "https://drive.google.com/uc?export=download&id=1x1I9_RHGlh4lcGg-JKzRMnaYlezi6kgM"
 },
-    {
-  title: "SAFT Training Plan",
- 
-  developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
-  openUrl: "https://drive.google.com/file/d/1WpfP4KCbPMSjZQRxYQwywA8QOerp4_mj/view?usp=sharing",
-  downloadUrl: "https://drive.google.com/uc?export=download&id=1WpfP4KCbPMSjZQRxYQwywA8QOerp4_mj"
-},
+
 
 
     {
