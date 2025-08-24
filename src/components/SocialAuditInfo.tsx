@@ -45,7 +45,7 @@ const SocialAuditInfo = () => {
       <div className="container mx-auto px-4">
         {/* What is Social Audit */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">What is a Social Audit?</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">What is Social Audit?</h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               A Social Audit is a community-led evaluation process that ensures transparency, 
