@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 const TrainingSection = () => {
   const allModules = [ 
     {
-      title: "Social Audit & Team of Social Audit data",
+      title: "Data of Social Audit Team",
       description: "Schools, Audit Steps, and Manpower for Each District",
       developed: "Social Audit Team",
       openUrl: "https://docs.google.com/spreadsheets/d/1JDRTuq2v2xnv4DqdT34x3RX2gO5mY3IF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true",
