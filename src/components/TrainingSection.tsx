@@ -13,13 +13,14 @@ const TrainingSection = () => {
   downloadUrl: "https://drive.google.com/uc?export=download&id=1SlFYciFon1HyNj6IUe6WX_aiV-i4pA5f"
 },
 
-    { 
-      title: "Official Circulars – Social Audit of Schools",
-      
-      developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
-      openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", 
-      downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH"
-    },
+    {
+  title: "Official Circulars and Letters– Social Audit of Schools",
+ 
+  developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
+  openUrl: "https://drive.google.com/file/d/1uQZ82jIYd2jA1s3lvO2ZjqAjOLW5MmZD/view?usp=sharing",
+  downloadUrl: "https://drive.google.com/uc?export=download&id=1uQZ82jIYd2jA1s3lvO2ZjqAjOLW5MmZD"
+},
+
     
   {
     title: "Block Level Training Plan of SAFT for Gonda",
