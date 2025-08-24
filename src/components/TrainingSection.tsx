@@ -15,7 +15,7 @@ const TrainingSection = () => {
 
     { 
       title: "Official Circulars – Social Audit of Schools",
-      description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+      
       developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
       openUrl: "https://drive.google.com/file/d/10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH/view?usp=sharing", 
       downloadUrl: "https://drive.google.com/uc?export=download&id=10j9s0CPFQFOpv1MW3VvF69K6-6K8f8TH"
@@ -23,14 +23,14 @@ const TrainingSection = () => {
     
   {
     title: "Block Level Training Plan of SAFT for Gonda",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/10LJ5adywBLsfS9O82FD-9i46BPtUm0ts/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=10LJ5adywBLsfS9O82FD-9i46BPtUm0ts"
   },
   {
     title: "Block Level Training Plan of SAFT for Sultanpur",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/11BemiHEDqhA1ZfL31JOc3Efw0mq-fSZp/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=11BemiHEDqhA1ZfL31JOc3Efw0mq-fSZp"
@@ -38,49 +38,49 @@ const TrainingSection = () => {
  
   {
     title: "Block Level Training Plan of SAFT for ",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1B7elTFWHEFxA1KTRCpbuEeL2XWzrIcfL/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1B7elTFWHEFxA1KTRCpbuEeL2XWzrIcfL"
   },
   {
     title: "Block Level Training Plan of SAFT for Bareilly",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+    
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1Cf4GB6zydsm18nglHNsqbQTRU8zvYW49/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1Cf4GB6zydsm18nglHNsqbQTRU8zvYW49"
   },
   {
     title: "District Level Training Plan for CSA Training",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+    
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1GBLFp_W9Uw4HAPzNRrvZJFBl03j_Ofjp/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1GBLFp_W9Uw4HAPzNRrvZJFBl03j_Ofjp"
   },
   {
     title: "Block Level Training Plan of SAFT for Bahraich",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+  
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1Gl3D0Vrj94zyqQO6ZMRmxAXYx_GOMHxa/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1Gl3D0Vrj94zyqQO6ZMRmxAXYx_GOMHxa"
   },
   {
     title: "Block Level Training Plan of SAFT for Shahjahanpur",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1GxeV140mzktsEZqrRjzhfSSEMOvkHrRM/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1GxeV140mzktsEZqrRjzhfSSEMOvkHrRM"
   },
   {
     title: "Block Level Training Plan of SAFT for Shrawasti",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1I54IAnXJ3jKGXWFGbGG3ipaUyAtaWAPl/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1I54IAnXJ3jKGXWFGbGG3ipaUyAtaWAPl"
   },
   {
     title: "Block Level Training Plan of SAFT for Rae Bareli",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+    
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1L8SiIhh5rmvoqKMW9aSap6IOjDWQX4uj/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1L8SiIhh5rmvoqKMW9aSap6IOjDWQX4uj"
@@ -94,7 +94,7 @@ const TrainingSection = () => {
   },
   {
     title: "Official Circulars – Social Audit of Schools",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1OjPKqsKmHqTm2Pyvuie6qV-pGp_vojsP/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1OjPKqsKmHqTm2Pyvuie6qV-pGp_vojsP"
@@ -108,77 +108,77 @@ const TrainingSection = () => {
   },
   {
     title: "Ambedkar Nagar Audit Plan",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://docs.google.com/spreadsheets/d/1RJsOjA1_gU6C3oL8ZVdTPayAO8qnqJNm/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true", 
     downloadUrl: "https://docs.google.com/spreadsheets/d/1RJsOjA1_gU6C3oL8ZVdTPayAO8qnqJNm/export?format=xlsx"
   },
   {
     title: "Block Level Training Plan of SAFT for Lakhimpur Kheri",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+    
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1TGq-g53cO0GDUe9Wf08mm7tKRE79QRyT/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1TGq-g53cO0GDUe9Wf08mm7tKRE79QRyT"
   },
   {
     title: "Block Level Training Plan of SAFT for Barabanki",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1W3QGGv2vBv79KPmYgScL6cxUkVhPJ-en/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1W3QGGv2vBv79KPmYgScL6cxUkVhPJ-en"
   },
   {
     title: "Block Level Training Plan of SAFT for Sitapur",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1ZhQTzpkqM2Ffd9jTD5l-3quoX2_PSFVv/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1ZhQTzpkqM2Ffd9jTD5l-3quoX2_PSFVv"
   },
   {
     title: "Bareilly Audit Plan",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+    
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://docs.google.com/spreadsheets/d/1ep42DG9BOLfXV8L8LBrLGr5-u2PpwaAa/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true", 
     downloadUrl: "https://docs.google.com/spreadsheets/d/1ep42DG9BOLfXV8L8LBrLGr5-u2PpwaAa/export?format=xlsx"
   },
   {
     title: "Block Level Training Plan of SAFT for Ambedkar Nagar",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1h-D_zzsD87nJ8WMwh_NTaAtX2i8RwCTP/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1h-D_zzsD87nJ8WMwh_NTaAtX2i8RwCTP"
   },
   {
     title: "Letter - BSA Bahraich",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1l4Ud1Mtfw4w8eczYdutqLgLNpe8kP2kp/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1l4Ud1Mtfw4w8eczYdutqLgLNpe8kP2kp"
   },
   {
     title: "Block Level Training Plan of SAFT for Balrampur",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1tSz6GPxwpPAKCqf72kwOu9Jg_A-iOKAd/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1tSz6GPxwpPAKCqf72kwOu9Jg_A-iOKAd"
   },
   {
     title: "Rae Bareli Audit Plan",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+    
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://docs.google.com/spreadsheets/d/1xxA19j2hwOVQAhj3Lu_sljkl4cpu0ffF/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true", 
     downloadUrl: "https://docs.google.com/spreadsheets/d/1xxA19j2hwOVQAhj3Lu_sljkl4cpu0ffF/export?format=xlsx"
   },
   {
     title: "Block Level Training Plan of SAFT for Amethi",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+    
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/1ypoCxU0VbidIuMEB1CDveXuIeR7B4zvd/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=1ypoCxU0VbidIuMEB1CDveXuIeR7B4zvd"
   },
   {
     title: "Lakhimpurkheri Audit Plan",
-    description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
+   
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://docs.google.com/spreadsheets/d/1zMi65dsnfjlxilSifo7VwZOT13kPvtvY/edit?usp=sharing&ouid=117567334419080675185&rtpof=true&sd=true", 
     downloadUrl: "https://docs.google.com/spreadsheets/d/1zMi65dsnfjlxilSifo7VwZOT13kPvtvY/export?format=xlsx"
