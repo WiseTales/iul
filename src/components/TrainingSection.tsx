@@ -12,7 +12,15 @@ const TrainingSection = () => {
   developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
   openUrl: "https://drive.google.com/file/d/1AwZnwjA_cPW4v193OpH5Cng8Jc1PL5k1/view?usp=sharing",
   downloadUrl: "https://drive.google.com/uc?export=download&id=1AwZnwjA_cPW4v193OpH5Cng8Jc1PL5k1"
-}
+},
+    {
+  title: "SAFT Training Plan",
+ 
+  developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
+  openUrl: "https://drive.google.com/file/d/1WpfP4KCbPMSjZQRxYQwywA8QOerp4_mj/view?usp=sharing",
+  downloadUrl: "https://drive.google.com/uc?export=download&id=1WpfP4KCbPMSjZQRxYQwywA8QOerp4_mj"
+},
+
 
     {
   title: "Data of Social Audit team",
