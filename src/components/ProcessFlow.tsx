@@ -21,7 +21,7 @@ const ProcessFlow = () => {
         " " ,
         
         "Manpower engaged",
-        "➡ 38889 ",
+        "➡ 38889 (approx)",
         
         
       ]
