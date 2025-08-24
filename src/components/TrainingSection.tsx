@@ -5,6 +5,15 @@ import { Download } from "lucide-react";
 
 const TrainingSection = () => {
   const allModules = [ 
+
+    {
+  title: "Cover Letter DG Office",
+ 
+  developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
+  openUrl: "https://drive.google.com/file/d/1AwZnwjA_cPW4v193OpH5Cng8Jc1PL5k1/view?usp=sharing",
+  downloadUrl: "https://drive.google.com/uc?export=download&id=1AwZnwjA_cPW4v193OpH5Cng8Jc1PL5k1"
+}
+
     {
   title: "Data of Social Audit team",
   description: "Schools, Audit Steps, and Manpower for Each District.",
