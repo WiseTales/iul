@@ -1,8 +1,7 @@
-
-import React from 'react';
+import React from 'react'; 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowDown, Users, FileText, Eye, Megaphone } from "lucide-react";
+import { ArrowDown, Users, FileText, Eye } from "lucide-react";
 
 const ProcessFlow = () => {
   const steps = [
@@ -11,7 +10,16 @@ const ProcessFlow = () => {
       description: "Identification, mapping, capacity building, and planning",
       icon: FileText,
       color: "bg-blue-500",
-      tasks: ["Identification of MTs/CSAs/SAFTs", "Mapping with schools", "Capacity building", "Planning of SA"]
+      tasks: [
+        "Identification of MTs/CSAs/SAFTs",
+        "➡ Number of CSAs (Cluster Social Auditors): 645 for 14 Districts",
+        "➡ 1 CSA for 10 - 13 Schools of each district under social audit",
+        "➡ Number of Master Trainers: 28 for 14 Districts",
+        "➡ 2 MASTs for each District",
+        "Mapping with schools",
+        "Capacity building",
+        "Planning of SA"
+      ]
     },
     {
       title: "Social Audit Phase",
@@ -35,7 +43,6 @@ const ProcessFlow = () => {
       responsibilities: ["Headmasters coordination", "SMC participation", "Data provision"],
       color: "bg-blue-100 text-blue-800"
     },
-   
     {
       level: "Block Level",
       responsibilities: ["BRC staff coordination", "Block compilation", "Resource support"],
@@ -51,9 +58,14 @@ const ProcessFlow = () => {
       responsibilities: ["State compilation", "Policy guidance", "Quality assurance"],
       color: "bg-red-100 text-red-800"
     },
-     {
+    {
       level: "SAU/Institute",
-      responsibilities: ["Identification of Social Audit team - MTs, CSAs and SAFT", "Capacity building of team", "Conduct Social Audit and public hearing", "Report writing"],
+      responsibilities: [
+        "Identification of Social Audit team - MTs, CSAs and SAFT",
+        "Capacity building of team",
+        "Conduct Social Audit and public hearing",
+        "Report writing"
+      ],
       color: "bg-red-100 text-red-800"
     }
   ];
