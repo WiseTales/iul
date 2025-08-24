@@ -7,7 +7,7 @@ const TrainingSection = () => {
   const allModules = [ 
 
   {
-  title: "Official Circulars – Social Audit of Schools",
+  title: "All Letters and Circulars – Social Audit of Schools",
   description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
   developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
   openUrl: "https://drive.google.com/file/d/1x1I9_RHGlh4lcGg-JKzRMnaYlezi6kgM/view?usp=sharing",
