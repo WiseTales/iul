@@ -15,7 +15,7 @@ const ProcessFlow = () => {
         "➡ Number of Master Trainers: 28 for 14 Districts", 
         "➡ 2 MTs for each District", 
         "➡ Number of CSAs (Cluster Social Auditors): 645 for 14 Districts",
-        "➡ 1 CSA for 10 - 13 Schools of each district under social audit",
+        "➡ 1 CSA for 10 - 13 Schools of each District",
         "Mapping with schools",
         "Capacity building",
         "Planning of SA"
