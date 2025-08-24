@@ -40,7 +40,7 @@ const ProcessFlow = () => {
   const roles = [
     {
       level: "School Level",
-      responsibilities: ["Headmasters coordination", "SMC participation", "Data provision"],
+      responsibilities: ["Headmasters coordination", "SMC (School Management Committee) participation", "Data provision"],
       color: "bg-blue-100 text-blue-800"
     },
     {
