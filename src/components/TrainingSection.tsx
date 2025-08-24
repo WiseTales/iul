@@ -13,7 +13,7 @@ const TrainingSection = () => {
   downloadUrl: "https://drive.google.com/uc?export=download&id=1SlFYciFon1HyNj6IUe6WX_aiV-i4pA5f"
 },
 
-    {
+    { 
       title: "Official Circulars – Social Audit of Schools",
       description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
       developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
@@ -227,9 +227,7 @@ const TrainingSection = () => {
                 <CardHeader>
                   <CardTitle className="text-lg text-center">{module.title}</CardTitle>
                   <p className="text-gray-600 text-center">{module.description}</p>
-                  <p className="text-sm text-blue-600 text-center font-medium">
-                    Issued by: {module.developed}
-                  </p>
+                 
                 </CardHeader>
                 <CardContent className="flex flex-col gap-3">
                   <div className="flex flex-col sm:flex-row gap-2">
