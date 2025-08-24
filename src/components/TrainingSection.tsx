@@ -22,21 +22,21 @@ const TrainingSection = () => {
     },
     
   {
-    title: "Official Circulars – Social Audit of Schools",
+    title: "Block Level Training Plan of SAFT for Gonda",
     description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/10LJ5adywBLsfS9O82FD-9i46BPtUm0ts/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=10LJ5adywBLsfS9O82FD-9i46BPtUm0ts"
   },
   {
-    title: "Block Level Training Plan of SAFT for GONDA",
+    title: "Block Level Training Plan of SAFT for Sultanpur",
     description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/11BemiHEDqhA1ZfL31JOc3Efw0mq-fSZp/view?usp=sharing", 
     downloadUrl: "https://drive.google.com/uc?export=download&id=11BemiHEDqhA1ZfL31JOc3Efw0mq-fSZp"
   },
   {
-    title: "Block Level Training Plan of SAFT for Sultanpur",
+    title: "",
     description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/12vhentDRgVZ9GRCbr10x6Rk3TpuJwQ6n/view?usp=sharing", 
