@@ -18,7 +18,9 @@ const ProcessFlow = () => {
         "➡ 1 CSA for 10 - 13 Schools of each District",
         "➡ SAFTs (Social Audit Facilitators Trainers) No. of SAFT (Approximate 38616) for 14 Districts",
         "➡ 6 SAFTs per School",
-        "➡ Manpower engaged",
+        "Manpower engaged",
+        "➡ 38889 ",
+        
         
       ]
     },
