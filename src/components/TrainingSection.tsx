@@ -29,7 +29,7 @@ const TrainingSection = () => {
     downloadUrl: "https://drive.google.com/uc?export=download&id=10LJ5adywBLsfS9O82FD-9i46BPtUm0ts"
   },
   {
-    title: "Official Circulars – Social Audit of Schools",
+    title: "Block Level Training Plan of SAFT for GONDA",
     description: "Directive for conducting Social Audit in 14 districts, including planning, manpower, and timelines.",
     developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
     openUrl: "https://drive.google.com/file/d/11BemiHEDqhA1ZfL31JOc3Efw0mq-fSZp/view?usp=sharing", 
