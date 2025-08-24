@@ -7,7 +7,7 @@ const TrainingSection = () => {
   const allModules = [ 
 
     {
-  title: "Cover Letter DG Office",
+  title: "Letter to DG Office",
  
   developed: "Integral University, Lucknow – Social Audit Project, Samagra Shiksha",
   openUrl: "https://drive.google.com/file/d/1AwZnwjA_cPW4v193OpH5Cng8Jc1PL5k1/view?usp=sharing",
