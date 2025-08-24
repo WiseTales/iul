@@ -50,7 +50,7 @@ const Hero = () => {
             className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-6 py-2 shadow-md transition"
             onClick={() => scrollToSection("dashboard")}
           >
-            Start Social Audit
+            Social Audit Started - July 2024
           </Button>
           <Button
             size="lg"
