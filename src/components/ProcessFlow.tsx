@@ -7,7 +7,7 @@ const ProcessFlow = () => {
   const steps = [
     {
       title: "Pre-Social Audit Phase",
-      description: "Identification, mapping, capacity building, and planning",
+      description: "Identification, Mapping, Capacity Building, and Planning",
       icon: FileText,
       color: "bg-blue-500",
       tasks: [
