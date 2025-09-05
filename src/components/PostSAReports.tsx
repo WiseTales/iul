@@ -116,10 +116,10 @@ const PostSAReports = () => {
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       {[
         {
-          name: "Plan Document",
+          name: "Public Hearing Plan - District Wise",
           link: "https://drive.google.com/file/d/1gdvLbxOHR4HEPmdpYFNamCm0LrI-bbsb/view?usp=sharing",
         },
-        { name: "Implementation Report", link: "" },
+        { name: "Official circulars and letters - Public Hearing", link: "" },
         { name: "Monitoring Report", link: "" },
       ].map((item, idx) => (
         <Card
@@ -156,9 +156,10 @@ const PostSAReports = () => {
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { src: "", alt: "Image 1" },
-              { src: "", alt: "Image 2" },
-              { src: "", alt: "Image 3" },
+              { src: "./PH1.jpeg", alt: "Image 1" },
+              { src: "./PH2.jpeg", alt: "Image 2" },
+              { src: "./PH3.jpeg", alt: "Image 3" },
+               { src: "./PH4.jpeg", alt: "Image 4" },
             ].map((img, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden flex items-center justify-center h-64">
                 {img.src ? (
