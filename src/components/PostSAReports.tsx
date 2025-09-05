@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, MapPin } from "lucide-react";
+import { Download, MapPin, Image as ImageIcon } from "lucide-react";
 
 const PostSAReports = () => {
   // District data from the provided screenshot (block count and total schools)
@@ -48,59 +48,125 @@ const PostSAReports = () => {
   };
 
   return (
-    <section id="reports" className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Post Social Audit Reports</h2>
-        </div>
+    <>
+      {/* Existing Reports Section */}
+      <section id="reports" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Post Social Audit Reports</h2>
+          </div>
 
-        {/* Report Categories */}
-        <div className="grid lg:grid-cols-1 gap-8 mb-16">
-          {reportCategories.map((category, index) => {
-            const IconComponent = category.icon;
-            return (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-                <CardHeader>
-                  <div className={`w-12 h-12 ${category.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
-                    <IconComponent className="h-6 w-6 text-white" />
-                  </div>
-                  <CardTitle className="text-xl text-center">{category.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3 max-h-[500px] overflow-y-auto">
-                    {category.reports.map((report, reportIndex) => (
-                      <div key={reportIndex} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
-                        <div>
-                          <p className="font-medium text-gray-900">{report.name}</p>
-                          <p className="text-xs text-gray-500">
-                            {report.schools} schools
-                          </p>
+          {/* Report Categories */}
+          <div className="grid lg:grid-cols-1 gap-8 mb-16">
+            {reportCategories.map((category, index) => {
+              const IconComponent = category.icon;
+              return (
+                <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+                  <CardHeader>
+                    <div className={`w-12 h-12 ${category.color} rounded-full flex items-center justify-center mx-auto mb-4`}>
+                      <IconComponent className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-xl text-center">{category.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="space-y-3 max-h-[500px] overflow-y-auto">
+                      {category.reports.map((report, reportIndex) => (
+                        <div key={reportIndex} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                          <div>
+                            <p className="font-medium text-gray-900">{report.name}</p>
+                            <p className="text-xs text-gray-500">
+                              {report.schools} schools
+                            </p>
+                          </div>
+                          <Button
+                            size="sm"
+                            variant="outline"
+                            onClick={() =>
+                              report.link
+                                ? handleDownloadExcel(report.link)
+                                : alert("Report link not available yet.")
+                            }
+                          >
+                            <Download className="h-3 w-3 mr-1" />
+                            Download
+                          </Button>
                         </div>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() =>
-                            report.link
-                              ? handleDownloadExcel(report.link)
-                              : alert("Report link not available yet.")
-                          }
-                        >
-                          <Download className="h-3 w-3 mr-1" />
-                          Download
-                        </Button>
-                      </div>
-                    ))}
-                  </div>
-                  <Button className="w-full mt-4" variant="outline">
-                    View All {category.title}
+                      ))}
+                    </div>
+                    <Button className="w-full mt-4" variant="outline">
+                      View All {category.title}
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Public Hearing Plan & Implementation Section */}
+      <section id="public-hearing" className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Public Hearing Plan & Implementation</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: "Plan Document", link: "" },
+              { name: "Implementation Report", link: "" },
+              { name: "Monitoring Report", link: "" },
+            ].map((item, idx) => (
+              <Card key={idx} className="hover:shadow-md transition-shadow duration-300">
+                <CardHeader>
+                  <CardTitle className="text-lg text-center">{item.name}</CardTitle>
+                </CardHeader>
+                <CardContent className="flex justify-center">
+                  <Button
+                    onClick={() =>
+                      item.link
+                        ? handleDownloadExcel(item.link)
+                        : alert("Link not available yet.")
+                    }
+                    className="w-full"
+                  >
+                    <Download className="h-4 w-4 mr-2" /> Download
                   </Button>
                 </CardContent>
               </Card>
-            );
-          })}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Images Section */}
+      <section id="images" className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">Gallery</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { src: "", alt: "Image 1" },
+              { src: "", alt: "Image 2" },
+              { src: "", alt: "Image 3" },
+            ].map((img, idx) => (
+              <div key={idx} className="bg-white rounded-xl shadow-md overflow-hidden flex items-center justify-center h-64">
+                {img.src ? (
+                  <img src={img.src} alt={img.alt} className="object-cover w-full h-full" />
+                ) : (
+                  <div className="flex flex-col items-center text-gray-400">
+                    <ImageIcon className="h-10 w-10 mb-2" />
+                    <p>Image placeholder</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
