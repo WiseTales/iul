@@ -104,40 +104,48 @@ const PostSAReports = () => {
         </div>
       </section>
 
-      {/* Public Hearing Plan & Implementation Section */}
-      <section id="public-hearing" className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">Public Hearing Plan & Implementation</h2>
-          </div>
+     {/* Public Hearing Plan & Implementation Section */}
+<section id="public-hearing" className="py-16 bg-white">
+  <div className="container mx-auto px-4">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl font-bold text-gray-900 mb-6">
+        Public Hearing Plan & Implementation
+      </h2>
+    </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { name: "Plan Document", link: "" },
-              { name: "Implementation Report", link: "" },
-              { name: "Monitoring Report", link: "" },
-            ].map((item, idx) => (
-              <Card key={idx} className="hover:shadow-md transition-shadow duration-300">
-                <CardHeader>
-                  <CardTitle className="text-lg text-center">{item.name}</CardTitle>
-                </CardHeader>
-                <CardContent className="flex justify-center">
-                  <Button
-                    onClick={() =>
-                      item.link
-                        ? handleDownloadExcel(item.link)
-                        : alert("Link not available yet.")
-                    }
-                    className="w-full"
-                  >
-                    <Download className="h-4 w-4 mr-2" /> Download
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {[
+        {
+          name: "Plan Document",
+          link: "https://drive.google.com/file/d/1gdvLbxOHR4HEPmdpYFNamCm0LrI-bbsb/view?usp=sharing",
+        },
+        { name: "Implementation Report", link: "" },
+        { name: "Monitoring Report", link: "" },
+      ].map((item, idx) => (
+        <Card
+          key={idx}
+          className="hover:shadow-md transition-shadow duration-300"
+        >
+          <CardHeader>
+            <CardTitle className="text-lg text-center">{item.name}</CardTitle>
+          </CardHeader>
+          <CardContent className="flex justify-center">
+            <Button
+              onClick={() =>
+                item.link
+                  ? handleDownloadExcel(item.link)
+                  : alert("Link not available yet.")
+              }
+              className="w-full"
+            >
+              <Download className="h-4 w-4 mr-2" /> Download
+            </Button>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Images Section */}
       <section id="images" className="py-16 bg-gray-50">
