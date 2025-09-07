@@ -112,19 +112,22 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <div>
             <p>&copy; 2025 Centre for Social Audit of Samagra Shiksha. All rights reserved.</p>
+            <p className="mt-1">
+              Developed by{" "}
+              <a 
+                href="https://zuhair.vercel.app" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-white transition-colors"
+              >
+                Zuhair Arif
+              </a>
+            </p>
           </div>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-white transition-colors">Accessibility</a>
-            <a 
-              href="https://zuhair.vercel.app" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hover:text-white transition-colors"
-            >
-              Developer
-            </a>
           </div>
         </div>
       </div>
