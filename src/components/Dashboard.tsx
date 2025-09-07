@@ -242,28 +242,7 @@ const Dashboard = () => {
           </Card>
 
           {/* Public Hearings */}
-          <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Megaphone className="h-5 w-5 text-red-600" />
-                Public Hearings (In Progress)
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
-                <div className="p-3 bg-red-50 rounded-lg">
-                  <p className="font-medium text-red-900">Block Level</p>
-                  <div className="flex justify-between items-center mt-2">
-                    <span className="text-sm text-red-700">Total Blocks: 192</span>
-                    <div className="text-right">
-                      <div className="text-lg font-bold text-red-600">0%</div>
-                      <div className="text-xs text-red-500">Hearings Conducted</div>
-                    </div>
-                  </div> 
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+         
         </div>
       </div>
     </section>
