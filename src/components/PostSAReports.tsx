@@ -187,7 +187,7 @@ const PostSAReports = () => {
       <section id="university-materials" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <h4 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-            Other Resource Materials Developed by Integral University
+           Videos Gallery
           </h4>
           <div className="grid md:grid-cols-4 gap-4">
             {resourcePackages.map((pkg, index) => (
@@ -208,7 +208,7 @@ const PostSAReports = () => {
                     </div>
                   ) : (
                     <div className="w-full h-40 flex items-center justify-center text-gray-500 text-sm border rounded">
-                      Video link not available
+                    Will be uploaded soon
                     </div>
                   )}
                 </CardContent>
