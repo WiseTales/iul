@@ -204,12 +204,7 @@ const TrainingSection = () => {
    
   ];
 
-  const resourcePackages = [
-    { name: "Resource Video 1", videoUrl: "https://drive.google.com/file/d/1COA7txEg12uVyoiou-Fz7AJzq4eKov6V/preview" },
-    { name: "Resource Video 2", videoUrl: "https://drive.google.com/file/d/1agcwsIqKPs9V_UHOVkmjKfDxqukzVIK3/preview" },
-    { name: "Resource Video 3", videoUrl: "https://www.youtube.com/embed/abc123xyz" },
-    { name: "Resource Video 4", videoUrl: "" } 
-  ];
+
 
   return (
     <section id="training" className="py-16 bg-white">
@@ -263,38 +258,7 @@ const TrainingSection = () => {
           </div>
         </div>
 
-        {/* University Materials */}
-        <div className="mt-12">
-          <h4 className="text-xl font-semibold text-gray-900 mb-6 text-center">
-            Other Resource Materials Developed by Integral University
-          </h4>
-          <div className="grid md:grid-cols-4 gap-4">
-            {resourcePackages.map((pkg, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="p-4 flex flex-col items-center gap-3">
-                  <p className="font-medium">{pkg.name}</p>
-                  {pkg.videoUrl ? (
-                    <div className="w-full aspect-video">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={pkg.videoUrl}
-                        title={pkg.name}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  ) : (
-                    <div className="w-full h-40 flex items-center justify-center text-gray-500 text-sm border rounded">
-                      Video link not available
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+      
       </div>
     </section>
   );
