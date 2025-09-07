@@ -117,6 +117,14 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
             <a href="#" className="hover:text-white transition-colors">Accessibility</a>
+            <a 
+              href="https://zuhair.vercel.app" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-white transition-colors"
+            >
+              Developer
+            </a>
           </div>
         </div>
       </div>
