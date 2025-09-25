@@ -27,17 +27,18 @@ const PostSAReports = () => {
   const districtData = [
     {
       name: "Ambedkar Nagar",
-      blocks: [
-        { name: "Akbarpur", image: "" },
-        { name: "Baskhari", image: "" },
-        { name: "Bhiti", image: "" },
-        { name: "Bhiyaon", image: "" },
-        { name: "Jahageerganj", image: "" },
-        { name: "Jalalpur", image: "" },
-        { name: "Katehari", image: "" },
-        { name: "Ramnagar", image: "" },
-        { name: "Tanda", image: "" },
-      ],
+     blocks: [
+  { name: "Akbarpur", image: "Akbarpur.jpeg" },
+  { name: "Baskhari", image: "Baskhari.jpeg" },
+  { name: "Bhiti", image: "Bhiti.jpeg" },
+  { name: "Bhiyaon", image: "Bhiyaon.jpeg" },
+  { name: "Jahageerganj", image: "Jahageerganj.jpeg" },
+  { name: "Jalalpur", image: "Jalalpur.jpeg" },
+  { name: "Katehari", image: "Katehari.jpeg" },
+  { name: "Ramnagar", image: "Ramnagar.jpeg" },
+  { name: "Tanda", image: "Tanda.jpeg" },
+],
+
     },
     {
       name: "Amethi",
