@@ -101,7 +101,7 @@ const PostSAReports = () => {
   { name: "Masoli", image: "Masoli.jpeg" },
   { name: "Nindura", image: "Nindura.jpeg" },
   { name: "Pure Dalai", image: "Pure Dalai.jpeg" },
-  { name: "Ramnagar", image: "Ramnagar.jpeg" },
+  { name: "Ramnagar", image: "Ramnagar2.jpeg" },
   { name: "Siddhore", image: "Siddhore.jpeg" },
   { name: "Sirauli Gauspur", image: "Sirauli Gauspur.jpeg" },
   { name: "Suratganj", image: "Suratganj.jpeg" },
