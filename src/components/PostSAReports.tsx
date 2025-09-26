@@ -75,7 +75,7 @@ const PostSAReports = () => {
     },
     {
       name: "Bahraich",
-      blocks: [{ name: "Tejwapur", image: "" }],
+      blocks: [{ name: "Tejwapur", image: "Tejwapur.jpeg" }],
     },
     {
       name: "Balrampur",
