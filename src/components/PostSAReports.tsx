@@ -79,16 +79,20 @@ const PostSAReports = () => {
     },
     {
       name: "Balrampur",
-      blocks: [
-        { name: "Gaindas Bujurg", image: "" },
-        { name: "Gainsari", image: "" },
-        { name: "Gilula", image: "" },
-        { name: "Harriya Satgharwa", image: "" },
-        { name: "Pachpedva", image: "" },
-        { name: "Shreedattganj", image: "" },
-        { name: "Tulsipur", image: "" },
-        { name: "Utraula", image: "" },
-      ],
+     blocks: [
+  { name: "Bani Kodar", image: "Bani Kodar.jpeg" },
+  { name: "Hadirgarh", image: "Hadirgarh.jpeg" },
+  { name: "Harakh", image: "Harakh.jpeg" },
+  { name: "Masoli", image: "Masoli.jpeg" },
+  { name: "Nindura", image: "Nindura.jpeg" },
+  { name: "Pure Dalai", image: "Pure Dalai.jpeg" },
+  { name: "Ramnagar", image: "Ramnagar2.jpeg" },
+  { name: "Siddhore", image: "Siddhore.jpeg" },
+  { name: "Sirauli Gauspur", image: "Sirauli Gauspur.jpeg" },
+  { name: "Suratganj", image: "Suratganj.jpeg" },
+  { name: "Trivediganj", image: "Trivediganj.jpeg" },
+],
+
     },
     {
       name: "Barabanki",
