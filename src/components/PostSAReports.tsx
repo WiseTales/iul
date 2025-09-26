@@ -79,36 +79,35 @@ const PostSAReports = () => {
     },
     {
       name: "Balrampur",
-     blocks: [
+    blocks: [
+  { name: "Gaindas Bujurg", image: "Gaindas Bujurg.jpeg" },
+  { name: "Gainsari", image: "Gainsari.jpeg" },
+  { name: "Gilula", image: "Gilula.jpeg" },
+  { name: "Harriya Satgharwa", image: "Harriya Satgharwa.jpeg" },
+  { name: "Pachpedva", image: "Pachpedva.jpeg" },
+  { name: "Shreedattganj", image: "Shreedattganj.jpeg" },
+  { name: "Tulsipur", image: "Tulsipur.jpeg" },
+  { name: "Utraula", image: "Utraula.jpeg" },
+],
+
+
+    },
+    {
+      name: "Barabanki",
+    blocks: [
   { name: "Bani Kodar", image: "Bani Kodar.jpeg" },
   { name: "Hadirgarh", image: "Hadirgarh.jpeg" },
   { name: "Harakh", image: "Harakh.jpeg" },
   { name: "Masoli", image: "Masoli.jpeg" },
   { name: "Nindura", image: "Nindura.jpeg" },
   { name: "Pure Dalai", image: "Pure Dalai.jpeg" },
-  { name: "Ramnagar", image: "Ramnagar2.jpeg" },
+  { name: "Ramnagar", image: "Ramnagar.jpeg" },
   { name: "Siddhore", image: "Siddhore.jpeg" },
   { name: "Sirauli Gauspur", image: "Sirauli Gauspur.jpeg" },
   { name: "Suratganj", image: "Suratganj.jpeg" },
   { name: "Trivediganj", image: "Trivediganj.jpeg" },
 ],
 
-    },
-    {
-      name: "Barabanki",
-      blocks: [
-        { name: "Bani Kodar", image: "" },
-        { name: "Hadirgarh", image: "" },
-        { name: "Harakh", image: "" },
-        { name: "Masoli", image: "" },
-        { name: "Nindura", image: "" },
-        { name: "Pure Dalai", image: "" },
-        { name: "Ramnagar", image: "" },
-        { name: "Siddhore", image: "" },
-        { name: "Sirauli Gauspur", image: "" },
-        { name: "Suratganj", image: "" },
-        { name: "Trivediganj", image: "" },
-      ],
     },
     {
       name: "Bareilly",
