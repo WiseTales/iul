@@ -38,6 +38,14 @@ const WhosWho = () => {
       profile: "Managing and overseeing various administrative activities of the project.",
       email: "registrar@iul.ac.in",
     },
+      {
+      name: "Prof. Ahmad Raza Khan",
+      position: "Treasurer",
+      organization: "Integral University",
+      image: "/63.jpg",
+      profile: "Managing and overseeing project funds.",
+      email: "treasurer@iul.ac.in",
+    },
      
     {
       name: "Prof. Hafiz Mohd Arif",
@@ -63,15 +71,8 @@ const WhosWho = () => {
       image: "/62.png",
       profile: "Coordinating Social Audit activities.",
       email: "vanya@iul.ac.in",
-    },
-    {
-      name: "Prof. Ahmad Raza Khan",
-      position: "Treasurer",
-      organization: "Integral University",
-      image: "/63.jpg",
-      profile: "Managing and overseeing project funds.",
-      email: "treasurer@iul.ac.in",
     }
+  
   ];
 
   const getInitials = (name: string) =>
