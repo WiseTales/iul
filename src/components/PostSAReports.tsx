@@ -42,17 +42,18 @@ const PostSAReports = () => {
     },
     {
       name: "Amethi",
-      blocks: [
-        { name: "Bahadurpur", image: "" },
-        { name: "Gauriganj", image: "" },
-        { name: "Jagdishpur", image: "" },
-        { name: "Jamo", image: "" },
-        { name: "Musafirkhana", image: "" },
-        { name: "Sangrampur", image: "" },
-        { name: "Shahgarh", image: "" },
-        { name: "Singhpur", image: "" },
-        { name: "Tiloi", image: "" },
-      ],
+     blocks: [
+  { name: "Bahadurpur", image: "Bahadurpur.jpeg" },
+  { name: "Gauriganj", image: "Gauriganj.jpeg" },
+  { name: "Jagdishpur", image: "Jagdishpur.jpeg" },
+  { name: "Jamo", image: "Jamo.jpeg" },
+  { name: "Musafirkhana", image: "Musafirkhana.jpeg" },
+  { name: "Sangrampur", image: "Sangrampur.jpeg" },
+  { name: "Shahgarh", image: "Shahgarh.jpeg" },
+  { name: "Singhpur", image: "Singhpur.jpeg" },
+  { name: "Tiloi", image: "Tiloi.jpeg" },
+],
+
     },
     {
       name: "Ayodhya",
