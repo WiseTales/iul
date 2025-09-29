@@ -121,7 +121,7 @@ const PostSAReports = () => {
   { name: "Fathganj", image: "Fathganj.jpeg" },
   { name: "Kyara", image: "Kyara.jpeg" },
   { name: "Nawabganj", image: "Nawabganj.jpeg" },
-  { name: "Richha Damkhoa", image: "Richha damkhoa.jpeg" },
+  { name: "Richha Damkhoa", image: "Richha damkhoda.jpeg" },
   { name: "Vithri Chainpur", image: "Vithri Chainpur.jpeg" },
 ],
 
@@ -156,8 +156,8 @@ const PostSAReports = () => {
   { name: "Mohmmdi", image: "Mohmmdi.jpeg" },
   { name: "Nakaha", image: "Nakaha.jpeg" },
   { name: "Pasgawan", image: "Pasgawan.jpeg" },
-  { name: "Phool Bahed", image: "Phool bahed.jpeg" },
-  { name: "Ramiya Behed", image: "Ramiya Behed.jpeg" },
+  { name: "Phool Bahed", image: "Phool Bahed.jpeg" },
+  { name: "Ramiya Behed", image: "Ramiya behed.jpeg" },
 ],
 
     },
@@ -228,7 +228,7 @@ const PostSAReports = () => {
   { name: "Dubeypur", image: "Dubeypur.jpeg" },
   { name: "Jaisinghpur", image: "Jaisinghpur.jpeg" },
   { name: "Kadipur", image: "Kadipur.jpeg" },
-  { name: "Karaudi Kalan", image: "Karaudi kalan.jpeg" },
+  { name: "Karaudi Kalan", image: "Karaundi kalan.jpeg" },
   { name: "Kurebhar", image: "Kurebhar.jpeg" },
   { name: "Kurwar", image: "Kurwar.jpeg" },
   { name: "Lambhua", image: "Lambhua.jpeg" },
