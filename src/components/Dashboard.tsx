@@ -60,59 +60,7 @@ const Dashboard = () => {
         </div>
 
         {/* Key Metrics */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Card className="bg-gradient-to-br from-blue-500 to-blue-600 text-white">
-            <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-blue-100">Social Audits Completed</p>
-                  <p className="text-3xl font-bold">0</p>
-                  <p className="text-sm text-blue-200">0% completion rate</p>
-                </div>
-                <BarChart3 className="h-12 w-12 text-blue-200" />
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-to-br from-green-500 to-green-600 text-white">
-            <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-green-100">Public Hearing (In Progress)</p>
-                  <p className="text-3xl font-bold">0</p>
-                  <p className="text-sm text-green-200">0% of audits</p>
-                </div>
-                <TrendingUp className="h-12 w-12 text-green-200" />
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-to-br from-orange-500 to-orange-600 text-white">
-            <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-orange-100">MTs/CSAs/SAFTs Trained</p>
-                  <p className="text-3xl font-bold">0</p>
-                  <p className="text-sm text-orange-200">Across all districts</p>
-                </div>
-                <AlertCircle className="h-12 w-12 text-orange-200" />
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-gradient-to-br from-purple-500 to-purple-600 text-white">
-            <CardContent className="p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="text-purple-100">Districts Covered</p>
-                  <p className="text-3xl font-bold">14</p>
-                  <p className="text-sm text-purple-200">Complete coverage</p>
-                </div>
-                <MapPin className="h-12 w-12 text-purple-200" />
-              </div>
-            </CardContent>
-          </Card>
-        </div>
+       
 
         {/* Four New Main Sections */}
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
