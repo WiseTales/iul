@@ -43,20 +43,7 @@ const Dashboard = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Live Dashboard</h2>
           <p className="text-xl text-gray-600 mb-8">Real-time monitoring and analytics for social audit activities</p>
           
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Button variant="outline" className="flex items-center gap-2">
-              <Filter className="h-4 w-4" />
-              Filter by District
-            </Button>
-            <Button variant="outline" className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              Block View
-            </Button>
-            <Button className="flex items-center gap-2">
-              <Download className="h-4 w-4" />
-              Export Report
-            </Button>
-          </div>
+         
         </div>
 
         {/* Key Metrics */}
